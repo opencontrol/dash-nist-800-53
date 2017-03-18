@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ng="http://angularjs.org">
+<head><title>
+	NVD - Control
+</title><link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/nvd.css" /><link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/nvd-public.css" /><link rel="apple-touch-icon" sizes="180x180" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png" /><link rel="icon" type="image/png" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16" /><link rel="manifest" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/manifest.json" /><link rel="mask-icon" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000" /><link rel="shortcut icon" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico" /><meta name="msapplication-config" content="/NVD/Media/images/favicons/browserconfig.xml" /><meta name="theme-color" content="#000000" />
+
+    <script language="javascript" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/jquery-1.9.1.min.js"></script>
+    <script language="javascript" id="_fed_an_js_tag" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/federated-analytics.all.min.js?agency=NIST&amp;subagency=nvd&amp;pua=UA-37115410-41&amp;yt=true"></script>
+    
+    <link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/sp800-53.css"/>
+</head>
+<body class="LTR ENUS ContentBody">
+    <div id="frameBusterDiv" style="display: none">
+        <h1>You are viewing this page in an unauthorized frame window.</h1>
+        <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov">http://nvd.nist.gov</a></p>
+    </div>
+    <form method="post" action="control%3FcontrolName=CM-6.html" id="pageForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="lgS0BWiptWhCgAWrzie/9QgROg9d4zIg1ff20qUO/XvKC5b0trwBI+j8OEvT0YG/NrfJPxOodkiBxxIQ3oEd1/zuZzwKaUqd/KWAGF3JnPUJFSRyYN946dumJb2OIpU7" />
+</div>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('ctl00$m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('ctl00$m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F6E39A44" />
+</div>
+    
+<div id="header">
+    <map name="banner" id="banner">
+        <area shape="rect" coords="0,0,340,50" href="http://www.us-cert.gov" alt="National Cyber Security Division" target="_blank" />
+        <area shape="rect" coords="630,0,800,50" href="http://csrc.nist.gov" alt="NIST Computer Security Division" target="_blank" />
+        <area href="https://nvd.nist.gov/home.cfm" id="HomeArea" shape="rect" coords="0,51,650,100" alt="NVD Home" />
+    </map>
+    <img src="https://nvd.nist.gov/NVDLegacy/media/NVDLegacyMedia/images/nvdbannerDHSNIST.jpg" id="INvdBanner" alt="NVD Banner" width="800" height="100" usemap="#banner" />
+    </div>
+    <div>
+        <div id="navbar">
+            <div id="navmenu1">
+                <ul>
+                    <li style="width:12%"><a href="https://web.nvd.nist.gov/view/vuln/search" id="AVulnSearch">Vulnerabilities</a></li>
+                    <li style="width:11%"><a href="https://web.nvd.nist.gov/view/ncp/repository" id="ANcpRepo">Checklists</a></li>
+                    <li style="width:14%"><a href="https://web.nvd.nist.gov/view/800-53/home" id="A80054Home">800-53/800-53A</a></li>
+                    <li style="width:16%"><a href="https://nvd.nist.gov/cpe.cfm" id="ACpe">Product Dictionary</a></li>
+                    <li style="width:15%"><a href="https://nvd.nist.gov/cvss.cfm" id="ACvss">Impact Metrics</a></li>
+                    <li style="width:12%"><a href="https://nvd.nist.gov/download.cfm" id="ADownload">Data Feeds</a></li>
+                    <li style="width:10%"><a href="https://web.nvd.nist.gov/view/vuln/statistics" id="AStats">Statistics</a>
+                    <li style="width:10%"><a href="https://nvd.nist.gov/faq" id="AFaq">FAQs</a></li>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="navmenu2">
+                <ul>
+                    <li style="width:7%"><a href="https://nvd.nist.gov/home.cfm" id="AHome">Home</a></li>
+                    <li style="width:10%"><a href="http://scap.nist.gov" id="AScap">SCAP</a></li>
+                    <li style="width:20%"><a href="https://nvd.nist.gov/scapproducts.cfm" id="AVAScapValTools">SCAP Validated Tools</a></li>
+                    <li style="width:15%"><a href="http://scap.nist.gov/events/" id="AScapEvents">SCAP Events</a></li>
+                    <li style="width:8%"><a href="https://nvd.nist.gov/about.cfm" id="AAbout">About</a></li>
+                    <li style="width:9%"><a href="https://nvd.nist.gov/contact.cfm" id="AContact">Contact</a></li>
+                    <li style="width:19%"><a href="https://nvd.nist.gov/vendor.cfm" id="AVendorComments">Vendor Comments</a></li>
+                    <li style="width:12%"><a href="https://nvd.nist.gov/Visualizations" id="AVisualizations">Visualizations</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        
+    
+    <div id="leftNav">
+        <dl>
+            <dt class="nav-header">800-53 (Rev. 4)</dt>
+            <dt>Security Controls</dt>
+            <dd><a href="impact%3FimpactName=low.html" id="BodyPlaceHolder_R4LI">Low-Impact</a></dd>
+            <dd><a href="impact%3FimpactName=moderate.html" id="BodyPlaceHolder_R4MI">Moderate-Impact</a></dd>
+            <dd><a href="impact%3FimpactName=high.html" id="BodyPlaceHolder_R4HI">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a href="https://web.nvd.nist.gov/view/800-53/Rev4/home" id="BodyPlaceHolder_R4F">Families</a></dd>
+            <dd><a href="https://web.nvd.nist.gov/view/800-53/Rev4/search" id="BodyPlaceHolder_R4S">Search</a></dd>
+            
+            
+            
+        </dl>
+    </div>
+    
+    <div id="contents">
+
+        
+                    	<h2>NIST Special Publication 800-53 (Rev. 4)</h2>
+
+		<h3>Security Controls and Assessment Procedures for Federal Information Systems and Organizations</h3>
+
+
+
+
+
+
+
+
+
+	      	
+		<div class="navigation">
+		    <a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_BreadCrumbAllControlsLink" href="home.html">All Controls</a>
+            &gt; <a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_BreadCrumbFamilyLink" href="family%3FfamilyName=CONFIGURATION%2520MANAGEMENT.html">CM</a>
+            &gt; <strong>CM-6</strong>
+		</div>
+	
+		<div class="box">
+		
+			
+			<h2 id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_TitleHeader" class="controls">CM-6 - CONFIGURATION SETTINGS</h2>
+		
+			<div class="properties">
+				<!-- PropertiesBox Area START -->
+				<div class="noBorder">
+						<div class="row">
+							<div class="leftColumn">Family:</div>
+					        <div class="rightColumn">
+					            <a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_PropertiesBoxFamilyLink" href="family%3FfamilyName=CONFIGURATION%2520MANAGEMENT.html">CM - CONFIGURATION MANAGEMENT</a>
+					        </div>
+				        </div>
+						
+						<div class="row">
+							<div class="leftColumn">Priority:</div>
+					        <div class="rightColumn">
+					            P1 - Implement P1 security controls first.
+					        </div>
+				        </div>
+						<div class="row">
+							<div class="leftColumn">Baseline Allocation:
+							</div>
+							<div class="rightColumn">
+								<table class="impactGroupTable">
+						     			<thead>
+						     				<tr>
+						     					<th class="impactGroupColumn">Low</th>
+							     				<th class="impactGroupColumn">Moderate</th>
+							     				<th class="impactGroupColumn">High</th>
+						     				</tr>
+						     			</thead>
+						    			<tr>
+							    			<td class="impactGroupColumn">
+							    			    CM-6
+							    			</td>
+							    			<td class="impactGroupColumn">
+							    			    CM-6
+							    			</td>
+							    			<td class="impactGroupColumn">
+							    			    CM-6 (<a href="control%3FcontrolName=CM-6.html#enhancement-1">1</a>) (<a href="control%3FcontrolName=CM-6.html#enhancement-2">2</a>)
+							    			</td>
+						    			</tr>
+						     		</table>
+							</div>
+				        </div>
+				</div>
+				<!-- PropertiesBox Area END -->
+			</div>
+		
+			<div class="controlDetailNavigation">
+			    
+                
+                    <span style="font-weight: bold">Jump To:</span><br />
+                    <a href="control%3FcontrolName=CM-6.html#Rev4Statements">Revision 4 Statements</a><br />
+                    <a href="control%3FcontrolName=CM-6.html#controlDescription">Control Description</a><br />
+                    <a href="control%3FcontrolName=CM-6.html#supplementalGuidance">Supplemental Guidance</a><br />
+                    <a href="control%3FcontrolName=CM-6.html#references">References</a>
+			    
+
+			</div>
+			
+			<div class="controlDetail">
+                
+                <a name="controlDescription"></a>
+                <div class="controlDetailSection">
+				                                     
+					<h3 class="controlDetailHeading">Control Description</h3>
+
+					
+			    
+                    <a name="Rev4Statements"></a>
+                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_StatementsDiv" class="controlDetailSection">
+                    
+                        <strong id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+                        <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4StatementContentsDiv"><div class="row">
+<div class="row">
+<div class="leftColumn">a.</div>
+<div class="rightColumn">
+Establishes and documents configuration settings for information technology products employed within the information system using [Assignment: organization-defined security configuration checklists] that reflect the most restrictive mode consistent with operational requirements;
+</div>
+</div>
+<div class="row">
+<div class="leftColumn">b.</div>
+<div class="rightColumn">
+Implements the configuration settings;
+</div>
+</div>
+<div class="row">
+<div class="leftColumn">c.</div>
+<div class="rightColumn">
+Identifies, documents, and approves any deviations from established configuration settings for [Assignment: organization-defined information system components] based on [Assignment: organization-defined operational requirements]; and
+</div>
+</div>
+<div class="row">
+<div class="leftColumn">d.</div>
+<div class="rightColumn">
+Monitors and controls changes to the configuration settings in accordance with organizational policies and procedures.
+</div>
+</div>
+</div>
+</div>
+
+                    </div>
+				                                 
+                </div>
+                
+			    <a name="supplementalGuidance"></a>
+                <div class="controlDetailSection">
+
+					<h3 class="controlDetailHeading">Supplemental Guidance</h3>
+					
+					<div class="controlDetailValue">
+					    <pre>Configuration settings are the set of parameters that can be changed in hardware, software, or firmware components of the information system that affect the security posture and/or functionality of the system. Information technology products for which security-related configuration settings can be defined include, for example, mainframe computers, servers (e.g., database, electronic mail, authentication, web, proxy, file, domain name), workstations, input/output devices (e.g.,  scanners, copiers, and printers), network components (e.g., firewalls, routers, gateways, voice and data switches, wireless access points, network appliances, sensors), operating systems, middleware, and applications. Security-related parameters are those parameters impacting the security state of information systems including the parameters required to satisfy other security control requirements. Security-related parameters include, for example: (i) registry settings; (ii) account, file, directory permission settings; and (iii) settings for functions, ports, protocols, services, and remote connections. Organizations establish organization-wide configuration settings and subsequently derive specific settings for information systems. The established settings become part of the systems configuration baseline.
+Common secure configurations (also referred to as security configuration checklists, lockdown and hardening guides, security reference guides, security technical implementation guides) provide recognized, standardized, and established benchmarks that stipulate secure configuration settings for specific information technology platforms/products and instructions for configuring those information system components to meet operational requirements. Common secure configurations can be developed by a variety of organizations including, for example, information technology product developers, manufacturers, vendors, consortia, academia, industry, federal agencies, and other organizations in the public and private sectors. Common secure configurations include the United States Government Configuration Baseline (USGCB) which affects the implementation of CM-6 and other controls such as AC-19 and CM-7. The Security Content Automation Protocol (SCAP) and the defined standards within the protocol (e.g., Common Configuration Enumeration) provide an effective method to uniquely identify, track, and control configuration settings. OMB establishes federal policy on configuration requirements for federal information systems.</pre>
+                        
+                            Related to: <a href="control%3FcontrolName=AC-19.html">AC-19</a>,&nbsp;<a href="control%3FcontrolName=CM-2.html">CM-2</a>,&nbsp;<a href="control%3FcontrolName=CM-3.html">CM-3</a>,&nbsp;<a href="control%3FcontrolName=CM-7.html">CM-7</a>,&nbsp;<a href="control%3FcontrolName=SI-4.html">SI-4</a>
+					</div>
+
+                </div>
+                
+                <a name="controlEnhancements"></a>
+                <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+					<h3 class="controlDetailHeading">Control Enhancements</h3>
+
+					<div class="controlDetailValue">
+						<div class="noBorder">
+						    
+						    
+						            <a name="enhancement-1"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_0" class="term">CM-6(1)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>CONFIGURATION SETTINGS | AUTOMATED CENTRAL MANAGEMENT / APPLICATION / VERIFICATION</dt>
+                                                <dt class="enhancementStatement">
+                                                    The organization employs automated mechanisms to centrally manage, apply, and verify configuration settings for [Assignment: organization-defined information system components].
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_0" class="row">
+                                                        <div class="controlDetailSection">
+					                                        
+                                                            <span class="controlDetailValue">
+                                                                
+                                                                
+                                                                Related to: <a href="control%3FcontrolName=CA-7.html">CA-7</a>,&nbsp;<a href="control%3FcontrolName=CM-4.html">CM-4</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-2"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_1" class="term">CM-6(2)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>CONFIGURATION SETTINGS | RESPOND TO UNAUTHORIZED CHANGES</dt>
+                                                <dt class="enhancementStatement">
+                                                    The organization employs [Assignment: organization-defined security safeguards] to respond to unauthorized changes to [Assignment: organization-defined configuration settings].
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_1" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_1" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                Responses to unauthorized changes to configuration settings can include, for example, alerting designated organizational personnel, restoring established configuration settings, or in extreme cases, halting affected information system processing.
+                                                                
+                                                                Related to: <a href="control%3FcontrolName=IR-4.html">IR-4</a>,&nbsp;<a href="control%3FcontrolName=SI-7.html">SI-7</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-3"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_2" class="term">CM-6(3)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>CONFIGURATION SETTINGS | UNAUTHORIZED CHANGE DETECTION</dt>
+                                                <dt class="enhancementStatement">
+                                                    [Withdrawn: Incorporated into SI-7].
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-4"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_3" class="term">CM-6(4)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>CONFIGURATION SETTINGS | CONFORMANCE DEMONSTRATION</dt>
+                                                <dt class="enhancementStatement">
+                                                    [Withdrawn: Incorporated into CM-4].
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						</div>
+					</div>
+                </div>
+                
+                
+                <a name="80053A"></a>
+                
+                
+                <a name="references"></a>
+                <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+                    <h3 class="controlDetailHeading">References</h3>
+
+                    <div class="controlDetailValue">
+                        
+                        
+                                <dl class="definitions">
+                                    <dt class="term3">OMB Memorandum 07-11</dt>
+                                    <dd class="definition"><a href="http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2007/m07-11.pdf">http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2007/m07-11.pdf</a></dd>
+                                </dl>
+                            
+                                <dl class="definitions">
+                                    <dt class="term3">OMB Memorandum 07-18</dt>
+                                    <dd class="definition"><a href="http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2007/m07-18.pdf">http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2007/m07-18.pdf</a></dd>
+                                </dl>
+                            
+                                <dl class="definitions">
+                                    <dt class="term3">OMB Memorandum 08-22</dt>
+                                    <dd class="definition"><a href="http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2008/m08-22.pdf">http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2008/m08-22.pdf</a></dd>
+                                </dl>
+                            
+                                <dl class="definitions">
+                                    <dt class="term3">NIST Special Publication 800-70</dt>
+                                    <dd class="definition"><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-70">http://csrc.nist.gov/publications/PubsSPs.html#800-70</a></dd>
+                                </dl>
+                            
+                                <dl class="definitions">
+                                    <dt class="term3">NIST Special Publication 800-128</dt>
+                                    <dd class="definition"><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-128">http://csrc.nist.gov/publications/PubsSPs.html#800-128</a></dd>
+                                </dl>
+                            
+                                <dl class="definitions">
+                                    <dt class="term3">http://nvd.nist.gov</dt>
+                                    <dd class="definition"><a href="http://nvd.nist.gov">http://nvd.nist.gov</a></dd>
+                                </dl>
+                            
+                                <dl class="definitions">
+                                    <dt class="term3">http://checklists.nist.gov</dt>
+                                    <dd class="definition"><a href="http://checklists.nist.gov">http://checklists.nist.gov</a></dd>
+                                </dl>
+                            
+                                <dl class="definitions">
+                                    <dt class="term3">http://www.nsa.gov</dt>
+                                    <dd class="definition"><a href="http://www.nsa.gov">http://www.nsa.gov</a></dd>
+                                </dl>
+                            
+                    </div>
+                </div>
+            </div>
+		
+		</div>
+
+
+            
+        
+    </div>
+
+
+    </div>
+
+        <div id="footer">
+            <p>
+                <a href="http://www.nist.gov/public_affairs/disclaimer.cfm">Disclaimer Notice</a> 
+                &amp; <a href="http://www.nist.gov/public_affairs/privacy.cfm">Privacy Statement / Security Notice</a><br/>
+                Send comments or suggestions to <a href="mailto:nvd@nist.gov">nvd@nist.gov</a><br/>
+                <a href="http://www.nist.gov">NIST</a> is an Agency of the <a href="http://www.doc.gov">U.S. Department of Commerce</a><br/>
+                <span id="SNVDServiceInfo">NVD Services Version 3.10<br/></span>
+                <a href="https://nvd.nist.gov/full_listing.cfm" id="AFullListing">Full vulnerability listing</a>
+            </p>
+        </div>
+    
+    <script type="text/javascript" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/nist-exit-script.js"></script>
+        <div id="NoIframeScriptPanel">
+	
+            <script>
+                if (self.location == top.location) {
+                    document.getElementById("pageForm").style.display = 'block';
+                    document.getElementById("frameBusterDiv").style.display = 'none';
+                } else {
+                    document.getElementById("pageForm").style.display = 'none';
+                    document.getElementById("frameBusterDiv").style.display = 'block';
+                    setTimeout("top.location.replace('http://nvd.nist.gov/')", 1000);
+                }
+            </script>
+        
+</div>
+    </form>
+    </body>
+</html>

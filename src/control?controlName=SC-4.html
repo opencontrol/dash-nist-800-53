@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ng="http://angularjs.org">
+<head><title>
+	NVD - Control
+</title><link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/nvd.css" /><link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/nvd-public.css" /><link rel="apple-touch-icon" sizes="180x180" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png" /><link rel="icon" type="image/png" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16" /><link rel="manifest" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/manifest.json" /><link rel="mask-icon" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000" /><link rel="shortcut icon" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico" /><meta name="msapplication-config" content="/NVD/Media/images/favicons/browserconfig.xml" /><meta name="theme-color" content="#000000" />
+
+    <script language="javascript" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/jquery-1.9.1.min.js"></script>
+    <script language="javascript" id="_fed_an_js_tag" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/federated-analytics.all.min.js?agency=NIST&amp;subagency=nvd&amp;pua=UA-37115410-41&amp;yt=true"></script>
+    
+    <link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/sp800-53.css"/>
+</head>
+<body class="LTR ENUS ContentBody">
+    <div id="frameBusterDiv" style="display: none">
+        <h1>You are viewing this page in an unauthorized frame window.</h1>
+        <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov">http://nvd.nist.gov</a></p>
+    </div>
+    <form method="post" action="control%3FcontrolName=SC-4.html" id="pageForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="rlvDFMy0ev99U4KbRjsUwMZDz5b1t8jWiC/Py3wtzMK+v7JiyVWWSugU/jyVZriybaFnhywSTZiilOO3TJNlvLOBZ7yyJKFHefvjo/M3sMaEgdh5uiN1sOkssNDANGld" />
+</div>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('ctl00$m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('ctl00$m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F6E39A44" />
+</div>
+    
+<div id="header">
+    <map name="banner" id="banner">
+        <area shape="rect" coords="0,0,340,50" href="http://www.us-cert.gov" alt="National Cyber Security Division" target="_blank" />
+        <area shape="rect" coords="630,0,800,50" href="http://csrc.nist.gov" alt="NIST Computer Security Division" target="_blank" />
+        <area href="https://nvd.nist.gov/home.cfm" id="HomeArea" shape="rect" coords="0,51,650,100" alt="NVD Home" />
+    </map>
+    <img src="https://nvd.nist.gov/NVDLegacy/media/NVDLegacyMedia/images/nvdbannerDHSNIST.jpg" id="INvdBanner" alt="NVD Banner" width="800" height="100" usemap="#banner" />
+    </div>
+    <div>
+        <div id="navbar">
+            <div id="navmenu1">
+                <ul>
+                    <li style="width:12%"><a href="https://web.nvd.nist.gov/view/vuln/search" id="AVulnSearch">Vulnerabilities</a></li>
+                    <li style="width:11%"><a href="https://web.nvd.nist.gov/view/ncp/repository" id="ANcpRepo">Checklists</a></li>
+                    <li style="width:14%"><a href="https://web.nvd.nist.gov/view/800-53/home" id="A80054Home">800-53/800-53A</a></li>
+                    <li style="width:16%"><a href="https://nvd.nist.gov/cpe.cfm" id="ACpe">Product Dictionary</a></li>
+                    <li style="width:15%"><a href="https://nvd.nist.gov/cvss.cfm" id="ACvss">Impact Metrics</a></li>
+                    <li style="width:12%"><a href="https://nvd.nist.gov/download.cfm" id="ADownload">Data Feeds</a></li>
+                    <li style="width:10%"><a href="https://web.nvd.nist.gov/view/vuln/statistics" id="AStats">Statistics</a>
+                    <li style="width:10%"><a href="https://nvd.nist.gov/faq" id="AFaq">FAQs</a></li>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="navmenu2">
+                <ul>
+                    <li style="width:7%"><a href="https://nvd.nist.gov/home.cfm" id="AHome">Home</a></li>
+                    <li style="width:10%"><a href="http://scap.nist.gov" id="AScap">SCAP</a></li>
+                    <li style="width:20%"><a href="https://nvd.nist.gov/scapproducts.cfm" id="AVAScapValTools">SCAP Validated Tools</a></li>
+                    <li style="width:15%"><a href="http://scap.nist.gov/events/" id="AScapEvents">SCAP Events</a></li>
+                    <li style="width:8%"><a href="https://nvd.nist.gov/about.cfm" id="AAbout">About</a></li>
+                    <li style="width:9%"><a href="https://nvd.nist.gov/contact.cfm" id="AContact">Contact</a></li>
+                    <li style="width:19%"><a href="https://nvd.nist.gov/vendor.cfm" id="AVendorComments">Vendor Comments</a></li>
+                    <li style="width:12%"><a href="https://nvd.nist.gov/Visualizations" id="AVisualizations">Visualizations</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        
+    
+    <div id="leftNav">
+        <dl>
+            <dt class="nav-header">800-53 (Rev. 4)</dt>
+            <dt>Security Controls</dt>
+            <dd><a href="impact%3FimpactName=low.html" id="BodyPlaceHolder_R4LI">Low-Impact</a></dd>
+            <dd><a href="impact%3FimpactName=moderate.html" id="BodyPlaceHolder_R4MI">Moderate-Impact</a></dd>
+            <dd><a href="impact%3FimpactName=high.html" id="BodyPlaceHolder_R4HI">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a href="https://web.nvd.nist.gov/view/800-53/Rev4/home" id="BodyPlaceHolder_R4F">Families</a></dd>
+            <dd><a href="https://web.nvd.nist.gov/view/800-53/Rev4/search" id="BodyPlaceHolder_R4S">Search</a></dd>
+            
+            
+            
+        </dl>
+    </div>
+    
+    <div id="contents">
+
+        
+                    	<h2>NIST Special Publication 800-53 (Rev. 4)</h2>
+
+		<h3>Security Controls and Assessment Procedures for Federal Information Systems and Organizations</h3>
+
+
+
+
+
+
+
+
+
+	      	
+		<div class="navigation">
+		    <a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_BreadCrumbAllControlsLink" href="home.html">All Controls</a>
+            &gt; <a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_BreadCrumbFamilyLink" href="family%3FfamilyName=SYSTEM%2520AND%2520COMMUNICATIONS%2520PROTECTION.html">SC</a>
+            &gt; <strong>SC-4</strong>
+		</div>
+	
+		<div class="box">
+		
+			
+			<h2 id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_TitleHeader" class="controls">SC-4 - INFORMATION IN SHARED RESOURCES</h2>
+		
+			<div class="properties">
+				<!-- PropertiesBox Area START -->
+				<div class="noBorder">
+						<div class="row">
+							<div class="leftColumn">Family:</div>
+					        <div class="rightColumn">
+					            <a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_PropertiesBoxFamilyLink" href="family%3FfamilyName=SYSTEM%2520AND%2520COMMUNICATIONS%2520PROTECTION.html">SC - SYSTEM AND COMMUNICATIONS PROTECTION</a>
+					        </div>
+				        </div>
+						
+						<div class="row">
+							<div class="leftColumn">Priority:</div>
+					        <div class="rightColumn">
+					            P1 - Implement P1 security controls first.
+					        </div>
+				        </div>
+						<div class="row">
+							<div class="leftColumn">Baseline Allocation:
+							</div>
+							<div class="rightColumn">
+								<table class="impactGroupTable">
+						     			<thead>
+						     				<tr>
+						     					<th class="impactGroupColumn">Low</th>
+							     				<th class="impactGroupColumn">Moderate</th>
+							     				<th class="impactGroupColumn">High</th>
+						     				</tr>
+						     			</thead>
+						    			<tr>
+							    			<td class="impactGroupColumn">
+							    			    N/A
+							    			</td>
+							    			<td class="impactGroupColumn">
+							    			    SC-4
+							    			</td>
+							    			<td class="impactGroupColumn">
+							    			    SC-4
+							    			</td>
+						    			</tr>
+						     		</table>
+							</div>
+				        </div>
+				</div>
+				<!-- PropertiesBox Area END -->
+			</div>
+		
+			<div class="controlDetailNavigation">
+			    
+                
+                    <span style="font-weight: bold">Jump To:</span><br />
+                    <a href="control%3FcontrolName=SC-4.html#Rev4Statements">Revision 4 Statements</a><br />
+                    <a href="control%3FcontrolName=SC-4.html#controlDescription">Control Description</a><br />
+                    <a href="control%3FcontrolName=SC-4.html#supplementalGuidance">Supplemental Guidance</a><br />
+                    <a href="control%3FcontrolName=SC-4.html#references">References</a>
+			    
+
+			</div>
+			
+			<div class="controlDetail">
+                
+                <a name="controlDescription"></a>
+                <div class="controlDetailSection">
+				                                     
+					<h3 class="controlDetailHeading">Control Description</h3>
+
+					
+			    
+                    <a name="Rev4Statements"></a>
+                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_StatementsDiv" class="controlDetailSection">
+                    
+                        <strong id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system prevents unauthorized and unintended information transfer via shared system resources.</strong>
+
+                        <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4StatementContentsDiv"></div>
+
+                    </div>
+				                                 
+                </div>
+                
+			    <a name="supplementalGuidance"></a>
+                <div class="controlDetailSection">
+
+					<h3 class="controlDetailHeading">Supplemental Guidance</h3>
+					
+					<div class="controlDetailValue">
+					    <pre>This control prevents information, including encrypted representations of information, produced by the actions of prior users/roles (or the actions of processes acting on behalf of prior users/roles) from being available to any current users/roles (or current processes) that obtain access to shared system resources (e.g., registers, main memory, hard disks) after those resources have been released back to information systems. The control of information in shared resources is also commonly referred to as object reuse and residual information protection. This control does not address: (i) information remanence which refers to residual representation of data that has been nominally erased or removed; (ii) covert channels (including storage and/or timing channels) where shared resources are manipulated to violate information flow restrictions; or (iii) components within information systems for which there are only single users/roles.</pre>
+                        
+                            Related to: <a href="control%3FcontrolName=AC-3.html">AC-3</a>,&nbsp;<a href="control%3FcontrolName=AC-4.html">AC-4</a>,&nbsp;<a href="control%3FcontrolName=MP-6.html">MP-6</a>
+					</div>
+
+                </div>
+                
+                <a name="controlEnhancements"></a>
+                <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+					<h3 class="controlDetailHeading">Control Enhancements</h3>
+
+					<div class="controlDetailValue">
+						<div class="noBorder">
+						    
+						    
+						            <a name="enhancement-1"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_0" class="term">SC-4(1)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>INFORMATION IN SHARED RESOURCES | SECURITY LEVELS</dt>
+                                                <dt class="enhancementStatement">
+                                                    [Withdrawn: Incorporated into SC-4].
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-2"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_1" class="term">SC-4(2)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>INFORMATION IN SHARED RESOURCES | PERIODS PROCESSING</dt>
+                                                <dt class="enhancementStatement">
+                                                    The information system prevents unauthorized information transfer via shared resources in accordance with [Assignment: organization-defined procedures] when system processing explicitly switches between different information classification levels or security categories.
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_1" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_1" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                This control enhancement applies when there are explicit changes in information processing levels during information system operations, for example, during multilevel processing and periods processing with information at different classification levels or security categories. Organization-defined procedures may include, for example, approved sanitization processes for electronically stored information.
+                                                                
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						</div>
+					</div>
+                </div>
+                
+                
+                <a name="80053A"></a>
+                
+                
+                <a name="references"></a>
+                <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+                    <h3 class="controlDetailHeading">References</h3>
+
+                    <div class="controlDetailValue">
+                        None.
+                        
+                    </div>
+                </div>
+            </div>
+		
+		</div>
+
+
+            
+        
+    </div>
+
+
+    </div>
+
+        <div id="footer">
+            <p>
+                <a href="http://www.nist.gov/public_affairs/disclaimer.cfm">Disclaimer Notice</a> 
+                &amp; <a href="http://www.nist.gov/public_affairs/privacy.cfm">Privacy Statement / Security Notice</a><br/>
+                Send comments or suggestions to <a href="mailto:nvd@nist.gov">nvd@nist.gov</a><br/>
+                <a href="http://www.nist.gov">NIST</a> is an Agency of the <a href="http://www.doc.gov">U.S. Department of Commerce</a><br/>
+                <span id="SNVDServiceInfo">NVD Services Version 3.10<br/></span>
+                <a href="https://nvd.nist.gov/full_listing.cfm" id="AFullListing">Full vulnerability listing</a>
+            </p>
+        </div>
+    
+    <script type="text/javascript" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/nist-exit-script.js"></script>
+        <div id="NoIframeScriptPanel">
+	
+            <script>
+                if (self.location == top.location) {
+                    document.getElementById("pageForm").style.display = 'block';
+                    document.getElementById("frameBusterDiv").style.display = 'none';
+                } else {
+                    document.getElementById("pageForm").style.display = 'none';
+                    document.getElementById("frameBusterDiv").style.display = 'block';
+                    setTimeout("top.location.replace('http://nvd.nist.gov/')", 1000);
+                }
+            </script>
+        
+</div>
+    </form>
+    </body>
+</html>

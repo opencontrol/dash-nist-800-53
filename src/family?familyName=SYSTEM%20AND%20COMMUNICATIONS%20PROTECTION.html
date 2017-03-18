@@ -1,0 +1,976 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ng="http://angularjs.org">
+<head><title>
+	NVD - Family
+</title><link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/nvd.css" /><link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/nvd-public.css" /><link rel="apple-touch-icon" sizes="180x180" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png" /><link rel="icon" type="image/png" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16" /><link rel="manifest" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/manifest.json" /><link rel="mask-icon" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000" /><link rel="shortcut icon" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico" /><meta name="msapplication-config" content="/NVD/Media/images/favicons/browserconfig.xml" /><meta name="theme-color" content="#000000" />
+
+    <script language="javascript" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/jquery-1.9.1.min.js"></script>
+    <script language="javascript" id="_fed_an_js_tag" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/federated-analytics.all.min.js?agency=NIST&amp;subagency=nvd&amp;pua=UA-37115410-41&amp;yt=true"></script>
+    
+    <link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/sp800-53.css"/>
+</head>
+<body class="LTR ENUS ContentBody">
+    <div id="frameBusterDiv" style="display: none">
+        <h1>You are viewing this page in an unauthorized frame window.</h1>
+        <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov">http://nvd.nist.gov</a></p>
+    </div>
+    <form method="post" action="http://web.nvd.nist.gov/view/800-53/Rev4/family?familyName=SYSTEM+AND+COMMUNICATIONS+PROTECTION" id="pageForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="XyKSEIxSZvG3Vjm09Y2t1VB+JioX4RDfm5hLU1Vafyl2D1IYpIfS0VzBZ9VfOhkNiXjQrvhNsYbb50i6jm8qzg4d5QdgeaRYg6IIy0e/fLnYg3PKgF5whc0qvv8zeiMk" />
+</div>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('ctl00$m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('ctl00$m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F6E39A44" />
+</div>
+    
+<div id="header">
+    <map name="banner" id="banner">
+        <area shape="rect" coords="0,0,340,50" href="http://www.us-cert.gov" alt="National Cyber Security Division" target="_blank" />
+        <area shape="rect" coords="630,0,800,50" href="http://csrc.nist.gov" alt="NIST Computer Security Division" target="_blank" />
+        <area href="https://nvd.nist.gov/home.cfm" id="HomeArea" shape="rect" coords="0,51,650,100" alt="NVD Home" />
+    </map>
+    <img src="https://nvd.nist.gov/NVDLegacy/media/NVDLegacyMedia/images/nvdbannerDHSNIST.jpg" id="INvdBanner" alt="NVD Banner" width="800" height="100" usemap="#banner" />
+    </div>
+    <div>
+        <div id="navbar">
+            <div id="navmenu1">
+                <ul>
+                    <li style="width:12%"><a href="https://web.nvd.nist.gov/view/vuln/search" id="AVulnSearch">Vulnerabilities</a></li>
+                    <li style="width:11%"><a href="https://web.nvd.nist.gov/view/ncp/repository" id="ANcpRepo">Checklists</a></li>
+                    <li style="width:14%"><a href="https://web.nvd.nist.gov/view/800-53/home" id="A80054Home">800-53/800-53A</a></li>
+                    <li style="width:16%"><a href="https://nvd.nist.gov/cpe.cfm" id="ACpe">Product Dictionary</a></li>
+                    <li style="width:15%"><a href="https://nvd.nist.gov/cvss.cfm" id="ACvss">Impact Metrics</a></li>
+                    <li style="width:12%"><a href="https://nvd.nist.gov/download.cfm" id="ADownload">Data Feeds</a></li>
+                    <li style="width:10%"><a href="https://web.nvd.nist.gov/view/vuln/statistics" id="AStats">Statistics</a>
+                    <li style="width:10%"><a href="https://nvd.nist.gov/faq" id="AFaq">FAQs</a></li>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="navmenu2">
+                <ul>
+                    <li style="width:7%"><a href="https://nvd.nist.gov/home.cfm" id="AHome">Home</a></li>
+                    <li style="width:10%"><a href="http://scap.nist.gov" id="AScap">SCAP</a></li>
+                    <li style="width:20%"><a href="https://nvd.nist.gov/scapproducts.cfm" id="AVAScapValTools">SCAP Validated Tools</a></li>
+                    <li style="width:15%"><a href="http://scap.nist.gov/events/" id="AScapEvents">SCAP Events</a></li>
+                    <li style="width:8%"><a href="https://nvd.nist.gov/about.cfm" id="AAbout">About</a></li>
+                    <li style="width:9%"><a href="https://nvd.nist.gov/contact.cfm" id="AContact">Contact</a></li>
+                    <li style="width:19%"><a href="https://nvd.nist.gov/vendor.cfm" id="AVendorComments">Vendor Comments</a></li>
+                    <li style="width:12%"><a href="https://nvd.nist.gov/Visualizations" id="AVisualizations">Visualizations</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        
+    
+    <div id="leftNav">
+        <dl>
+            <dt class="nav-header">800-53 (Rev. 4)</dt>
+            <dt>Security Controls</dt>
+            <dd><a href="http://web.nvd.nist.gov/view/800-53/Rev4/impact%3FimpactName=low.html" id="BodyPlaceHolder_R4LI">Low-Impact</a></dd>
+            <dd><a href="http://web.nvd.nist.gov/view/800-53/Rev4/impact%3FimpactName=moderate.html" id="BodyPlaceHolder_R4MI">Moderate-Impact</a></dd>
+            <dd><a href="http://web.nvd.nist.gov/view/800-53/Rev4/impact%3FimpactName=high.html" id="BodyPlaceHolder_R4HI">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a href="https://web.nvd.nist.gov/view/800-53/Rev4/home" id="BodyPlaceHolder_R4F">Families</a></dd>
+            <dd><a href="https://web.nvd.nist.gov/view/800-53/Rev4/search" id="BodyPlaceHolder_R4S">Search</a></dd>
+            
+            
+            
+        </dl>
+    </div>
+    
+    <div id="contents">
+
+        
+                <h2>
+	NIST Special Publication 800-53 (Rev. 4)</h2>
+<h3>
+	Security Controls and Assessment Procedures for Federal Information Systems and Organizations</h3>
+
+
+
+
+
+
+
+
+
+
+    
+    <h4>SYSTEM AND COMMUNICATIONS PROTECTION Control Family</h4>
+
+      
+    
+<p>Showing <strong>44</strong> controls:</p>
+  
+
+		<table class="data">
+			<thead>
+				<tr>
+					<th scope="col">No.</th>
+					<th scope="col">Control</th>
+					<th scope="col">Priority</th>
+					<th scope="col">Low</th>
+					<th scope="col">Moderate</th>
+					<th scope="col">High</th>
+				</tr>
+			</thead>
+			<tbody>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-1.html">SC-1</a></td>
+            <td class="controlClass">SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_0">SC-1</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_0">SC-1</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_0">SC-1</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-2.html">SC-2</a></td>
+            <td class="controlClass">APPLICATION PARTITIONING</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_1"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_1">SC-2</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_1">SC-2</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-3.html">SC-3</a></td>
+            <td class="controlClass">SECURITY FUNCTION ISOLATION</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_2"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_2"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_2">SC-3</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-4.html">SC-4</a></td>
+            <td class="controlClass">INFORMATION IN SHARED RESOURCES</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_3"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_3">SC-4</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_3">SC-4</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-5.html">SC-5</a></td>
+            <td class="controlClass">DENIAL OF SERVICE PROTECTION</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_4">SC-5</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_4">SC-5</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_4">SC-5</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-6.html">SC-6</a></td>
+            <td class="controlClass">RESOURCE AVAILABILITY</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_5"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_5"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_5"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html">SC-7</a></td>
+            <td class="controlClass">BOUNDARY PROTECTION</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_6">SC-7</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_6">SC-7</span>
+                 (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModeratePriorityRepeater_6_PriorityLink_0" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html#enhancement-3">3</a>) (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModeratePriorityRepeater_6_PriorityLink_1" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html#enhancement-4">4</a>) (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModeratePriorityRepeater_6_PriorityLink_2" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html#enhancement-5">5</a>) (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModeratePriorityRepeater_6_PriorityLink_3" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html#enhancement-7">7</a>)
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_6">SC-7</span>
+                 (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighPriorityRepeater_6_PriorityLink_0" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html#enhancement-3">3</a>) (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighPriorityRepeater_6_PriorityLink_1" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html#enhancement-4">4</a>) (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighPriorityRepeater_6_PriorityLink_2" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html#enhancement-5">5</a>) (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighPriorityRepeater_6_PriorityLink_3" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html#enhancement-7">7</a>) (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighPriorityRepeater_6_PriorityLink_4" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html#enhancement-8">8</a>) (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighPriorityRepeater_6_PriorityLink_5" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html#enhancement-18">18</a>) (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighPriorityRepeater_6_PriorityLink_6" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-7.html#enhancement-21">21</a>)
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-8.html">SC-8</a></td>
+            <td class="controlClass">TRANSMISSION CONFIDENTIALITY AND INTEGRITY</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_7"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_7">SC-8</span>
+                 (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModeratePriorityRepeater_7_PriorityLink_0" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-8.html#enhancement-1">1</a>)
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_7">SC-8</span>
+                 (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighPriorityRepeater_7_PriorityLink_0" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-8.html#enhancement-1">1</a>)
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-9.html">SC-9</a></td>
+            <td class="controlClass">TRANSMISSION CONFIDENTIALITY</td>
+            <td class="controlClass" nowrap></td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_8"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_8"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_8"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-10.html">SC-10</a></td>
+            <td class="controlClass">NETWORK DISCONNECT</td>
+            <td class="controlClass" nowrap>P2</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_9"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_9">SC-10</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_9">SC-10</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-11.html">SC-11</a></td>
+            <td class="controlClass">TRUSTED PATH</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_10"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_10"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_10"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-12.html">SC-12</a></td>
+            <td class="controlClass">CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_11">SC-12</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_11">SC-12</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_11">SC-12</span>
+                 (<a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighPriorityRepeater_11_PriorityLink_0" href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-12.html#enhancement-1">1</a>)
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-13.html">SC-13</a></td>
+            <td class="controlClass">CRYPTOGRAPHIC PROTECTION</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_12">SC-13</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_12">SC-13</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_12">SC-13</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-14.html">SC-14</a></td>
+            <td class="controlClass">PUBLIC ACCESS PROTECTIONS</td>
+            <td class="controlClass" nowrap></td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_13"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_13"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_13"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-15.html">SC-15</a></td>
+            <td class="controlClass">COLLABORATIVE COMPUTING DEVICES</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_14">SC-15</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_14">SC-15</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_14">SC-15</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-16.html">SC-16</a></td>
+            <td class="controlClass">TRANSMISSION OF SECURITY ATTRIBUTES</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_15"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_15"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_15"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-17.html">SC-17</a></td>
+            <td class="controlClass">PUBLIC KEY INFRASTRUCTURE CERTIFICATES</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_16"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_16">SC-17</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_16">SC-17</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-18.html">SC-18</a></td>
+            <td class="controlClass">MOBILE CODE</td>
+            <td class="controlClass" nowrap>P2</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_17"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_17">SC-18</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_17">SC-18</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-19.html">SC-19</a></td>
+            <td class="controlClass">VOICE OVER INTERNET PROTOCOL</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_18"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_18">SC-19</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_18">SC-19</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-20.html">SC-20</a></td>
+            <td class="controlClass">SECURE NAME / ADDRESS RESOLUTION SERVICE (AUTHORITATIVE SOURCE)</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_19">SC-20</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_19">SC-20</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_19">SC-20</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-21.html">SC-21</a></td>
+            <td class="controlClass">SECURE NAME / ADDRESS RESOLUTION SERVICE (RECURSIVE OR CACHING RESOLVER)</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_20">SC-21</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_20">SC-21</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_20">SC-21</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-22.html">SC-22</a></td>
+            <td class="controlClass">ARCHITECTURE AND PROVISIONING FOR NAME / ADDRESS RESOLUTION SERVICE</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_21">SC-22</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_21">SC-22</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_21">SC-22</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-23.html">SC-23</a></td>
+            <td class="controlClass">SESSION AUTHENTICITY</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_22"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_22">SC-23</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_22">SC-23</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-24.html">SC-24</a></td>
+            <td class="controlClass">FAIL IN KNOWN STATE</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_23"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_23"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_23">SC-24</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-25.html">SC-25</a></td>
+            <td class="controlClass">THIN NODES</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_24"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_24"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_24"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-26.html">SC-26</a></td>
+            <td class="controlClass">HONEYPOTS</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_25"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_25"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_25"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-27.html">SC-27</a></td>
+            <td class="controlClass">PLATFORM-INDEPENDENT APPLICATIONS</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_26"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_26"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_26"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-28.html">SC-28</a></td>
+            <td class="controlClass">PROTECTION OF INFORMATION AT REST</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_27"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_27">SC-28</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_27">SC-28</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-29.html">SC-29</a></td>
+            <td class="controlClass">HETEROGENEITY</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_28"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_28"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_28"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-30.html">SC-30</a></td>
+            <td class="controlClass">CONCEALMENT AND MISDIRECTION</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_29"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_29"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_29"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-31.html">SC-31</a></td>
+            <td class="controlClass">COVERT CHANNEL ANALYSIS</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_30"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_30"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_30"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-32.html">SC-32</a></td>
+            <td class="controlClass">INFORMATION SYSTEM PARTITIONING</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_31"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_31"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_31"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-33.html">SC-33</a></td>
+            <td class="controlClass">TRANSMISSION PREPARATION INTEGRITY</td>
+            <td class="controlClass" nowrap></td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_32"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_32"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_32"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-34.html">SC-34</a></td>
+            <td class="controlClass">NON-MODIFIABLE EXECUTABLE PROGRAMS</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_33"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_33"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_33"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-35.html">SC-35</a></td>
+            <td class="controlClass">HONEYCLIENTS</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_34"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_34"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_34"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-36.html">SC-36</a></td>
+            <td class="controlClass">DISTRIBUTED PROCESSING AND STORAGE</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_35"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_35"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_35"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-37.html">SC-37</a></td>
+            <td class="controlClass">OUT-OF-BAND CHANNELS</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_36"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_36"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_36"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-38.html">SC-38</a></td>
+            <td class="controlClass">OPERATIONS SECURITY</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_37"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_37"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_37"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-39.html">SC-39</a></td>
+            <td class="controlClass">PROCESS ISOLATION</td>
+            <td class="controlClass" nowrap>P1</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_38">SC-39</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_38">SC-39</span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_38">SC-39</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-40.html">SC-40</a></td>
+            <td class="controlClass">WIRELESS LINK PROTECTION</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_39"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_39"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_39"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-41.html">SC-41</a></td>
+            <td class="controlClass">PORT AND I/O DEVICE ACCESS</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_40"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_40"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_40"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-42.html">SC-42</a></td>
+            <td class="controlClass">SENSOR CAPABILITY AND DATA</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_41"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_41"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_41"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-43.html">SC-43</a></td>
+            <td class="controlClass">USAGE RESTRICTIONS</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_42"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_42"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_42"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+			<td class="controlClass" nowrap><a href="http://web.nvd.nist.gov/view/800-53/Rev4/control%3FcontrolName=SC-44.html">SC-44</a></td>
+            <td class="controlClass">DETONATION CHAMBERS</td>
+            <td class="controlClass" nowrap>P0</td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_LowNumberLabel_43"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_ModerateNumberLabel_43"></span>
+                
+            </td>
+            <td class="controlClass">
+                <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Family_WP80053Controls_ClassFamilyRepeater_HighNumberLabel_43"></span>
+                
+            </td>
+		</tr>
+	
+			</tbody>
+		</table>
+    
+
+            
+        
+    </div>
+
+
+    </div>
+
+        <div id="footer">
+            <p>
+                <a href="http://www.nist.gov/public_affairs/disclaimer.cfm">Disclaimer Notice</a> 
+                &amp; <a href="http://www.nist.gov/public_affairs/privacy.cfm">Privacy Statement / Security Notice</a><br/>
+                Send comments or suggestions to <a href="mailto:nvd@nist.gov">nvd@nist.gov</a><br/>
+                <a href="http://www.nist.gov">NIST</a> is an Agency of the <a href="http://www.doc.gov">U.S. Department of Commerce</a><br/>
+                <span id="SNVDServiceInfo">NVD Services Version 3.10<br/></span>
+                <a href="https://nvd.nist.gov/full_listing.cfm" id="AFullListing">Full vulnerability listing</a>
+            </p>
+        </div>
+    
+    <script type="text/javascript" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/nist-exit-script.js"></script>
+        <div id="NoIframeScriptPanel">
+	
+            <script>
+                if (self.location == top.location) {
+                    document.getElementById("pageForm").style.display = 'block';
+                    document.getElementById("frameBusterDiv").style.display = 'none';
+                } else {
+                    document.getElementById("pageForm").style.display = 'none';
+                    document.getElementById("frameBusterDiv").style.display = 'block';
+                    setTimeout("top.location.replace('http://nvd.nist.gov/')", 1000);
+                }
+            </script>
+        
+</div>
+    </form>
+    </body>
+</html>

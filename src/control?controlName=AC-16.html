@@ -1,0 +1,601 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ng="http://angularjs.org">
+<head><title>
+	NVD - Control
+</title><link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/nvd.css" /><link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/nvd-public.css" /><link rel="apple-touch-icon" sizes="180x180" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png" /><link rel="icon" type="image/png" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16" /><link rel="manifest" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/manifest.json" /><link rel="mask-icon" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000" /><link rel="shortcut icon" href="http://web.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico" /><meta name="msapplication-config" content="/NVD/Media/images/favicons/browserconfig.xml" /><meta name="theme-color" content="#000000" />
+
+    <script language="javascript" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/jquery-1.9.1.min.js"></script>
+    <script language="javascript" id="_fed_an_js_tag" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/federated-analytics.all.min.js?agency=NIST&amp;subagency=nvd&amp;pua=UA-37115410-41&amp;yt=true"></script>
+    
+    <link rel="stylesheet" href="http://web.nvd.nist.gov/NVDLegacy/media/CSS/sp800-53.css"/>
+</head>
+<body class="LTR ENUS ContentBody">
+    <div id="frameBusterDiv" style="display: none">
+        <h1>You are viewing this page in an unauthorized frame window.</h1>
+        <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov">http://nvd.nist.gov</a></p>
+    </div>
+    <form method="post" action="control%3FcontrolName=AC-16.html" id="pageForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="dxGfGqgG4R9cP6GCVdYupVddz26yKNFeV9nnBnyLLh+Av5oaqDv4Ft03MGqzIRLUmk6QDxWhfTowYBbbjJiUV+eXSDQ3HPJnGd2kET75b0xNPOE5B/NE8FbUVxMcxlAw" />
+</div>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('ctl00$m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('ctl00$m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F6E39A44" />
+</div>
+    
+<div id="header">
+    <map name="banner" id="banner">
+        <area shape="rect" coords="0,0,340,50" href="http://www.us-cert.gov" alt="National Cyber Security Division" target="_blank" />
+        <area shape="rect" coords="630,0,800,50" href="http://csrc.nist.gov" alt="NIST Computer Security Division" target="_blank" />
+        <area href="https://nvd.nist.gov/home.cfm" id="HomeArea" shape="rect" coords="0,51,650,100" alt="NVD Home" />
+    </map>
+    <img src="https://nvd.nist.gov/NVDLegacy/media/NVDLegacyMedia/images/nvdbannerDHSNIST.jpg" id="INvdBanner" alt="NVD Banner" width="800" height="100" usemap="#banner" />
+    </div>
+    <div>
+        <div id="navbar">
+            <div id="navmenu1">
+                <ul>
+                    <li style="width:12%"><a href="https://web.nvd.nist.gov/view/vuln/search" id="AVulnSearch">Vulnerabilities</a></li>
+                    <li style="width:11%"><a href="https://web.nvd.nist.gov/view/ncp/repository" id="ANcpRepo">Checklists</a></li>
+                    <li style="width:14%"><a href="https://web.nvd.nist.gov/view/800-53/home" id="A80054Home">800-53/800-53A</a></li>
+                    <li style="width:16%"><a href="https://nvd.nist.gov/cpe.cfm" id="ACpe">Product Dictionary</a></li>
+                    <li style="width:15%"><a href="https://nvd.nist.gov/cvss.cfm" id="ACvss">Impact Metrics</a></li>
+                    <li style="width:12%"><a href="https://nvd.nist.gov/download.cfm" id="ADownload">Data Feeds</a></li>
+                    <li style="width:10%"><a href="https://web.nvd.nist.gov/view/vuln/statistics" id="AStats">Statistics</a>
+                    <li style="width:10%"><a href="https://nvd.nist.gov/faq" id="AFaq">FAQs</a></li>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="navmenu2">
+                <ul>
+                    <li style="width:7%"><a href="https://nvd.nist.gov/home.cfm" id="AHome">Home</a></li>
+                    <li style="width:10%"><a href="http://scap.nist.gov" id="AScap">SCAP</a></li>
+                    <li style="width:20%"><a href="https://nvd.nist.gov/scapproducts.cfm" id="AVAScapValTools">SCAP Validated Tools</a></li>
+                    <li style="width:15%"><a href="http://scap.nist.gov/events/" id="AScapEvents">SCAP Events</a></li>
+                    <li style="width:8%"><a href="https://nvd.nist.gov/about.cfm" id="AAbout">About</a></li>
+                    <li style="width:9%"><a href="https://nvd.nist.gov/contact.cfm" id="AContact">Contact</a></li>
+                    <li style="width:19%"><a href="https://nvd.nist.gov/vendor.cfm" id="AVendorComments">Vendor Comments</a></li>
+                    <li style="width:12%"><a href="https://nvd.nist.gov/Visualizations" id="AVisualizations">Visualizations</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        
+    
+    <div id="leftNav">
+        <dl>
+            <dt class="nav-header">800-53 (Rev. 4)</dt>
+            <dt>Security Controls</dt>
+            <dd><a href="impact%3FimpactName=low.html" id="BodyPlaceHolder_R4LI">Low-Impact</a></dd>
+            <dd><a href="impact%3FimpactName=moderate.html" id="BodyPlaceHolder_R4MI">Moderate-Impact</a></dd>
+            <dd><a href="impact%3FimpactName=high.html" id="BodyPlaceHolder_R4HI">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a href="https://web.nvd.nist.gov/view/800-53/Rev4/home" id="BodyPlaceHolder_R4F">Families</a></dd>
+            <dd><a href="https://web.nvd.nist.gov/view/800-53/Rev4/search" id="BodyPlaceHolder_R4S">Search</a></dd>
+            
+            
+            
+        </dl>
+    </div>
+    
+    <div id="contents">
+
+        
+                    	<h2>NIST Special Publication 800-53 (Rev. 4)</h2>
+
+		<h3>Security Controls and Assessment Procedures for Federal Information Systems and Organizations</h3>
+
+
+
+
+
+
+
+
+
+	      	
+		<div class="navigation">
+		    <a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_BreadCrumbAllControlsLink" href="home.html">All Controls</a>
+            &gt; <a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_BreadCrumbFamilyLink" href="family%3FfamilyName=ACCESS%2520CONTROL.html">AC</a>
+            &gt; <strong>AC-16</strong>
+		</div>
+	
+		<div class="box">
+		
+			
+			<h2 id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_TitleHeader" class="controls">AC-16 - SECURITY ATTRIBUTES</h2>
+		
+			<div class="properties">
+				<!-- PropertiesBox Area START -->
+				<div class="noBorder">
+						<div class="row">
+							<div class="leftColumn">Family:</div>
+					        <div class="rightColumn">
+					            <a id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_PropertiesBoxFamilyLink" href="family%3FfamilyName=ACCESS%2520CONTROL.html">AC - ACCESS CONTROL</a>
+					        </div>
+				        </div>
+						
+						<div class="row">
+							<div class="leftColumn">Priority:</div>
+					        <div class="rightColumn">
+					            P0 - Unspecified priority.
+					        </div>
+				        </div>
+						<div class="row">
+							<div class="leftColumn">Baseline Allocation:
+							</div>
+							<div class="rightColumn">
+								<table class="impactGroupTable">
+						     			<thead>
+						     				<tr>
+						     					<th class="impactGroupColumn">Low</th>
+							     				<th class="impactGroupColumn">Moderate</th>
+							     				<th class="impactGroupColumn">High</th>
+						     				</tr>
+						     			</thead>
+						    			<tr>
+							    			<td class="impactGroupColumn">
+							    			    N/A
+							    			</td>
+							    			<td class="impactGroupColumn">
+							    			    N/A
+							    			</td>
+							    			<td class="impactGroupColumn">
+							    			    N/A
+							    			</td>
+						    			</tr>
+						     		</table>
+							</div>
+				        </div>
+				</div>
+				<!-- PropertiesBox Area END -->
+			</div>
+		
+			<div class="controlDetailNavigation">
+			    
+                
+                    <span style="font-weight: bold">Jump To:</span><br />
+                    <a href="control%3FcontrolName=AC-16.html#Rev4Statements">Revision 4 Statements</a><br />
+                    <a href="control%3FcontrolName=AC-16.html#controlDescription">Control Description</a><br />
+                    <a href="control%3FcontrolName=AC-16.html#supplementalGuidance">Supplemental Guidance</a><br />
+                    <a href="control%3FcontrolName=AC-16.html#references">References</a>
+			    
+
+			</div>
+			
+			<div class="controlDetail">
+                
+                <a name="controlDescription"></a>
+                <div class="controlDetailSection">
+				                                     
+					<h3 class="controlDetailHeading">Control Description</h3>
+
+					
+			    
+                    <a name="Rev4Statements"></a>
+                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_StatementsDiv" class="controlDetailSection">
+                    
+                        <strong id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+                        <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4StatementContentsDiv"><div class="row">
+<div class="row">
+<div class="leftColumn">a.</div>
+<div class="rightColumn">
+Provides the means to associate [Assignment: organization-defined types of security attributes] having [Assignment: organization-defined security attribute values] with information in storage, in process, and/or in transmission;
+</div>
+</div>
+<div class="row">
+<div class="leftColumn">b.</div>
+<div class="rightColumn">
+Ensures that the security attribute associations are made and retained with the information;
+</div>
+</div>
+<div class="row">
+<div class="leftColumn">c.</div>
+<div class="rightColumn">
+Establishes the permitted [Assignment: organization-defined security attributes] for [Assignment: organization-defined information systems]; and
+</div>
+</div>
+<div class="row">
+<div class="leftColumn">d.</div>
+<div class="rightColumn">
+Determines the permitted [Assignment: organization-defined values or ranges] for each of the established security attributes.
+</div>
+</div>
+</div>
+</div>
+
+                    </div>
+				                                 
+                </div>
+                
+			    <a name="supplementalGuidance"></a>
+                <div class="controlDetailSection">
+
+					<h3 class="controlDetailHeading">Supplemental Guidance</h3>
+					
+					<div class="controlDetailValue">
+					    <pre>Information is represented internally within information systems using abstractions known as data structures. Internal data structures can represent different types of entities, both active and passive. Active entities, also known as subjects, are typically associated with individuals, devices, or processes acting on behalf of individuals. Passive entities, also known as objects, are typically associated with data structures such as records, buffers, tables, files, inter-process pipes, and communications ports. Security attributes, a form of metadata, are abstractions representing the basic properties or characteristics of active and passive entities with respect to safeguarding information. These attributes may be associated with active entities (i.e., subjects) that have the potential to send or receive information, to cause information to flow among objects, or to change the information system state. These attributes may also be associated with passive entities (i.e., objects) that contain or receive information. The association of security attributes to subjects and objects is referred to as binding and is typically inclusive of setting the attribute value and the attribute type. Security attributes when bound to data/information, enables the enforcement of information security policies for access control and information flow control, either through organizational processes or information system functions or mechanisms. The content or assigned values of security attributes can directly affect the ability of individuals to access organizational information.
+Organizations can define the types of attributes needed for selected information systems to support missions/business functions. There is potentially a wide range of values that can be assigned to any given security attribute. Release markings could include, for example, US only, NATO, or NOFORN (not releasable to foreign nationals). By specifying permitted attribute ranges and values, organizations can ensure that the security attribute values are meaningful and relevant. The term security labeling refers to the association of security attributes with subjects and objects represented by internal data structures within organizational information systems, to enable information system-based enforcement of information security policies. Security labels include, for example, access authorizations, data life cycle protection (i.e., encryption and data expiration), nationality, affiliation as contractor, and classification of information in accordance with legal and compliance requirements. The term security marking refers to the association of security attributes with objects in a human-readable form, to enable organizational process-based enforcement of information security policies. The AC-16 base control represents the requirement for user-based attribute association (marking). The enhancements to AC-16 represent additional requirements including information system-based attribute association (labeling). Types of attributes include, for example, classification level for objects and clearance (access authorization) level for subjects. An example of a value for both of these attribute types is Top Secret.</pre>
+                        
+                            Related to: <a href="control%3FcontrolName=AC-3.html">AC-3</a>,&nbsp;<a href="control%3FcontrolName=AC-4.html">AC-4</a>,&nbsp;<a href="control%3FcontrolName=AC-6.html">AC-6</a>,&nbsp;<a href="control%3FcontrolName=AC-21.html">AC-21</a>,&nbsp;<a href="control%3FcontrolName=AU-2.html">AU-2</a>,&nbsp;<a href="control%3FcontrolName=AU-10.html">AU-10</a>,&nbsp;<a href="control%3FcontrolName=SC-16.html">SC-16</a>,&nbsp;<a href="control%3FcontrolName=MP-3.html">MP-3</a>
+					</div>
+
+                </div>
+                
+                <a name="controlEnhancements"></a>
+                <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+					<h3 class="controlDetailHeading">Control Enhancements</h3>
+
+					<div class="controlDetailValue">
+						<div class="noBorder">
+						    
+						    
+						            <a name="enhancement-1"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_0" class="term">AC-16(1)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>SECURITY ATTRIBUTES | DYNAMIC ATTRIBUTE ASSOCIATION</dt>
+                                                <dt class="enhancementStatement">
+                                                    The information system dynamically associates security attributes with [Assignment: organization-defined subjects and objects] in accordance with [Assignment: organization-defined security policies] as information is created and combined.
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_0" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_0" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                Dynamic association of security attributes is appropriate whenever the security characteristics of information changes over time. Security attributes may change, for example, due to information aggregation issues (i.e., the security characteristics of individual information elements are different from the combined elements), changes in individual access authorizations (i.e., privileges), and changes in the security category of information.
+                                                                
+                                                                Related to: <a href="control%3FcontrolName=AC-4.html">AC-4</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-2"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_1" class="term">AC-16(2)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>SECURITY ATTRIBUTES | ATTRIBUTE VALUE CHANGES BY AUTHORIZED INDIVIDUALS</dt>
+                                                <dt class="enhancementStatement">
+                                                    The information system provides authorized individuals (or processes acting on behalf of individuals) the capability to define or change the value of associated security attributes.
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_1" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_1" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                The content or assigned values of security attributes can directly affect the ability of individuals to access organizational information. Therefore, it is important for information systems to be able to limit the ability to create or modify security attributes to authorized individuals.
+                                                                
+                                                                Related to: <a href="control%3FcontrolName=AC-6.html">AC-6</a>,&nbsp;<a href="control%3FcontrolName=AU-2.html">AU-2</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-3"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_2" class="term">AC-16(3)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>SECURITY ATTRIBUTES | MAINTENANCE OF ATTRIBUTE ASSOCIATIONS BY INFORMATION SYSTEM</dt>
+                                                <dt class="enhancementStatement">
+                                                    The information system maintains the association and integrity of [Assignment: organization-defined security attributes] to [Assignment: organization-defined subjects and objects].
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_2" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_2" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                Maintaining the association and integrity of security attributes to subjects and objects with sufficient assurance helps to ensure that the attribute associations can be used as the basis of automated policy actions. Automated policy actions include, for example, access control decisions or information flow control decisions.
+                                                                
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-4"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_3" class="term">AC-16(4)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>SECURITY ATTRIBUTES | ASSOCIATION OF ATTRIBUTES BY AUTHORIZED INDIVIDUALS</dt>
+                                                <dt class="enhancementStatement">
+                                                    The information system supports the association of [Assignment: organization-defined security attributes] with [Assignment: organization-defined subjects and objects] by authorized individuals (or processes acting on behalf of individuals).
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_3" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_3" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                The support provided by information systems can vary to include: (i) prompting users to select specific security attributes to be associated with specific information objects; (ii) employing automated mechanisms for categorizing information with appropriate attributes based on defined policies; or (iii) ensuring that the combination of selected security attributes selected is valid. Organizations consider the creation, deletion, or modification of security attributes when defining auditable events.
+                                                                
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-5"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_4" class="term">AC-16(5)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>SECURITY ATTRIBUTES | ATTRIBUTE DISPLAYS FOR OUTPUT DEVICES</dt>
+                                                <dt class="enhancementStatement">
+                                                    The information system displays security attributes in human-readable form on each object that the system transmits to output devices to identify [Assignment: organization-identified special dissemination, handling, or distribution instructions] using [Assignment: organization-identified human-readable, standard naming conventions].
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_4" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_4" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                Information system outputs include, for example, pages, screens, or equivalent. Information system output devices include, for example, printers and video displays on computer workstations, notebook computers, and personal digital assistants.
+                                                                
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-6"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_5" class="term">AC-16(6)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>SECURITY ATTRIBUTES | MAINTENANCE OF ATTRIBUTE ASSOCIATION BY ORGANIZATION</dt>
+                                                <dt class="enhancementStatement">
+                                                    The organization allows personnel to associate, and maintain the association of [Assignment: organization-defined security attributes] with [Assignment: organization-defined subjects and objects] in accordance with [Assignment: organization-defined security policies].
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_5" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_5" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                This control enhancement requires individual users (as opposed to the information system) to maintain associations of security attributes with subjects and objects.
+                                                                
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-7"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_6" class="term">AC-16(7)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>SECURITY ATTRIBUTES | CONSISTENT ATTRIBUTE INTERPRETATION</dt>
+                                                <dt class="enhancementStatement">
+                                                    The organization provides a consistent interpretation of security attributes transmitted between distributed information system components.
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_6" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_6" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                In order to enforce security policies across multiple components in distributed information systems (e.g., distributed database management systems, cloud-based systems, and service-oriented architectures), organizations provide a consistent interpretation of security attributes that are used in access enforcement and flow enforcement decisions. Organizations establish agreements and processes to ensure that all distributed information system components implement security attributes with consistent interpretations in automated access/flow enforcement actions.
+                                                                
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-8"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_7" class="term">AC-16(8)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>SECURITY ATTRIBUTES | ASSOCIATION TECHNIQUES / TECHNOLOGIES</dt>
+                                                <dt class="enhancementStatement">
+                                                    The information system implements [Assignment: organization-defined techniques or technologies] with [Assignment: organization-defined level of assurance] in associating security attributes to information.
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_7" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_7" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                The association (i.e., binding) of security attributes to information within information systems is of significant importance with regard to conducting automated access enforcement and flow enforcement actions. The association of such security attributes can be accomplished with technologies/techniques providing different levels of assurance. For example, information systems can cryptographically bind security attributes to information using digital signatures with the supporting cryptographic keys protected by hardware devices (sometimes known as hardware roots of trust).
+                                                                
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-9"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_8" class="term">AC-16(9)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>SECURITY ATTRIBUTES | ATTRIBUTE REASSIGNMENT</dt>
+                                                <dt class="enhancementStatement">
+                                                    The organization ensures that security attributes associated with information are reassigned only via re-grading mechanisms validated using [Assignment: organization-defined techniques or procedures].
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_8" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_8" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                Validated re-grading mechanisms are employed by organizations to provide the requisite levels of assurance for security attribute reassignment activities. The validation is facilitated by ensuring that re-grading mechanisms are single purpose and of limited function. Since security attribute reassignments can affect security policy enforcement actions (e.g., access/flow enforcement decisions), using trustworthy re-grading mechanisms is necessary to ensure that such mechanisms perform in a consistent/correct mode of operation.
+                                                                
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						            <a name="enhancement-10"></a>
+                                    <div class="row">
+                                        <div class="controlEnhancementSectionLeftColumn">
+                                            <dt id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_EnhancementNameDT_9" class="term">AC-16(10)</dt>
+                                        </div>
+                                        <div class="controlEnhancementSectionRightColumn">
+                                            <dl class="assessmentObjectiveProcedure">
+                                                <dt>SECURITY ATTRIBUTES | ATTRIBUTE CONFIGURATION BY AUTHORIZED INDIVIDUALS</dt>
+                                                <dt class="enhancementStatement">
+                                                    The information system provides authorized individuals the capability to define or change the type and value of security attributes available for association with subjects and objects.
+                                                    
+                                                </dt>
+                                                <dd>
+                                                    <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidRow_9" class="row">
+                                                        <div class="controlDetailSection">
+					                                        <span id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_Rev4ControlEnhancementRepeater_SuppGuidHeading_9" class="controlDetailHeading">Supplemental Guidance:</span>
+                                                            <span class="controlDetailValue">
+                                                                The content or assigned values of security attributes can directly affect the ability of individuals to access organizational information. Therefore, it is important for information systems to be able to limit the ability to create or modify security attributes to authorized individuals only.
+                                                                
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+						        
+						</div>
+					</div>
+                </div>
+                
+                
+                <a name="80053A"></a>
+                
+                
+                <a name="references"></a>
+                <div id="BodyPlaceHolder_plcZones_lt_zoneCenter_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+                    <h3 class="controlDetailHeading">References</h3>
+
+                    <div class="controlDetailValue">
+                        None.
+                        
+                    </div>
+                </div>
+            </div>
+		
+		</div>
+
+
+            
+        
+    </div>
+
+
+    </div>
+
+        <div id="footer">
+            <p>
+                <a href="http://www.nist.gov/public_affairs/disclaimer.cfm">Disclaimer Notice</a> 
+                &amp; <a href="http://www.nist.gov/public_affairs/privacy.cfm">Privacy Statement / Security Notice</a><br/>
+                Send comments or suggestions to <a href="mailto:nvd@nist.gov">nvd@nist.gov</a><br/>
+                <a href="http://www.nist.gov">NIST</a> is an Agency of the <a href="http://www.doc.gov">U.S. Department of Commerce</a><br/>
+                <span id="SNVDServiceInfo">NVD Services Version 3.10<br/></span>
+                <a href="https://nvd.nist.gov/full_listing.cfm" id="AFullListing">Full vulnerability listing</a>
+            </p>
+        </div>
+    
+    <script type="text/javascript" src="http://web.nvd.nist.gov/NVDLegacy/media/JavaScript/nist-exit-script.js"></script>
+        <div id="NoIframeScriptPanel">
+	
+            <script>
+                if (self.location == top.location) {
+                    document.getElementById("pageForm").style.display = 'block';
+                    document.getElementById("frameBusterDiv").style.display = 'none';
+                } else {
+                    document.getElementById("pageForm").style.display = 'none';
+                    document.getElementById("frameBusterDiv").style.display = 'block';
+                    setTimeout("top.location.replace('http://nvd.nist.gov/')", 1000);
+                }
+            </script>
+        
+</div>
+    </form>
+    </body>
+</html>
