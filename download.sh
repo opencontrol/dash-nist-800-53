@@ -11,3 +11,7 @@ wget \
   --reject "search" \
   --wait=1 \
   https://web.nvd.nist.gov/view/800-53/Rev4/home
+
+# wget doesn't seem to handle the `--convert-links` with `--adjust-extension`, so convert the remaining absolute URLs
+# http://savannah.gnu.org/bugs/?25340
+sed -i '' -E 's/https?:\/\/web\.nvd\.nist\.gov\/view\/800-53\/Rev4\///g' src/*.html
