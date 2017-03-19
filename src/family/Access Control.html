@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html  >
+<head id="head"><title>
+	NVD - Family
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/family/ACCESS&#32;CONTROL.html" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+</div>
+    
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/800-53/Rev4/family/ACCESS&#32;CONTROL.html#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="https://beta.nvd.nist.gov/800-53/Rev4/family/ACCESS&#32;CONTROL.html#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/800-53/Rev4/family/ACCESS&#32;CONTROL.html#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="https://beta.nvd.nist.gov/800-53/Rev4/Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Family</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+
+    
+    <h4>ACCESS CONTROL Control Family</h4>
+
+      
+    
+<p>Showing <strong>25</strong> controls:</p>
+  
+
+		<table class="table table-hover table-striped table-smaller">
+			<thead>
+				<tr>
+					<th>No.</th>
+					<th>Control</th>
+					<th>Priority</th>
+					<th>Low</th>
+					<th>Moderate</th>
+					<th>High</th>
+				</tr>
+			</thead>
+			<tbody>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-1.html">AC-1</a></td>
+            <td>ACCESS CONTROL POLICY AND PROCEDURES</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl01_LowNumberLabel">AC-1</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl01_ModerateNumberLabel">AC-1</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl01_HighNumberLabel">AC-1</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html">AC-2</a></td>
+            <td>ACCOUNT MANAGEMENT</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_LowNumberLabel">AC-2</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModerateNumberLabel">AC-2</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl01_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl02_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl03_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-4">4</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighNumberLabel">AC-2</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl01_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl02_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl03_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-4">4</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl04_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-5">5</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl05_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-11">11</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl06_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-12">12</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl07_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2.html#enhancement-13">13</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-3.html">AC-3</a></td>
+            <td>ACCESS ENFORCEMENT</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl03_LowNumberLabel">AC-3</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl03_ModerateNumberLabel">AC-3</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl03_HighNumberLabel">AC-3</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-4.html">AC-4</a></td>
+            <td>INFORMATION FLOW ENFORCEMENT</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl04_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl04_ModerateNumberLabel">AC-4</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl04_HighNumberLabel">AC-4</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-5.html">AC-5</a></td>
+            <td>SEPARATION OF DUTIES</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl05_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl05_ModerateNumberLabel">AC-5</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl05_HighNumberLabel">AC-5</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html">AC-6</a></td>
+            <td>LEAST PRIVILEGE</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModerateNumberLabel">AC-6</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl01_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl02_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html#enhancement-5">5</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl03_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html#enhancement-9">9</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl04_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html#enhancement-10">10</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighNumberLabel">AC-6</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl01_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl02_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl03_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html#enhancement-5">5</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl04_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html#enhancement-9">9</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl05_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6.html#enhancement-10">10</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-7.html">AC-7</a></td>
+            <td>UNSUCCESSFUL LOGON ATTEMPTS</td>
+            <td nowrap>P2</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl07_LowNumberLabel">AC-7</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl07_ModerateNumberLabel">AC-7</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl07_HighNumberLabel">AC-7</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-8.html">AC-8</a></td>
+            <td>SYSTEM USE NOTIFICATION</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl08_LowNumberLabel">AC-8</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl08_ModerateNumberLabel">AC-8</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl08_HighNumberLabel">AC-8</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-9.html">AC-9</a></td>
+            <td>PREVIOUS LOGON (ACCESS) NOTIFICATION</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl09_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl09_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl09_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-10.html">AC-10</a></td>
+            <td>CONCURRENT SESSION CONTROL</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl10_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl10_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl10_HighNumberLabel">AC-10</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-11.html">AC-11</a></td>
+            <td>SESSION LOCK</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_ModerateNumberLabel">AC-11</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_ModeratePriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-11.html#enhancement-1">1</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_HighNumberLabel">AC-11</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_HighPriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-11.html#enhancement-1">1</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-12.html">AC-12</a></td>
+            <td>SESSION TERMINATION</td>
+            <td nowrap>P2</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl12_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl12_ModerateNumberLabel">AC-12</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl12_HighNumberLabel">AC-12</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-13.html">AC-13</a></td>
+            <td>SUPERVISION AND REVIEW - ACCESS CONTROL</td>
+            <td nowrap></td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl13_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl13_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl13_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-14.html">AC-14</a></td>
+            <td>PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl14_LowNumberLabel">AC-14</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl14_ModerateNumberLabel">AC-14</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl14_HighNumberLabel">AC-14</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-15.html">AC-15</a></td>
+            <td>AUTOMATED MARKING</td>
+            <td nowrap></td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl15_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl15_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl15_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-16.html">AC-16</a></td>
+            <td>SECURITY ATTRIBUTES</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl16_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl16_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl16_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-17.html">AC-17</a></td>
+            <td>REMOTE ACCESS</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_LowNumberLabel">AC-17</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModerateNumberLabel">AC-17</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-17.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl01_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-17.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl02_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-17.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl03_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-17.html#enhancement-4">4</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighNumberLabel">AC-17</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-17.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl01_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-17.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl02_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-17.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl03_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-17.html#enhancement-4">4</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-18.html">AC-18</a></td>
+            <td>WIRELESS ACCESS</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_LowNumberLabel">AC-18</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_ModerateNumberLabel">AC-18</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_ModeratePriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-18.html#enhancement-1">1</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighNumberLabel">AC-18</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighPriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-18.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighPriorityRepeater_ctl01_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-18.html#enhancement-4">4</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighPriorityRepeater_ctl02_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-18.html#enhancement-5">5</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-19.html">AC-19</a></td>
+            <td>ACCESS CONTROL FOR MOBILE DEVICES</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_LowNumberLabel">AC-19</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_ModerateNumberLabel">AC-19</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_ModeratePriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-19.html#enhancement-5">5</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_HighNumberLabel">AC-19</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_HighPriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-19.html#enhancement-5">5</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-20.html">AC-20</a></td>
+            <td>USE OF EXTERNAL INFORMATION SYSTEMS</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_LowNumberLabel">AC-20</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_ModerateNumberLabel">AC-20</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_ModeratePriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-20.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_ModeratePriorityRepeater_ctl01_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-20.html#enhancement-2">2</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_HighNumberLabel">AC-20</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_HighPriorityRepeater_ctl00_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-20.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_HighPriorityRepeater_ctl01_PriorityLink" href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-20.html#enhancement-2">2</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-21.html">AC-21</a></td>
+            <td>INFORMATION SHARING</td>
+            <td nowrap>P2</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl21_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl21_ModerateNumberLabel">AC-21</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl21_HighNumberLabel">AC-21</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-22.html">AC-22</a></td>
+            <td>PUBLICLY ACCESSIBLE CONTENT</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl22_LowNumberLabel">AC-22</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl22_ModerateNumberLabel">AC-22</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl22_HighNumberLabel">AC-22</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-23.html">AC-23</a></td>
+            <td>DATA MINING PROTECTION</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl23_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl23_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl23_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-24.html">AC-24</a></td>
+            <td>ACCESS CONTROL DECISIONS</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl24_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl24_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl24_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-25.html">AC-25</a></td>
+            <td>REFERENCE MONITOR</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl25_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl25_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl25_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+			</tbody>
+		</table>
+    
+
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="https://beta.nvd.nist.gov/800-53/Rev4/impact/low.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="https://beta.nvd.nist.gov/800-53/Rev4/impact/moderate.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="https://beta.nvd.nist.gov/800-53/Rev4/impact/high.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="https://beta.nvd.nist.gov/800-53/Rev4/Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="https://beta.nvd.nist.gov/800-53/Rev4/search">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+</form>
+</body>
+</html>

@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html  >
+<head id="head"><title>
+	NVD - Control
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="SC-7.html" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+</div>
+    
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="SC-7.html#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="SC-7.html#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="SC-7.html#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SC-7 <small>BOUNDARY PROTECTION</small></h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM&#32;AND&#32;COMMUNICATIONS&#32;PROTECTION.html">SC - SYSTEM AND COMMUNICATIONS PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="https://beta.nvd.nist.gov/800-53/Rev4/class/"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            SC-7
+                                        </td>
+                                        <td>
+                                            SC-7 (<a href="SC-7.html#enhancement-3">3</a>) (<a href="SC-7.html#enhancement-4">4</a>) (<a href="SC-7.html#enhancement-5">5</a>) (<a href="SC-7.html#enhancement-7">7</a>)
+                                        </td>
+                                        <td>
+                                            SC-7 (<a href="SC-7.html#enhancement-3">3</a>) (<a href="SC-7.html#enhancement-4">4</a>) (<a href="SC-7.html#enhancement-5">5</a>) (<a href="SC-7.html#enhancement-7">7</a>) (<a href="SC-7.html#enhancement-8">8</a>) (<a href="SC-7.html#enhancement-18">18</a>) (<a href="SC-7.html#enhancement-21">21</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="SC-7.html#Rev4Statements">Revision 4 Statements</a><br />
+                        <a href="SC-7.html#controlDescription">Control Description</a><br />
+                        <a href="SC-7.html#supplementalGuidance">Supplemental Guidance</a><br />
+                        <a href="SC-7.html#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="https://beta.nvd.nist.gov/800-53/Rev4/home">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM&#32;AND&#32;COMMUNICATIONS&#32;PROTECTION.html">SC</a>
+                    &gt; <strong>SC-7</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"><p>
+a.
+Monitors and controls communications at the external boundary of the system and at key internal boundaries within the system;
+</p>
+<p>
+b.
+Implements subnetworks for publicly accessible system components that are [Selection: physically; logically] separated from internal organizational networks; and
+</p>
+<p>
+c.
+Connects to external networks or information systems only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security architecture.
+</p>
+</p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Managed interfaces include, for example, gateways, routers, firewalls, guards, network-based malicious code analysis and virtualization systems, or encrypted tunnels implemented within a security architecture (e.g., routers protecting firewalls or application gateways residing on protected subnetworks). Subnetworks that are physically or logically separated from internal networks are referred to as demilitarized zones or DMZs. Restricting or prohibiting interfaces within organizational information systems includes, for example, restricting external web traffic to designated web servers within managed interfaces and prohibiting external traffic that appears to be spoofing internal addresses. Organizations consider the shared nature of commercial telecommunications services in the implementation of security controls associated with the use of such services. Commercial telecommunications services are commonly based on network components and consolidated management systems shared by all attached commercial customers, and may also include third party-provided access lines and other service elements. Such transmission services may represent sources of increased risk despite contract security provisions.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-4">AC-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-3">CA-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-7">CM-7</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-8">CP-8</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-4">IR-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=RA-3">RA-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-5">SC-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-13">SC-13</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SC-7(1)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | PHYSICALLY SEPARATED SUBNETWORKS<br/>
+                                <strong>[Withdrawn: Incorporated into SC-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SC-7(2)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | PUBLIC ACCESS<br/>
+                                <strong>[Withdrawn: Incorporated into SC-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SC-7(3)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | ACCESS POINTS<br/>
+                                <strong>The organization limits the number of external network connections to the information system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Limiting the number of external network connections facilitates more comprehensive monitoring of inbound and outbound communications traffic. The Trusted Internet Connection (TIC) initiative is an example of limiting the number of external network connections.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SC-7(4)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | EXTERNAL TELECOMMUNICATIONS SERVICES<br/>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SC-7 (4)(a)</th>
+                                                <td><pre>Implements a managed interface for each external telecommunication service;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SC-7 (4)(b)</th>
+                                                <td><pre>Establishes a traffic flow policy for each managed interface;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SC-7 (4)(c)</th>
+                                                <td><pre>Protects the confidentiality and integrity of the information being transmitted across each interface;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SC-7 (4)(d)</th>
+                                                <td><pre>Documents each exception to the traffic flow policy with a supporting mission/business need and duration of that need; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SC-7 (4)(e)</th>
+                                                <td><pre>Reviews exceptions to the traffic flow policy [Assignment: organization-defined frequency] and removes exceptions that are no longer supported by an explicit mission/business need.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SC-8.html">SC-8</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SC-7(5)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | DENY BY DEFAULT / ALLOW BY EXCEPTION<br/>
+                                <strong>The information system at managed interfaces denies network communications traffic by default and allows network communications traffic by exception (i.e., deny all, permit by exception).</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement applies to both inbound and outbound network communications traffic. A deny-all, permit-by-exception network communications traffic policy ensures that only those connections which are essential and approved are allowed.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">SC-7(6)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | RESPONSE TO RECOGNIZED FAILURES<br/>
+                                <strong>[Withdrawn: Incorporated into SC-7 (18)].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">SC-7(7)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | PREVENT SPLIT TUNNELING FOR REMOTE DEVICES<br/>
+                                <strong>The information system, in conjunction with a remote device, prevents the device from simultaneously establishing non-remote connections with the system and communicating via some other connection to resources in external networks.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement is implemented within remote devices (e.g., notebook computers) through configuration settings to disable split tunneling in those devices, and by preventing those configuration settings from being readily configurable by users. This control enhancement is implemented within the information system by the detection of split tunneling (or of configuration settings that allow split tunneling) in the remote device, and by prohibiting the connection if the remote device is using split tunneling. Split tunneling might be desirable by remote users to communicate with local information system resources such as printers/file servers. However, split tunneling would in effect allow unauthorized external connections, making the system more vulnerable to attack and to exfiltration of organizational information. The use of VPNs for remote connections, when adequately provisioned with appropriate security controls, may provide the organization with sufficient assurance that it can effectively treat such connections as non-remote connections from the confidentiality and integrity perspective. VPNs thus provide a means for allowing non-remote communications paths from remote devices. The use of an adequately provisioned VPN does not eliminate the need for preventing split tunneling.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">SC-7(8)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | ROUTE TRAFFIC TO AUTHENTICATED PROXY SERVERS<br/>
+                                <strong>The information system routes [Assignment: organization-defined internal communications traffic] to [Assignment: organization-defined external networks] through authenticated proxy servers at managed interfaces.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                External networks are networks outside of organizational control. A proxy server is a server (i.e., information system or application) that acts as an intermediary for clients requesting information system resources (e.g., files, connections, web pages, or services) from other organizational servers. Client requests established through an initial connection to the proxy server are evaluated to manage complexity and to provide additional protection by limiting direct connectivity. Web content filtering devices are one of the most common proxy servers providing access to the Internet. Proxy servers support logging individual Transmission Control Protocol (TCP) sessions and blocking specific Uniform Resource Locators (URLs), domain names, and Internet Protocol (IP) addresses. Web proxies can be configured with organization-defined lists of authorized and unauthorized websites.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AC-3.html">AC-3</a>,&nbsp;<a href="AU-2.html">AU-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">SC-7(9)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | RESTRICT THREATENING OUTGOING COMMUNICATIONS TRAFFIC<br/>
+                                <strong>The information system:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SC-7 (9)(a)</th>
+                                                <td><pre>Detects and denies outgoing communications traffic posing a threat to external information systems; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SC-7 (9)(b)</th>
+                                                <td><pre>Audits the identity of internal users associated with denied communications.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Detecting outgoing communications traffic from internal actions that may pose threats to external information systems is sometimes termed extrusion detection. Extrusion detection at information system boundaries as part of managed interfaces includes the analysis of incoming and outgoing communications traffic searching for indications of internal threats to the security of external systems. Such threats include, for example, traffic indicative of denial of service attacks and traffic containing malicious code.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>,&nbsp;<a href="AU-6.html">AU-6</a>,&nbsp;<a href="SC-38.html">SC-38</a>,&nbsp;<a href="SC-44.html">SC-44</a>,&nbsp;<a href="SI-3.html">SI-3</a>,&nbsp;<a href="SI-4.html">SI-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">SC-7(10)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | PREVENT UNAUTHORIZED EXFILTRATION<br/>
+                                <strong>The organization prevents the unauthorized exfiltration of information across managed interfaces.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Safeguards implemented by organizations to prevent unauthorized exfiltration of information from information systems include, for example: (i) strict adherence to protocol formats; (ii) monitoring for beaconing from information systems; (iii) monitoring for steganography; (iv) disconnecting external network interfaces except when explicitly needed; (v) disassembling and reassembling packet headers; and (vi) employing traffic profile analysis to detect deviations from the volume/types of traffic expected within organizations or call backs to command and control centers. Devices enforcing strict adherence to protocol formats include, for example, deep packet inspection firewalls and XML gateways. These devices verify adherence to protocol formats and specification at the application layer and serve to identify vulnerabilities that cannot be detected by devices operating at the network or transport layers. This control enhancement is closely associated with cross-domain solutions and system guards enforcing information flow requirements.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SI-3.html">SI-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-11">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_EnhancementNameDT">SC-7(11)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | RESTRICT INCOMING COMMUNICATIONS TRAFFIC<br/>
+                                <strong>The information system only allows incoming communications from [Assignment: organization-defined authorized sources] to be routed to [Assignment: organization-defined authorized destinations].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement provides determinations that source and destination address pairs represent authorized/allowed communications. Such determinations can be based on several factors including, for example, the presence of source/destination address pairs in lists of authorized/allowed communications, the absence of address pairs in lists of unauthorized/disallowed pairs, or meeting more general rules for authorized/allowed source/destination pairs.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AC-3.html">AC-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-12">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_EnhancementNameDT">SC-7(12)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | HOST-BASED PROTECTION<br/>
+                                <strong>The organization implements [Assignment: organization-defined host-based boundary protection mechanisms] at [Assignment: organization-defined information system components].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Host-based boundary protection mechanisms include, for example, host-based firewalls. Information system components employing host-based boundary protection mechanisms include, for example, servers, workstations, and mobile devices.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-13">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_EnhancementNameDT">SC-7(13)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | ISOLATION OF SECURITY TOOLS / MECHANISMS / SUPPORT COMPONENTS<br/>
+                                <strong>The organization isolates [Assignment: organization-defined information security tools, mechanisms, and support components] from other internal information system components by implementing physically separate subnetworks with managed interfaces to other components of the system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Physically separate subnetworks with managed interfaces are useful, for example, in isolating computer network defenses from critical operational processing networks to prevent adversaries from discovering the analysis and forensics techniques of organizations.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SA-8.html">SA-8</a>,&nbsp;<a href="SC-2.html">SC-2</a>,&nbsp;<a href="SC-3.html">SC-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-14">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_EnhancementNameDT">SC-7(14)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | PROTECTS AGAINST UNAUTHORIZED PHYSICAL CONNECTIONS<br/>
+                                <strong>The organization protects against unauthorized physical connections at [Assignment: organization-defined managed interfaces].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Information systems operating at different security categories or classification levels may share common physical and environmental controls, since the systems may share space within organizational facilities. In practice, it is possible that these separate information systems may share common equipment rooms, wiring closets, and cable distribution paths. Protection against unauthorized physical connections can be achieved, for example, by employing clearly identified and physically separated cable trays, connection frames, and patch panels for each side of managed interfaces with physical access controls enforcing limited authorized access to these items.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="PE-4.html">PE-4</a>,&nbsp;<a href="PE-19.html">PE-19</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-15">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_EnhancementNameDT">SC-7(15)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | ROUTE PRIVILEGED NETWORK ACCESSES<br/>
+                                <strong>The information system routes all networked, privileged accesses through a dedicated, managed interface for purposes of access control and auditing.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AC-2.html">AC-2</a>,&nbsp;<a href="AC-3.html">AC-3</a>,&nbsp;<a href="AU-2.html">AU-2</a>,&nbsp;<a href="SI-4.html">SI-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-16">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_EnhancementNameDT">SC-7(16)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | PREVENT DISCOVERY OF COMPONENTS / DEVICES<br/>
+                                <strong>The information system prevents discovery of specific system components composing a managed interface.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement protects network addresses of information system components that are part of managed interfaces from discovery through common tools and techniques used to identify devices on networks. Network addresses are not available for discovery (e.g., network address not published or entered in domain name systems), requiring prior knowledge for access. Another obfuscation technique is to periodically change network addresses.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-17">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl17_EnhancementNameDT">SC-7(17)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | AUTOMATED ENFORCEMENT OF PROTOCOL FORMATS<br/>
+                                <strong>The information system enforces adherence to protocol formats.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl17_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl17_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl17_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Information system components that enforce protocol formats include, for example, deep packet inspection firewalls and XML gateways. Such system components verify adherence to protocol formats/specifications (e.g., IEEE) at the application layer and identify significant vulnerabilities that cannot be detected by devices operating at the network or transport layers.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SC-4.html">SC-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-18">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl18_EnhancementNameDT">SC-7(18)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | FAIL SECURE<br/>
+                                <strong>The information system fails securely in the event of an operational failure of a boundary protection device.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl18_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl18_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl18_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Fail secure is a condition achieved by employing information system mechanisms to ensure that in the event of operational failures of boundary protection devices at managed interfaces (e.g., routers, firewalls, guards, and application gateways residing on protected subnetworks commonly referred to as demilitarized zones), information systems do not enter into unsecure states where intended security properties no longer hold. Failures of boundary protection devices cannot lead to, or cause information external to the devices to enter the devices, nor can failures permit unauthorized information releases.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="CP-2.html">CP-2</a>,&nbsp;<a href="SC-24.html">SC-24</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-19">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl19_EnhancementNameDT">SC-7(19)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | BLOCKS COMMUNICATION FROM NON-ORGANIZATIONALLY CONFIGURED HOSTS<br/>
+                                <strong>The information system blocks both inbound and outbound communications traffic between [Assignment: organization-defined communication clients] that are independently configured by end users and external service providers.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl19_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl19_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl19_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Communication clients independently configured by end users and external service providers include, for example, instant messaging clients. Traffic blocking does not apply to communication clients that are configured by organizations to perform authorized functions.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-20">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl20_EnhancementNameDT">SC-7(20)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | DYNAMIC ISOLATION / SEGREGATION<br/>
+                                <strong>The information system provides the capability to dynamically isolate/segregate [Assignment: organization-defined information system components] from other components of the system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl20_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl20_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl20_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The capability to dynamically isolate or segregate certain internal components of organizational information systems is useful when it is necessary to partition or separate certain components of dubious origin from those components possessing greater trustworthiness. Component isolation reduces the attack surface of organizational information systems. Isolation of selected information system components is also a means of limiting the damage from successful cyber attacks when those attacks occur.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-21">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl21_EnhancementNameDT">SC-7(21)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | ISOLATION OF INFORMATION SYSTEM COMPONENTS<br/>
+                                <strong>The organization employs boundary protection mechanisms to separate [Assignment: organization-defined information system components] supporting [Assignment: organization-defined missions and/or business functions].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl21_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl21_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl21_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations can isolate information system components performing different missions and/or business functions. Such isolation limits unauthorized information flows among system components and also provides the opportunity to deploy greater levels of protection for selected components. Separating system components with boundary protection mechanisms provides the capability for increased protection of individual components and to more effectively control information flows between those components. This type of enhanced protection limits the potential harm from cyber attacks and errors. The degree of separation provided varies depending upon the mechanisms chosen. Boundary protection mechanisms include, for example, routers, gateways, and firewalls separating system components into physically separate networks or subnetworks, cross-domain devices separating subnetworks, virtualization techniques, and encrypting information flows among system components using distinct encryption keys.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="CA-9.html">CA-9</a>,&nbsp;<a href="SC-3.html">SC-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-22">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl22_EnhancementNameDT">SC-7(22)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | SEPARATE SUBNETS FOR CONNECTING TO DIFFERENT SECURITY DOMAINS<br/>
+                                <strong>The information system implements separate network addresses (i.e., different subnets) to connect to systems in different security domains.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl22_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl22_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl22_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Decomposition of information systems into subnets helps to provide the appropriate level of protection for network connections to different security domains containing information with different security categories or classification levels.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-23">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl23_EnhancementNameDT">SC-7(23)</span>
+                            </th>
+                            <td>
+                                BOUNDARY PROTECTION | DISABLE SENDER FEEDBACK ON PROTOCOL VALIDATION FAILURE<br/>
+                                <strong>The information system disables feedback to senders on protocol format validation failure.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl23_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl23_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl23_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Disabling feedback to senders when there is a failure in protocol validation format prevents adversaries from obtaining information which would otherwise be unavailable.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div><div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>FIPS Publication 199</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#199">http://csrc.nist.gov/publications/PubsFIPS.html#199</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-41</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-41">http://csrc.nist.gov/publications/PubsSPs.html#800-41</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-77</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-77">http://csrc.nist.gov/publications/PubsSPs.html#800-77</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="../impact/low.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="../impact/moderate.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="../impact/high.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="../Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="https://beta.nvd.nist.gov/800-53/Rev4/search">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+</form>
+</body>
+</html>

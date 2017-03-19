@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html  >
+<head id="head"><title>
+	NVD - Control
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="AC-16.html" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+</div>
+    
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="AC-16.html#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="AC-16.html#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="AC-16.html#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AC-16 <small>SECURITY ATTRIBUTES</small></h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/ACCESS&#32;CONTROL.html">AC - ACCESS CONTROL</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="https://beta.nvd.nist.gov/800-53/Rev4/class/"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P0 - Unspecified priority.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="AC-16.html#Rev4Statements">Revision 4 Statements</a><br />
+                        <a href="AC-16.html#controlDescription">Control Description</a><br />
+                        <a href="AC-16.html#supplementalGuidance">Supplemental Guidance</a><br />
+                        <a href="AC-16.html#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="https://beta.nvd.nist.gov/800-53/Rev4/home">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/ACCESS&#32;CONTROL.html">AC</a>
+                    &gt; <strong>AC-16</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"><p>
+a.
+Provides the means to associate [Assignment: organization-defined types of security attributes] having [Assignment: organization-defined security attribute values] with information in storage, in process, and/or in transmission;
+</p>
+<p>
+b.
+Ensures that the security attribute associations are made and retained with the information;
+</p>
+<p>
+c.
+Establishes the permitted [Assignment: organization-defined security attributes] for [Assignment: organization-defined information systems]; and
+</p>
+<p>
+d.
+Determines the permitted [Assignment: organization-defined values or ranges] for each of the established security attributes.
+</p>
+</p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Information is represented internally within information systems using abstractions known as data structures. Internal data structures can represent different types of entities, both active and passive. Active entities, also known as subjects, are typically associated with individuals, devices, or processes acting on behalf of individuals. Passive entities, also known as objects, are typically associated with data structures such as records, buffers, tables, files, inter-process pipes, and communications ports. Security attributes, a form of metadata, are abstractions representing the basic properties or characteristics of active and passive entities with respect to safeguarding information. These attributes may be associated with active entities (i.e., subjects) that have the potential to send or receive information, to cause information to flow among objects, or to change the information system state. These attributes may also be associated with passive entities (i.e., objects) that contain or receive information. The association of security attributes to subjects and objects is referred to as binding and is typically inclusive of setting the attribute value and the attribute type. Security attributes when bound to data/information, enables the enforcement of information security policies for access control and information flow control, either through organizational processes or information system functions or mechanisms. The content or assigned values of security attributes can directly affect the ability of individuals to access organizational information.
+Organizations can define the types of attributes needed for selected information systems to support missions/business functions. There is potentially a wide range of values that can be assigned to any given security attribute. Release markings could include, for example, US only, NATO, or NOFORN (not releasable to foreign nationals). By specifying permitted attribute ranges and values, organizations can ensure that the security attribute values are meaningful and relevant. The term security labeling refers to the association of security attributes with subjects and objects represented by internal data structures within organizational information systems, to enable information system-based enforcement of information security policies. Security labels include, for example, access authorizations, data life cycle protection (i.e., encryption and data expiration), nationality, affiliation as contractor, and classification of information in accordance with legal and compliance requirements. The term security marking refers to the association of security attributes with objects in a human-readable form, to enable organizational process-based enforcement of information security policies. The AC-16 base control represents the requirement for user-based attribute association (marking). The enhancements to AC-16 represent additional requirements including information system-based attribute association (labeling). Types of attributes include, for example, classification level for objects and clearance (access authorization) level for subjects. An example of a value for both of these attribute types is Top Secret.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-4">AC-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-6">AC-6</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-21">AC-21</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-2">AU-2</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-10">AU-10</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-16">SC-16</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-3">MP-3</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AC-16(1)</span>
+                            </th>
+                            <td>
+                                SECURITY ATTRIBUTES | DYNAMIC ATTRIBUTE ASSOCIATION<br/>
+                                <strong>The information system dynamically associates security attributes with [Assignment: organization-defined subjects and objects] in accordance with [Assignment: organization-defined security policies] as information is created and combined.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Dynamic association of security attributes is appropriate whenever the security characteristics of information changes over time. Security attributes may change, for example, due to information aggregation issues (i.e., the security characteristics of individual information elements are different from the combined elements), changes in individual access authorizations (i.e., privileges), and changes in the security category of information.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AC-4.html">AC-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AC-16(2)</span>
+                            </th>
+                            <td>
+                                SECURITY ATTRIBUTES | ATTRIBUTE VALUE CHANGES BY AUTHORIZED INDIVIDUALS<br/>
+                                <strong>The information system provides authorized individuals (or processes acting on behalf of individuals) the capability to define or change the value of associated security attributes.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The content or assigned values of security attributes can directly affect the ability of individuals to access organizational information. Therefore, it is important for information systems to be able to limit the ability to create or modify security attributes to authorized individuals.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AC-6.html">AC-6</a>,&nbsp;<a href="AU-2.html">AU-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AC-16(3)</span>
+                            </th>
+                            <td>
+                                SECURITY ATTRIBUTES | MAINTENANCE OF ATTRIBUTE ASSOCIATIONS BY INFORMATION SYSTEM<br/>
+                                <strong>The information system maintains the association and integrity of [Assignment: organization-defined security attributes] to [Assignment: organization-defined subjects and objects].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Maintaining the association and integrity of security attributes to subjects and objects with sufficient assurance helps to ensure that the attribute associations can be used as the basis of automated policy actions. Automated policy actions include, for example, access control decisions or information flow control decisions.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AC-16(4)</span>
+                            </th>
+                            <td>
+                                SECURITY ATTRIBUTES | ASSOCIATION OF ATTRIBUTES BY AUTHORIZED INDIVIDUALS<br/>
+                                <strong>The information system supports the association of [Assignment: organization-defined security attributes] with [Assignment: organization-defined subjects and objects] by authorized individuals (or processes acting on behalf of individuals).</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The support provided by information systems can vary to include: (i) prompting users to select specific security attributes to be associated with specific information objects; (ii) employing automated mechanisms for categorizing information with appropriate attributes based on defined policies; or (iii) ensuring that the combination of selected security attributes selected is valid. Organizations consider the creation, deletion, or modification of security attributes when defining auditable events.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AC-16(5)</span>
+                            </th>
+                            <td>
+                                SECURITY ATTRIBUTES | ATTRIBUTE DISPLAYS FOR OUTPUT DEVICES<br/>
+                                <strong>The information system displays security attributes in human-readable form on each object that the system transmits to output devices to identify [Assignment: organization-identified special dissemination, handling, or distribution instructions] using [Assignment: organization-identified human-readable, standard naming conventions].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Information system outputs include, for example, pages, screens, or equivalent. Information system output devices include, for example, printers and video displays on computer workstations, notebook computers, and personal digital assistants.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">AC-16(6)</span>
+                            </th>
+                            <td>
+                                SECURITY ATTRIBUTES | MAINTENANCE OF ATTRIBUTE ASSOCIATION BY ORGANIZATION<br/>
+                                <strong>The organization allows personnel to associate, and maintain the association of [Assignment: organization-defined security attributes] with [Assignment: organization-defined subjects and objects] in accordance with [Assignment: organization-defined security policies].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement requires individual users (as opposed to the information system) to maintain associations of security attributes with subjects and objects.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">AC-16(7)</span>
+                            </th>
+                            <td>
+                                SECURITY ATTRIBUTES | CONSISTENT ATTRIBUTE INTERPRETATION<br/>
+                                <strong>The organization provides a consistent interpretation of security attributes transmitted between distributed information system components.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                In order to enforce security policies across multiple components in distributed information systems (e.g., distributed database management systems, cloud-based systems, and service-oriented architectures), organizations provide a consistent interpretation of security attributes that are used in access enforcement and flow enforcement decisions. Organizations establish agreements and processes to ensure that all distributed information system components implement security attributes with consistent interpretations in automated access/flow enforcement actions.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">AC-16(8)</span>
+                            </th>
+                            <td>
+                                SECURITY ATTRIBUTES | ASSOCIATION TECHNIQUES / TECHNOLOGIES<br/>
+                                <strong>The information system implements [Assignment: organization-defined techniques or technologies] with [Assignment: organization-defined level of assurance] in associating security attributes to information.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The association (i.e., binding) of security attributes to information within information systems is of significant importance with regard to conducting automated access enforcement and flow enforcement actions. The association of such security attributes can be accomplished with technologies/techniques providing different levels of assurance. For example, information systems can cryptographically bind security attributes to information using digital signatures with the supporting cryptographic keys protected by hardware devices (sometimes known as hardware roots of trust).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">AC-16(9)</span>
+                            </th>
+                            <td>
+                                SECURITY ATTRIBUTES | ATTRIBUTE REASSIGNMENT<br/>
+                                <strong>The organization ensures that security attributes associated with information are reassigned only via re-grading mechanisms validated using [Assignment: organization-defined techniques or procedures].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Validated re-grading mechanisms are employed by organizations to provide the requisite levels of assurance for security attribute reassignment activities. The validation is facilitated by ensuring that re-grading mechanisms are single purpose and of limited function. Since security attribute reassignments can affect security policy enforcement actions (e.g., access/flow enforcement decisions), using trustworthy re-grading mechanisms is necessary to ensure that such mechanisms perform in a consistent/correct mode of operation.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">AC-16(10)</span>
+                            </th>
+                            <td>
+                                SECURITY ATTRIBUTES | ATTRIBUTE CONFIGURATION BY AUTHORIZED INDIVIDUALS<br/>
+                                <strong>The information system provides authorized individuals the capability to define or change the type and value of security attributes available for association with subjects and objects.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The content or assigned values of security attributes can directly affect the ability of individuals to access organizational information. Therefore, it is important for information systems to be able to limit the ability to create or modify security attributes to authorized individuals only.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div><div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="../impact/low.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="../impact/moderate.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="../impact/high.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="../Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="https://beta.nvd.nist.gov/800-53/Rev4/search">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+</form>
+</body>
+</html>

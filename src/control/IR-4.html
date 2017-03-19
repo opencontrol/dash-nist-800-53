@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html  >
+<head id="head"><title>
+	NVD - Control
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="IR-4.html" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+</div>
+    
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="IR-4.html#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="IR-4.html#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="IR-4.html#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">IR-4 <small>INCIDENT HANDLING</small></h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/INCIDENT&#32;RESPONSE.html">IR - INCIDENT RESPONSE</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="https://beta.nvd.nist.gov/800-53/Rev4/class/"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            IR-4
+                                        </td>
+                                        <td>
+                                            IR-4 (<a href="IR-4.html#enhancement-1">1</a>)
+                                        </td>
+                                        <td>
+                                            IR-4 (<a href="IR-4.html#enhancement-1">1</a>) (<a href="IR-4.html#enhancement-4">4</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="IR-4.html#Rev4Statements">Revision 4 Statements</a><br />
+                        <a href="IR-4.html#controlDescription">Control Description</a><br />
+                        <a href="IR-4.html#supplementalGuidance">Supplemental Guidance</a><br />
+                        <a href="IR-4.html#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="https://beta.nvd.nist.gov/800-53/Rev4/home">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/INCIDENT&#32;RESPONSE.html">IR</a>
+                    &gt; <strong>IR-4</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"><p>
+a.
+Implements an incident handling capability for security incidents that includes preparation, detection and analysis, containment, eradication, and recovery;
+</p>
+<p>
+b.
+Coordinates incident handling activities with contingency planning activities; and
+</p>
+<p>
+c.
+Incorporates lessons learned from ongoing incident handling activities into incident response procedures, training, and testing, and implements the resulting changes accordingly.
+</p>
+</p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Organizations recognize that incident response capability is dependent on the capabilities of organizational information systems and the mission/business processes being supported by those systems. Therefore, organizations consider incident response as part of the definition, design, and development of mission/business processes and information systems. Incident-related information can be obtained from a variety of sources including, for example, audit monitoring, network monitoring, physical access monitoring, user/administrator reports, and reported supply chain events. Effective incident handling capability includes coordination among many organizational entities including, for example, mission/business owners, information system owners, authorizing officials, human resources offices, physical and personnel security offices, legal departments, operations personnel, procurement offices, and the risk executive (function).</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-6">AU-6</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-6">CM-6</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-2">CP-2</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-4">CP-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-2">IR-2</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-3">IR-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-8">IR-8</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-6">PE-6</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-5">SC-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-7">SC-7</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-3">SI-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-4">SI-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-7">SI-7</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">IR-4(1)</span>
+                            </th>
+                            <td>
+                                INCIDENT HANDLING | AUTOMATED INCIDENT HANDLING PROCESSES<br/>
+                                <strong>The organization employs automated mechanisms to support the incident handling process.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Automated mechanisms supporting incident handling processes include, for example, online incident management systems.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">IR-4(2)</span>
+                            </th>
+                            <td>
+                                INCIDENT HANDLING | DYNAMIC RECONFIGURATION<br/>
+                                <strong>The organization includes dynamic reconfiguration of [Assignment: organization-defined information system components] as part of the incident response capability.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Dynamic reconfiguration includes, for example, changes to router rules, access control lists, intrusion detection/prevention system parameters, and filter rules for firewalls and gateways. Organizations perform dynamic reconfiguration of information systems, for example, to stop attacks, to misdirect attackers, and to isolate components of systems, thus limiting the extent of the damage from breaches or compromises. Organizations include time frames for achieving the reconfiguration of information systems in the definition of the reconfiguration capability, considering the potential need for rapid response in order to effectively address sophisticated cyber threats.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AC-2.html">AC-2</a>,&nbsp;<a href="AC-4.html">AC-4</a>,&nbsp;<a href="AC-16.html">AC-16</a>,&nbsp;<a href="CM-2.html">CM-2</a>,&nbsp;<a href="CM-3.html">CM-3</a>,&nbsp;<a href="CM-4.html">CM-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">IR-4(3)</span>
+                            </th>
+                            <td>
+                                INCIDENT HANDLING | CONTINUITY OF OPERATIONS<br/>
+                                <strong>The organization identifies [Assignment: organization-defined classes of incidents] and [Assignment: organization-defined actions to take in response to classes of incidents] to ensure continuation of organizational missions and business functions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Classes of incidents include, for example, malfunctions due to design/implementation errors and omissions, targeted malicious attacks, and untargeted malicious attacks. Appropriate incident response actions include, for example, graceful degradation, information system shutdown, fall back to manual mode/alternative technology whereby the system operates differently, employing deceptive measures, alternate information flows, or operating in a mode that is reserved solely for when systems are under attack.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">IR-4(4)</span>
+                            </th>
+                            <td>
+                                INCIDENT HANDLING | INFORMATION CORRELATION<br/>
+                                <strong>The organization correlates incident information and individual incident responses to achieve an organization-wide perspective on incident awareness and response.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Sometimes the nature of a threat event, for example, a hostile cyber attack, is such that it can only be observed by bringing together information from different sources including various reports and reporting procedures established by organizations.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">IR-4(5)</span>
+                            </th>
+                            <td>
+                                INCIDENT HANDLING | AUTOMATIC DISABLING OF INFORMATION SYSTEM<br/>
+                                <strong>The organization implements a configurable capability to automatically disable the information system if [Assignment: organization-defined security violations] are detected.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">IR-4(6)</span>
+                            </th>
+                            <td>
+                                INCIDENT HANDLING | INSIDER THREATS - SPECIFIC CAPABILITIES<br/>
+                                <strong>The organization implements incident handling capability for insider threats.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                While many organizations address insider threat incidents as an inherent part of their organizational incident response capability, this control enhancement provides additional emphasis on this type of threat and the need for specific incident handling capabilities (as defined within organizations) to provide appropriate and timely responses.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">IR-4(7)</span>
+                            </th>
+                            <td>
+                                INCIDENT HANDLING | INSIDER THREATS - INTRA-ORGANIZATION COORDINATION<br/>
+                                <strong>The organization coordinates incident handling capability for insider threats across [Assignment: organization-defined components or elements of the organization].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Incident handling for insider threat incidents (including preparation, detection and analysis, containment, eradication, and recovery) requires close coordination among a variety of organizational components or elements to be effective. These components or elements include, for example, mission/business owners, information system owners, human resources offices, procurement offices, personnel/physical security offices, operations personnel, and risk executive (function). In addition, organizations may require external support from federal, state, and local law enforcement agencies.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">IR-4(8)</span>
+                            </th>
+                            <td>
+                                INCIDENT HANDLING | CORRELATION WITH EXTERNAL ORGANIZATIONS<br/>
+                                <strong>The organization coordinates with [Assignment: organization-defined external organizations] to correlate and share [Assignment: organization-defined incident information] to achieve a cross-organization perspective on incident awareness and more effective incident responses.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The coordination of incident information with external organizations including, for example, mission/business partners, military/coalition partners, customers, and multitiered developers, can provide significant benefits. Cross-organizational coordination with respect to incident handling can serve as an important risk management capability. This capability allows organizations to leverage critical information from a variety of sources to effectively respond to information security-related incidents potentially affecting the organization�s operations, assets, and individuals.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">IR-4(9)</span>
+                            </th>
+                            <td>
+                                INCIDENT HANDLING | DYNAMIC RESPONSE CAPABILITY<br/>
+                                <strong>The organization employs [Assignment: organization-defined dynamic response capabilities] to effectively respond to security incidents.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement addresses the deployment of replacement or new capabilities in a timely manner in response to security incidents (e.g., adversary actions during hostile cyber attacks). This includes capabilities implemented at the mission/business process level (e.g., activating alternative mission/business processes) and at the information system level.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="CP-10.html">CP-10</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">IR-4(10)</span>
+                            </th>
+                            <td>
+                                INCIDENT HANDLING | SUPPLY CHAIN COORDINATION<br/>
+                                <strong>The organization coordinates incident handling activities involving supply chain events with other organizations involved in the supply chain.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations involved in supply chain activities include, for example, system/product developers, integrators, manufacturers, packagers, assemblers, distributors, vendors, and resellers. Supply chain incidents include, for example, compromises/breaches involving information system components, information technology products, development processes or personnel, and distribution processes or warehousing facilities.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div><div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>Executive Order 13587</th>
+                    <td><a href="http://www.whitehouse.gov/the-press-office/2011/10/07/executive-order-13587-structural-reforms-improve-security-classified-net">http://www.whitehouse.gov/the-press-office/2011/10/07/executive-order-13587-structural-reforms-improve-security-classified-net</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-61</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-61">http://csrc.nist.gov/publications/PubsSPs.html#800-61</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="../impact/low.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="../impact/moderate.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="../impact/high.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="../Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="https://beta.nvd.nist.gov/800-53/Rev4/search">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+</form>
+</body>
+</html>

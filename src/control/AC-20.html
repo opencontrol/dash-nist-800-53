@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html  >
+<head id="head"><title>
+	NVD - Control
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="AC-20.html" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+</div>
+    
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="AC-20.html#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="AC-20.html#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="AC-20.html#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AC-20 <small>USE OF EXTERNAL INFORMATION SYSTEMS</small></h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/ACCESS&#32;CONTROL.html">AC - ACCESS CONTROL</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="https://beta.nvd.nist.gov/800-53/Rev4/class/"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AC-20
+                                        </td>
+                                        <td>
+                                            AC-20 (<a href="AC-20.html#enhancement-1">1</a>) (<a href="AC-20.html#enhancement-2">2</a>)
+                                        </td>
+                                        <td>
+                                            AC-20 (<a href="AC-20.html#enhancement-1">1</a>) (<a href="AC-20.html#enhancement-2">2</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="AC-20.html#Rev4Statements">Revision 4 Statements</a><br />
+                        <a href="AC-20.html#controlDescription">Control Description</a><br />
+                        <a href="AC-20.html#supplementalGuidance">Supplemental Guidance</a><br />
+                        <a href="AC-20.html#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="https://beta.nvd.nist.gov/800-53/Rev4/home">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/ACCESS&#32;CONTROL.html">AC</a>
+                    &gt; <strong>AC-20</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization establishes terms and conditions, consistent with any trust relationships established with other organizations owning, operating, and/or maintaining external information systems, allowing authorized individuals to:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"><p>
+a.
+Access the information system from external information systems; and
+</p>
+<p>
+b.
+Process, store, or transmit organization-controlled information using external information systems.
+</p>
+</p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>External information systems are information systems or components of information systems that are outside of the authorization boundary established by organizations and for which organizations typically have no direct supervision and authority over the application of required security controls or the assessment of control effectiveness. External information systems include, for example: (i) personally owned information systems/devices (e.g., notebook computers, smart phones, tablets, personal digital assistants); (ii) privately owned computing and communications devices resident in commercial or public facilities (e.g., hotels, train stations, convention centers, shopping malls, or airports); (iii) information systems owned or controlled by nonfederal governmental organizations; and (iv) federal information systems that are not owned by, operated by, or under the direct supervision and authority of organizations. This control also addresses the use of external information systems for the processing, storage, or transmission of organizational information, including, for example, accessing cloud services (e.g., infrastructure as a service, platform as a service, or software as a service) from organizational information systems.
+For some external information systems (i.e., information systems operated by other federal agencies, including organizations subordinate to those agencies), the trust relationships that have been established between those organizations and the originating organization may be such, that no explicit terms and conditions are required. Information systems within these organizations would not be considered external. These situations occur when, for example, there are pre-existing sharing/trust agreements (either implicit or explicit) established between federal agencies or organizations subordinate to those agencies, or when such trust agreements are specified by applicable laws, Executive Orders, directives, or policies. Authorized individuals include, for example, organizational personnel, contractors, or other individuals with authorized access to organizational information systems and over which organizations have the authority to impose rules of behavior with regard to system access. Restrictions that organizations impose on authorized individuals need not be uniform, as those restrictions may vary depending upon the trust relationships between organizations. Therefore, organizations may choose to impose different security restrictions on contractors than on state, local, or tribal governments.
+This control does not apply to the use of external information systems to access public interfaces to organizational information systems (e.g., individuals accessing federal information through www.usa.gov). Organizations establish terms and conditions for the use of external information systems in accordance with organizational security policies and procedures. Terms and conditions address as a minimum: types of applications that can be accessed on organizational information systems from external information systems; and the highest security category of information that can be processed, stored, or transmitted on external information systems. If terms and conditions with the owners of external information systems cannot be established, organizations may impose restrictions on organizational personnel using those external systems.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-19">AC-19</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-3">CA-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-4">PL-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-9">SA-9</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AC-20(1)</span>
+                            </th>
+                            <td>
+                                USE OF EXTERNAL INFORMATION SYSTEMS | LIMITS ON AUTHORIZED USE<br/>
+                                <strong>The organization permits authorized individuals to use an external information system to access the information system or to process, store, or transmit organization-controlled information only when the organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AC-20 (1)(a)</th>
+                                                <td><pre>Verifies the implementation of required security controls on the external system as specified in the organization�s information security policy and security plan; or</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-20 (1)(b)</th>
+                                                <td><pre>Retains approved information system connection or processing agreements with the organizational entity hosting the external information system.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement recognizes that there are circumstances where individuals using external information systems (e.g., contractors, coalition partners) need to access organizational information systems. In those situations, organizations need confidence that the external information systems contain the necessary security safeguards (i.e., security controls), so as not to compromise, damage, or otherwise harm organizational information systems. Verification that the required security controls have been implemented can be achieved, for example, by third-party, independent assessments, attestations, or other means, depending on the confidence level required by organizations.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="CA-2.html">CA-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AC-20(2)</span>
+                            </th>
+                            <td>
+                                USE OF EXTERNAL INFORMATION SYSTEMS | PORTABLE STORAGE DEVICES<br/>
+                                <strong>The organization [Selection: restricts; prohibits] the use of organization-controlled portable storage devices by authorized individuals on external information systems.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Limits on the use of organization-controlled portable storage devices in external information systems include, for example, complete prohibition of the use of such devices or restrictions on how the devices may be used and under what conditions the devices may be used.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AC-20(3)</span>
+                            </th>
+                            <td>
+                                USE OF EXTERNAL INFORMATION SYSTEMS | NON-ORGANIZATIONALLY OWNED SYSTEMS / COMPONENTS / DEVICES<br/>
+                                <strong>The organization [Selection: restricts; prohibits] the use of non-organizationally owned information systems, system components, or devices to process, store, or transmit organizational information.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Non-organizationally owned devices include devices owned by other organizations (e.g., federal/state agencies, contractors) and personally owned devices. There are risks to using non-organizationally owned devices. In some cases, the risk is sufficiently high as to prohibit such use. In other cases, it may be such that the use of non-organizationally owned devices is allowed but restricted in some way. Restrictions include, for example: (i) requiring the implementation of organization-approved security controls prior to authorizing such connections; (ii) limiting access to certain types of information, services, or applications; (iii) using virtualization techniques to limit processing and storage activities to servers or other system components provisioned by the organization; and (iv) agreeing to terms and conditions for usage. For personally owned devices, organizations consult with the Office of the General Counsel regarding legal issues associated with using such devices in operational environments, including, for example, requirements for conducting forensic analyses during investigations after an incident.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AC-20(4)</span>
+                            </th>
+                            <td>
+                                USE OF EXTERNAL INFORMATION SYSTEMS | NETWORK ACCESSIBLE STORAGE DEVICES<br/>
+                                <strong>The organization prohibits the use of [Assignment: organization-defined network accessible storage devices] in external information systems.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Network accessible storage devices in external information systems include, for example, online storage devices in public, hybrid, or community cloud-based systems.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div><div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>FIPS Publication 199</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#199">http://csrc.nist.gov/publications/PubsFIPS.html#199</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="../impact/low.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="../impact/moderate.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="../impact/high.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="../Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="https://beta.nvd.nist.gov/800-53/Rev4/search">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+</form>
+</body>
+</html>

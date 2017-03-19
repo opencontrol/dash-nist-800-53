@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html  >
+<head id="head"><title>
+	NVD - Control
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="SI-7.html" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+</div>
+    
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="SI-7.html#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="SI-7.html#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="SI-7.html#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SI-7 <small>SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY</small></h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM&#32;AND&#32;INFORMATION&#32;INTEGRITY.html">SI - SYSTEM AND INFORMATION INTEGRITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="https://beta.nvd.nist.gov/800-53/Rev4/class/"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            SI-7 (<a href="SI-7.html#enhancement-1">1</a>) (<a href="SI-7.html#enhancement-7">7</a>)
+                                        </td>
+                                        <td>
+                                            SI-7 (<a href="SI-7.html#enhancement-1">1</a>) (<a href="SI-7.html#enhancement-2">2</a>) (<a href="SI-7.html#enhancement-5">5</a>) (<a href="SI-7.html#enhancement-7">7</a>) (<a href="SI-7.html#enhancement-14">14</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="SI-7.html#Rev4Statements">Revision 4 Statements</a><br />
+                        <a href="SI-7.html#controlDescription">Control Description</a><br />
+                        <a href="SI-7.html#supplementalGuidance">Supplemental Guidance</a><br />
+                        <a href="SI-7.html#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="https://beta.nvd.nist.gov/800-53/Rev4/home">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM&#32;AND&#32;INFORMATION&#32;INTEGRITY.html">SI</a>
+                    &gt; <strong>SI-7</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization employs integrity verification tools to detect unauthorized changes to [Assignment: organization-defined software, firmware, and information].</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Unauthorized changes to software, firmware, and information can occur due to errors or malicious activity (e.g., tampering). Software includes, for example, operating systems (with key internal components such as kernels, drivers), middleware, and applications. Firmware includes, for example, the Basic Input Output System (BIOS). Information includes metadata such as security attributes associated with information. State-of-the-practice integrity-checking mechanisms (e.g., parity checks, cyclical redundancy checks, cryptographic hashes) and associated tools can automatically monitor the integrity of information systems and hosted applications.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-12">SA-12</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-8">SC-8</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-13">SC-13</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-3">SI-3</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SI-7(1)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | INTEGRITY CHECKS<br/>
+                                <strong>The information system performs an integrity check of [Assignment: organization-defined software, firmware, and information] [Selection (one or more): at startup; at [Assignment: organization-defined transitional states or security-relevant events]; [Assignment: organization-defined frequency]].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Security-relevant events include, for example, the identification of a new threat to which organizational information systems are susceptible, and the installation of new hardware, software, or firmware. Transitional states include, for example, system startup, restart, shutdown, and abort.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SI-7(2)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | AUTOMATED NOTIFICATIONS OF INTEGRITY VIOLATIONS<br/>
+                                <strong>The organization employs automated tools that provide notification to [Assignment: organization-defined personnel or roles] upon discovering discrepancies during integrity verification.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The use of automated tools to report integrity violations and to notify organizational personnel in a timely matter is an essential precursor to effective risk response. Personnel having an interest in integrity violations include, for example, mission/business owners, information system owners, systems administrators, software developers, systems integrators, and information security officers.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SI-7(3)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | CENTRALLY-MANAGED INTEGRITY TOOLS<br/>
+                                <strong>The organization employs centrally managed integrity verification tools.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AU-3.html">AU-3</a>,&nbsp;<a href="SI-2.html">SI-2</a>,&nbsp;<a href="SI-8.html">SI-8</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SI-7(4)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | TAMPER-EVIDENT PACKAGING<br/>
+                                <strong>[Withdrawn: Incorporated into SA-12].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SI-7(5)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS<br/>
+                                <strong>The information system automatically [Selection (one or more): shuts the information system down; restarts the information system; implements [Assignment: organization-defined security safeguards]] when integrity violations are discovered.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations may define different integrity checking and anomaly responses: (i) by type of information (e.g., firmware, software, user data); (ii) by specific information (e.g., boot firmware, boot firmware for a specific types of machines); or (iii) a combination of both. Automatic implementation of specific safeguards within organizational information systems includes, for example, reversing the changes, halting the information system, or triggering audit alerts when unauthorized modifications to critical security files occur.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">SI-7(6)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | CRYPTOGRAPHIC PROTECTION<br/>
+                                <strong>The information system implements cryptographic mechanisms to detect unauthorized changes to software, firmware, and information.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Cryptographic mechanisms used for the protection of integrity include, for example, digital signatures and the computation and application of signed hashes using asymmetric cryptography, protecting the confidentiality of the key used to generate the hash, and using the public key to verify the hash information.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SC-13.html">SC-13</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">SI-7(7)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | INTEGRATION OF DETECTION AND RESPONSE<br/>
+                                <strong>The organization incorporates the detection of unauthorized [Assignment: organization-defined security-relevant changes to the information system] into the organizational incident response capability.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement helps to ensure that detected events are tracked, monitored, corrected, and available for historical purposes. Maintaining historical records is important both for being able to identify and discern adversary actions over an extended period of time and for possible legal actions. Security-relevant changes include, for example, unauthorized changes to established configuration settings or unauthorized elevation of information system privileges.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="IR-4.html">IR-4</a>,&nbsp;<a href="IR-5.html">IR-5</a>,&nbsp;<a href="SI-4.html">SI-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">SI-7(8)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | AUDITING CAPABILITY FOR SIGNIFICANT EVENTS<br/>
+                                <strong>The information system, upon detection of a potential integrity violation, provides the capability to audit the event and initiates the following actions: [Selection (one or more): generates an audit record; alerts current user; alerts [Assignment: organization-defined personnel or roles]; [Assignment: organization-defined other actions]].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations select response actions based on types of software, specific software, or information for which there are potential integrity violations.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>,&nbsp;<a href="AU-6.html">AU-6</a>,&nbsp;<a href="AU-12.html">AU-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">SI-7(9)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | VERIFY BOOT PROCESS<br/>
+                                <strong>The information system verifies the integrity of the boot process of [Assignment: organization-defined devices].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Ensuring the integrity of boot processes is critical to starting devices in known/trustworthy states. Integrity verification mechanisms provide organizational personnel with assurance that only trusted code is executed during boot processes.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">SI-7(10)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | PROTECTION OF BOOT FIRMWARE<br/>
+                                <strong>The information system implements [Assignment: organization-defined security safeguards] to protect the integrity of boot firmware in [Assignment: organization-defined devices].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Unauthorized modifications to boot firmware may be indicative of a sophisticated, targeted cyber attack. These types of cyber attacks can result in a permanent denial of service (e.g., if the firmware is corrupted) or a persistent malicious code presence (e.g., if code is embedded within the firmware). Devices can protect the integrity of the boot firmware in organizational information systems by: (i) verifying the integrity and authenticity of all updates to the boot firmware prior to applying changes to the boot devices; and (ii) preventing unauthorized processes from modifying the boot firmware.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-11">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_EnhancementNameDT">SI-7(11)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | CONFINED ENVIRONMENTS WITH LIMITED PRIVILEGES<br/>
+                                <strong>The organization requires that [Assignment: organization-defined user-installed software] execute in a confined physical or virtual machine environment with limited privileges.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations identify software that may be of greater concern with regard to origin or potential for containing malicious code. For this type of software, user installations occur in confined environments of operation to limit or contain damage from malicious code that may be executed.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-12">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_EnhancementNameDT">SI-7(12)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | INTEGRITY VERIFICATION<br/>
+                                <strong>The organization requires that the integrity of [Assignment: organization-defined user-installed software] be verified prior to execution.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations verify the integrity of user-installed software prior to execution to reduce the likelihood of executing malicious code or code that contains errors from unauthorized modifications. Organizations consider the practicality of approaches to verifying software integrity including, for example, availability of checksums of adequate trustworthiness from software developers or vendors.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-13">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_EnhancementNameDT">SI-7(13)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | CODE EXECUTION IN PROTECTED ENVIRONMENTS<br/>
+                                <strong>The organization allows execution of binary or machine-executable code obtained from sources with limited or no warranty and without the provision of source code only in confined physical or virtual machine environments and with the explicit approval of [Assignment: organization-defined personnel or roles].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement applies to all sources of binary or machine-executable code including, for example, commercial software/firmware and open source software.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-14">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_EnhancementNameDT">SI-7(14)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | BINARY OR MACHINE EXECUTABLE CODE<br/>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SI-7 (14)(a)</th>
+                                                <td><pre>Prohibits the use of binary or machine-executable code from sources with limited or no warranty and without the provision of source code; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SI-7 (14)(b)</th>
+                                                <td><pre>Provides exceptions to the source code requirement only for compelling mission/operational requirements and with the approval of the authorizing official.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement applies to all sources of binary or machine-executable code including, for example, commercial software/firmware and open source software. Organizations assess software products without accompanying source code from sources with limited or no warranty for potential security impacts. The assessments address the fact that these types of software products may be very difficult to review, repair, or extend, given that organizations, in most cases, do not have access to the original source code, and there may be no owners who could make such repairs on behalf of organizations.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SA-5.html">SA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-15">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_EnhancementNameDT">SI-7(15)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | CODE AUTHENTICATION<br/>
+                                <strong>The information system implements cryptographic mechanisms to authenticate [Assignment: organization-defined software or firmware components] prior to installation.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Cryptographic authentication includes, for example, verifying that software or firmware components have been digitally signed using certificates recognized and approved by organizations. Code signing is an effective method to protect against malicious code.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-16">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_EnhancementNameDT">SI-7(16)</span>
+                            </th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | TIME LIMIT ON PROCESS EXECUTION W/O SUPERVISION<br/>
+                                <strong>The organization does not allow processes to execute without supervision for more than [Assignment: organization-defined time period].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement addresses processes for which normal execution periods can be determined and situations in which organizations exceed such periods. Supervision includes, for example, operating system timers, automated responses, or manual oversight and response when information system process anomalies occur.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div><div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-147</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-147">http://csrc.nist.gov/publications/PubsSPs.html#800-147</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-155</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-155">http://csrc.nist.gov/publications/PubsSPs.html#800-155</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="../impact/low.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="../impact/moderate.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="../impact/high.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="../Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="https://beta.nvd.nist.gov/800-53/Rev4/search">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+</form>
+</body>
+</html>

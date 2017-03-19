@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html  >
+<head id="head"><title>
+	NVD - Control
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="SA-17.html" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+</div>
+    
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="SA-17.html#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="SA-17.html#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="SA-17.html#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SA-17 <small>DEVELOPER SECURITY ARCHITECTURE AND DESIGN</small></h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM&#32;AND&#32;SERVICES&#32;ACQUISITION.html">SA - SYSTEM AND SERVICES ACQUISITION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="https://beta.nvd.nist.gov/800-53/Rev4/class/"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            SA-17
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="SA-17.html#Rev4Statements">Revision 4 Statements</a><br />
+                        <a href="SA-17.html#controlDescription">Control Description</a><br />
+                        <a href="SA-17.html#supplementalGuidance">Supplemental Guidance</a><br />
+                        <a href="SA-17.html#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="https://beta.nvd.nist.gov/800-53/Rev4/home">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM&#32;AND&#32;SERVICES&#32;ACQUISITION.html">SA</a>
+                    &gt; <strong>SA-17</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization requires the developer of the information system, system component, or information system service to produce a design specification and security architecture that:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"><p>
+a.
+Is consistent with and supportive of the organization�s security architecture which is established within and is an integrated part of the organization�s enterprise architecture;
+</p>
+<p>
+b.
+Accurately and completely describes the required security functionality, and the allocation of security controls among physical and logical components; and
+</p>
+<p>
+c.
+Expresses how individual security functions, mechanisms, and services work together to provide required security capabilities and a unified approach to protection.
+</p>
+</p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control is primarily directed at external developers, although it could also be used for internal (in-house) development. In contrast, PL-8 is primarily directed at internal developers to help ensure that organizations develop an information security architecture and such security architecture is integrated or tightly coupled to the enterprise architecture. This distinction is important if/when organizations outsource the development of information systems, information system components, or information system services to external entities, and there is a requirement to demonstrate consistency with the organization�s enterprise architecture and information security architecture.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-8">PL-8</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-7">PM-7</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-3">SA-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-8">SA-8</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SA-17(1)</span>
+                            </th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | FORMAL POLICY MODEL<br/>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-17 (1)(a)</th>
+                                                <td><pre>Produce, as an integral part of the development process, a formal policy model describing the [Assignment: organization-defined elements of organizational security policy] to be enforced; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (1)(b)</th>
+                                                <td><pre>Prove that the formal policy model is internally consistent and sufficient to enforce the defined elements of the organizational security policy when implemented.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Formal models describe specific behaviors or security policies using formal languages, thus enabling the correctness of those behaviors/policies to be formally proven. Not all components of information systems can be modeled, and generally, formal specifications are scoped to specific behaviors or policies of interest (e.g., nondiscretionary access control policies). Organizations choose the particular formal modeling language and approach based on the nature of the behaviors/policies to be described and the available tools. Formal modeling tools include, for example, Gypsy and Zed.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SA-17(2)</span>
+                            </th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | SECURITY-RELEVANT COMPONENTS<br/>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-17 (2)(a)</th>
+                                                <td><pre>Define security-relevant hardware, software, and firmware; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (2)(b)</th>
+                                                <td><pre>Provide a rationale that the definition for security-relevant hardware, software, and firmware is complete.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Security-relevant hardware, software, and firmware represent the portion of the information system, component, or service that must be trusted to perform correctly in order to maintain required security properties.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SA-5.html">SA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SA-17(3)</span>
+                            </th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | FORMAL CORRESPONDENCE<br/>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-17 (3)(a)</th>
+                                                <td><pre>Produce, as an integral part of the development process, a formal top-level specification that specifies the interfaces to security-relevant hardware, software, and firmware in terms of exceptions, error messages, and effects;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (3)(b)</th>
+                                                <td><pre>Show via proof to the extent feasible with additional informal demonstration as necessary, that the formal top-level specification is consistent with the formal policy model;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (3)(c)</th>
+                                                <td><pre>Show via informal demonstration, that the formal top-level specification completely covers the interfaces to security-relevant hardware, software, and firmware;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (3)(d)</th>
+                                                <td><pre>Show that the formal top-level specification is an accurate description of the implemented security-relevant hardware, software, and firmware; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (3)(e)</th>
+                                                <td><pre>Describe the security-relevant hardware, software, and firmware mechanisms not addressed in the formal top-level specification but strictly internal to the security-relevant hardware, software, and firmware.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Correspondence is an important part of the assurance gained through modeling. It demonstrates that the implementation is an accurate transformation of the model, and that any additional code or implementation details present have no impact on the behaviors or policies being modeled. Formal methods can be used to show that the high-level security properties are satisfied by the formal information system description, and that the formal system description is correctly implemented by a description of some lower level, for example a hardware description. Consistency between the formal top-level specification and the formal policy models is generally not amenable to being fully proven. Therefore, a combination of formal/informal methods may be needed to show such consistency. Consistency between the formal top-level specification and the implementation may require the use of an informal demonstration due to limitations in the applicability of formal methods to prove that the specification accurately reflects the implementation. Hardware, software, and firmware mechanisms strictly internal to security-relevant hardware, software, and firmware include, for example, mapping registers and direct memory input/output.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SA-5.html">SA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SA-17(4)</span>
+                            </th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | INFORMAL CORRESPONDENCE<br/>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-17 (4)(a)</th>
+                                                <td><pre>Produce, as an integral part of the development process, an informal descriptive top-level specification that specifies the interfaces to security-relevant hardware, software, and firmware in terms of exceptions, error messages, and effects;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (4)(b)</th>
+                                                <td><pre>Show via [Selection: informal demonstration, convincing argument with formal methods as feasible] that the descriptive top-level specification is consistent with the formal policy model;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (4)(c)</th>
+                                                <td><pre>Show via informal demonstration, that the descriptive top-level specification completely  covers the interfaces to security-relevant hardware, software, and firmware;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (4)(d)</th>
+                                                <td><pre>Show that the descriptive top-level specification is an accurate description of the interfaces to security-relevant hardware, software, and firmware; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (4)(e)</th>
+                                                <td><pre>Describe the security-relevant hardware, software, and firmware mechanisms not addressed in the descriptive top-level specification but strictly internal to the security-relevant hardware, software, and firmware.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Correspondence is an important part of the assurance gained through modeling. It demonstrates that the implementation is an accurate transformation of the model, and that any additional code or implementation details present has no impact on the behaviors or policies being modeled. Consistency between the descriptive top-level specification (i.e., high-level/low-level design) and the formal policy model is generally not amenable to being fully proven. Therefore, a combination of formal/informal methods may be needed to show such consistency. Hardware, software, and firmware mechanisms strictly internal to security-relevant hardware, software, and firmware include, for example, mapping registers and direct memory input/output.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SA-5.html">SA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SA-17(5)</span>
+                            </th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | CONCEPTUALLY SIMPLE DESIGN<br/>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-17 (5)(a)</th>
+                                                <td><pre>Design and structure the security-relevant hardware, software, and firmware to use a complete, conceptually simple protection mechanism with precisely defined semantics; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (5)(b)</th>
+                                                <td><pre>Internally structure the security-relevant hardware, software, and firmware with specific regard for this mechanism.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SC-3.html">SC-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">SA-17(6)</span>
+                            </th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | STRUCTURE FOR TESTING<br/>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to structure security-relevant hardware, software, and firmware to facilitate testing.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SA-11.html">SA-11</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">SA-17(7)</span>
+                            </th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | STRUCTURE FOR LEAST PRIVILEGE<br/>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to structure security-relevant hardware, software, and firmware to facilitate controlling access with least privilege.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AC-5.html">AC-5</a>,&nbsp;<a href="AC-6.html">AC-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div><div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="../impact/low.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="../impact/moderate.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="../impact/high.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="../Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="https://beta.nvd.nist.gov/800-53/Rev4/search">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+</form>
+</body>
+</html>
