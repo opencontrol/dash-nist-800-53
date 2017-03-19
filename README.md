@@ -1,6 +1,10 @@
 # NIST 800-53 (Revision 4) Docset for Dash
 
-This repository contains the code and files to format the [NIST 800-53 (Revision 4)](https://beta.nvd.nist.gov/800-53/Rev4) security control documentation for [Dash](https://kapeli.com/dash). To generate:
+This repository contains the code and files to format the [NIST 800-53 (Revision 4)](https://beta.nvd.nist.gov/800-53/Rev4) security control documentation for [Dash](https://kapeli.com/dash).
+
+![screenshot](screenshot.png)
+
+## Generating
 
 1. Install dependencies.
     * [Dashing](https://github.com/technosophos/dashing)
