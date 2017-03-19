@@ -5,10 +5,23 @@ This repository contains the code and files to format the [NIST 800-53 (Revision
 1. Install dependencies.
     * [Dashing](https://github.com/technosophos/dashing)
     * [HTTrack](http://www.httrack.com/html/index.html)
+    * Ruby 1.9+. Run
+
+        ```sh
+        gem install bundler
+        bundle
+        ```
+
 1. Get the latest version of the documentation.
 
     ```sh
     ./download.sh
+    ```
+
+1. Run the documentation cleanup script.
+
+    ```sh
+    bundle exec ruby cleanup.rb
     ```
 
 1. Generate the docset.
