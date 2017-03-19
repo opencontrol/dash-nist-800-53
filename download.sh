@@ -3,13 +3,8 @@
 set -e
 set -x
 
-rm src/*.html
+cd src
 
-wget \
-  -r --no-parent \
-  -P src \
-  --convert-links --adjust-extension \
-  -nH  --cut-dirs=2 \
-  --reject "search" \
-  --wait=1 \
-  https://beta.nvd.nist.gov/800-53/Rev4
+rm -rf beta.nvd.nist.gov hts-cache
+
+httrack https://beta.nvd.nist.gov/800-53/Rev4

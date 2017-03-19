@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html  >
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 19:19:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="head"><title>
+	NVD - Control
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AU-6" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov/" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AU-6 <small>AUDIT REVIEW, ANALYSIS, AND REPORTING</small></h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU - AUDIT AND ACCOUNTABILITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AU-6
+                                        </td>
+                                        <td>
+                                            AU-6 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-3">3</a>)
+                                        </td>
+                                        <td>
+                                            AU-6 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-5">5</a>) (<a href="#enhancement-6">6</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br />
+                        <a href="#controlDescription">Control Description</a><br />
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br />
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU</a>
+                    &gt; <strong>AU-6</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"><p>
+a.
+Reviews and analyzes information system audit records [Assignment: organization-defined frequency] for indications of [Assignment: organization-defined inappropriate or unusual activity]; and
+</p>
+<p>
+b.
+Reports findings to [Assignment: organization-defined personnel or roles].
+</p>
+</p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Audit review, analysis, and reporting covers information security-related auditing performed by organizations including, for example, auditing that results from monitoring of account usage, remote access, wireless connectivity, mobile device connection, configuration settings, system component inventory, use of maintenance tools and nonlocal maintenance, physical access, temperature and humidity, equipment delivery and removal, communications at the information system boundaries, use of mobile code, and use of VoIP. Findings can be reported to organizational entities that include, for example, incident response team, help desk, information security group/department. If organizations are prohibited from reviewing and analyzing audit information or unable to conduct such activities (e.g., in certain national security applications or systems), the review/analysis may be carried out by other organizations granted such authority.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-6">AC-6</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AT-3">AT-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-7">AU-7</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-16">AU-16</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-7">CA-7</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-5">CM-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-10">CM-10</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-11">CM-11</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-3">IA-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-5">IA-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-5">IR-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-6">IR-6</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-4">MA-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-4">MP-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-3">PE-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-6">PE-6</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-14">PE-14</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-16">PE-16</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=RA-5">RA-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-7">SC-7</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-18">SC-18</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-19">SC-19</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-3">SI-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-4">SI-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-7">SI-7</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AU-6(1)</span>
+                            </th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | PROCESS INTEGRATION<br/>
+                                <strong>The organization employs automated mechanisms to integrate audit review, analysis, and reporting processes to support organizational processes for investigation and response to suspicious activities.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizational processes benefiting from integrated audit review, analysis, and reporting include, for example, incident response, continuous monitoring, contingency planning, and Inspector General audits.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AU-12.html">AU-12</a>,&nbsp;<a href="PM-7.html">PM-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AU-6(2)</span>
+                            </th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | AUTOMATED SECURITY ALERTS<br/>
+                                <strong>[Withdrawn: Incorporated into SI-4].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AU-6(3)</span>
+                            </th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | CORRELATE AUDIT REPOSITORIES<br/>
+                                <strong>The organization analyzes and correlates audit records across different repositories to gain organization-wide situational awareness.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organization-wide situational awareness includes awareness across all three tiers of risk management (i.e., organizational, mission/business process, and information system) and supports cross-organization awareness.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AU-12.html">AU-12</a>,&nbsp;<a href="IR-4.html">IR-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AU-6(4)</span>
+                            </th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | CENTRAL REVIEW AND ANALYSIS<br/>
+                                <strong>The information system provides the capability to centrally review and analyze audit records from multiple components within the system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Automated mechanisms for centralized reviews and analyses include, for example, Security Information Management products.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>,&nbsp;<a href="AU-12.html">AU-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AU-6(5)</span>
+                            </th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | INTEGRATION / SCANNING AND MONITORING CAPABILITIES<br/>
+                                <strong>The organization integrates analysis of audit records with analysis of [Selection (one or more): vulnerability scanning information; performance data; information system monitoring information; [Assignment: organization-defined data/information collected from other sources]] to further enhance the ability to identify inappropriate or unusual activity.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement does not require vulnerability scanning, the generation of performance data, or information system monitoring. Rather, the enhancement requires that the analysis of information being otherwise produced in these areas is integrated with the analysis of audit information. Security Event and Information Management System tools can facilitate audit record aggregation/consolidation from multiple information system components as well as audit record correlation and analysis. The use of standardized audit record analysis scripts developed by organizations (with localized script adjustments, as necessary) provides more cost-effective approaches for analyzing audit record information collected. The correlation of audit record information with vulnerability scanning information is important in determining the veracity of vulnerability scans and correlating attack detection events with scanning results. Correlation with performance data can help uncover denial of service attacks or cyber attacks resulting in unauthorized use of resources. Correlation with system monitoring information can assist in uncovering attacks and in better relating audit information to operational situations.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AU-12.html">AU-12</a>,&nbsp;<a href="IR-4.html">IR-4</a>,&nbsp;<a href="RA-5.html">RA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">AU-6(6)</span>
+                            </th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | CORRELATION WITH PHYSICAL MONITORING<br/>
+                                <strong>The organization correlates information from audit records with information obtained from monitoring physical access to further enhance the ability to identify suspicious, inappropriate, unusual, or malevolent activity.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The correlation of physical audit information and audit logs from information systems may assist organizations in identifying examples of suspicious behavior or supporting evidence of such behavior. For example, the correlation of an individual�s identity for logical access to certain information systems with the additional physical security information that the individual was actually present at the facility when the logical access occurred, may prove to be useful in investigations.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">AU-6(7)</span>
+                            </th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | PERMITTED ACTIONS<br/>
+                                <strong>The organization specifies the permitted actions for each [Selection (one or more): information system process; role; user] associated with the review, analysis, and reporting of audit information.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations specify permitted actions for information system processes, roles, and/or users associated with the review, analysis, and reporting of audit records through account management techniques. Specifying permitted actions on audit information is a way to enforce the principle of least privilege. Permitted actions are enforced by the information system and include, for example, read, write, execute, append, and delete.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">AU-6(8)</span>
+                            </th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | FULL TEXT ANALYSIS OF PRIVILEGED COMMANDS<br/>
+                                <strong>The organization performs a full text analysis of audited privileged commands in a physically distinct component or subsystem of the information system, or other information system that is dedicated to that analysis.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement requires a distinct environment for the dedicated analysis of audit information related to privileged users without compromising such information on the information system where the users have elevated privileges including the capability to execute privileged commands. Full text analysis refers to analysis that considers the full text of privileged commands (i.e., commands and all parameters) as opposed to analysis that considers only the name of the command. Full text analysis includes, for example, the use of pattern matching and heuristics.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AU-3.html">AU-3</a>,&nbsp;<a href="AU-9.html">AU-9</a>,&nbsp;<a href="AU-11.html">AU-11</a>,&nbsp;<a href="AU-12.html">AU-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">AU-6(9)</span>
+                            </th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | CORRELATION WITH INFORMATION FROM NONTECHNICAL SOURCES<br/>
+                                <strong>The organization correlates information from nontechnical sources with audit information to enhance organization-wide situational awareness.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Nontechnical sources include, for example, human resources records documenting organizational policy violations (e.g., sexual harassment incidents, improper use of organizational information assets). Such information can lead organizations to a more directed analytical effort to detect potential malicious insider activity. Due to the sensitive nature of the information available from nontechnical sources, organizations limit access to such information to minimize the potential for the inadvertent release of privacy-related information to individuals that do not have a need to know. Thus, correlation of information from nontechnical sources with audit information generally occurs only when individuals are suspected of being involved in a security incident. Organizations obtain legal advice prior to initiating such actions.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AT-2.html">AT-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">AU-6(10)</span>
+                            </th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | AUDIT LEVEL ADJUSTMENT<br/>
+                                <strong>The organization adjusts the level of audit review, analysis, and reporting within the information system when there is a change in risk based on law enforcement information, intelligence information, or other credible sources of information.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The frequency, scope, and/or depth of the audit review, analysis, and reporting may be adjusted to meet organizational needs based on new information received.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div><div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="../impact/low-2.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="../impact/moderate-2.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="../impact/high-2.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="../../Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="../search.html">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov/" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov/" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 19:19:39 GMT -->
+</html>

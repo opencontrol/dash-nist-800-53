@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html  >
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SI-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 19:19:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="head"><title>
+	NVD - Control
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SI-2" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov/" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SI-2 <small>FLAW REMEDIATION</small></h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20INFORMATION%20INTEGRITY-2.html">SI - SYSTEM AND INFORMATION INTEGRITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            SI-2
+                                        </td>
+                                        <td>
+                                            SI-2 (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                        <td>
+                                            SI-2 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br />
+                        <a href="#controlDescription">Control Description</a><br />
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br />
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20INFORMATION%20INTEGRITY-2.html">SI</a>
+                    &gt; <strong>SI-2</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"><p>
+a.
+Identifies, reports, and corrects information system flaws;
+</p>
+<p>
+b.
+Tests software and firmware updates related to flaw remediation for effectiveness and potential side effects before installation;
+</p>
+<p>
+c.
+Installs security-relevant software and firmware updates within [Assignment: organization-defined time period] of the release of the updates; and
+</p>
+<p>
+d.
+Incorporates flaw remediation into the organizational configuration management process.
+</p>
+</p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Organizations identify information systems affected by announced software flaws including potential vulnerabilities resulting from those flaws, and report this information to designated organizational personnel with information security responsibilities. Security-relevant software updates include, for example, patches, service packs, hot fixes, and anti-virus signatures. Organizations also address flaws discovered during security assessments, continuous monitoring, incident response activities, and system error handling. Organizations take advantage of available resources such as the Common Weakness Enumeration (CWE) or Common Vulnerabilities and Exposures (CVE) databases in remediating flaws discovered in organizational information systems. By incorporating flaw remediation into ongoing configuration management processes, required/anticipated remediation actions can be tracked and verified. Flaw remediation actions that can be tracked and verified include, for example, determining whether organizations follow US-CERT guidance and Information Assurance Vulnerability Alerts. Organization-defined time periods for updating security-relevant software and firmware may vary based on a variety of factors including, for example, the security category of the information system or the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw). Some types of flaw remediation may require more testing than other types. Organizations determine the degree and type of testing needed for the specific type of flaw remediation activity under consideration and also the types of changes that are to be configuration-managed. In some situations, organizations may determine that the testing of software and/or firmware updates is not necessary or practical, for example, when implementing simple anti-virus signature updates. Organizations may also consider in testing decisions, whether security-relevant software or firmware updates are obtained from authorized sources with appropriate digital signatures.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-2">CA-2</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-7">CA-7</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-3">CM-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-5">CM-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-8">CM-8</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-2">MA-2</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-4">IR-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=RA-5">RA-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-10">SA-10</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-11">SA-11</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-11">SI-11</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SI-2(1)</span>
+                            </th>
+                            <td>
+                                FLAW REMEDIATION | CENTRAL MANAGEMENT<br/>
+                                <strong>The organization centrally manages the flaw remediation process.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Central management is the organization-wide management and implementation of flaw remediation processes. Central management includes planning, implementing, assessing, authorizing, and monitoring the organization-defined, centrally managed flaw remediation security controls.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SI-2(2)</span>
+                            </th>
+                            <td>
+                                FLAW REMEDIATION | AUTOMATED FLAW REMEDIATION STATUS<br/>
+                                <strong>The organization employs automated mechanisms [Assignment: organization-defined frequency] to determine the state of information system components with regard to flaw remediation.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="CM-6.html">CM-6</a>,&nbsp;<a href="SI-4.html">SI-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SI-2(3)</span>
+                            </th>
+                            <td>
+                                FLAW REMEDIATION | TIME TO REMEDIATE FLAWS / BENCHMARKS FOR CORRECTIVE ACTIONS<br/>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SI-2 (3)(a)</th>
+                                                <td><pre>Measures the time between flaw identification and flaw remediation; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SI-2 (3)(b)</th>
+                                                <td><pre>Establishes [Assignment: organization-defined benchmarks] for taking corrective actions.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement requires organizations to determine the current time it takes on the average to correct information system flaws after such flaws have been identified, and subsequently establish organizational benchmarks (i.e., time frames) for taking corrective actions. Benchmarks can be established by type of flaw and/or severity of the potential vulnerability if the flaw can be exploited.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SI-2(4)</span>
+                            </th>
+                            <td>
+                                FLAW REMEDIATION | AUTOMATED PATCH MANAGEMENT TOOLS<br/>
+                                <strong>[Withdrawn: Incorporated into SI-2].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SI-2(5)</span>
+                            </th>
+                            <td>
+                                FLAW REMEDIATION | AUTOMATIC SOFTWARE / FIRMWARE UPDATES<br/>
+                                <strong>The organization installs [Assignment: organization-defined security-relevant software and firmware updates] automatically to [Assignment: organization-defined information system components].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Due to information system integrity and availability concerns, organizations give careful consideration to the methodology used to carry out automatic updates. Organizations must balance the need to ensure that the updates are installed as soon as possible with the need to maintain configuration management and with any mission or operational impacts that automatic updates might impose.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">SI-2(6)</span>
+                            </th>
+                            <td>
+                                FLAW REMEDIATION | REMOVAL OF PREVIOUS VERSIONS OF SOFTWARE / FIRMWARE<br/>
+                                <strong>The organization removes [Assignment: organization-defined software and firmware components] after updated versions have been installed.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Previous versions of software and/or firmware components that are not removed from the information system after updates have been installed may be exploited by adversaries. Some information technology products may remove older versions of software and/or firmware automatically from the information system.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div><div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-40</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-40">http://csrc.nist.gov/publications/PubsSPs.html#800-40</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-128</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-128">http://csrc.nist.gov/publications/PubsSPs.html#800-128</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="../impact/low-2.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="../impact/moderate-2.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="../impact/high-2.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="../../Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="../search.html">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov/" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov/" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SI-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 19:19:49 GMT -->
+</html>

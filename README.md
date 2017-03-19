@@ -2,7 +2,9 @@
 
 This repository contains the code and files to format the [NIST 800-53 (Revision 4)](https://beta.nvd.nist.gov/800-53/Rev4) security control documentation for [Dash](https://kapeli.com/dash). To generate:
 
-1. Install [dashing](https://github.com/technosophos/dashing).
+1. Install dependencies.
+    * [Dashing](https://github.com/technosophos/dashing)
+    * [HTTrack](http://www.httrack.com/html/index.html)
 1. Get the latest version of the documentation.
 
     ```sh

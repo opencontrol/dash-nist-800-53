@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html  >
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-17 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 19:19:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="head"><title>
+	NVD - Control
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-17" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="dEQioVKPCBiN3KDco4LPctMZbvpaes6a/OuGCDoAwKa7LYmpLA01aFL7ucfNd7uco0ZSvMvDWqrO3K+KM/S5KjydD0v5k0zjNgWZsbvpkfRVHEIe2ZtTQHiCKWR0ZxLgfzNDQrIwJlaXWOdn7FHYpU3UfyNnrg9lIX/OyRPHPitnR5dDQr9Vv2V/WnVxrhw9ZLNliPW940TYGZs8k4ISx7wANPVpiDkJRv2195MufidevnPHUIWKkza7aPHQ9KjNbSFhD8X7a3JvHLOm9YTx58tcG5E6X2Euv+zcycdGSbsqNAF3Jo48gZXPEUdXABtkjv2uGbreRyu2We1Tcem/+sJd3uThhuizRjyXp2iTMPiDW+4yw5w1u0jzSJcjD6LWDCHRnRSuUME5cYaz4fEk4OTDFMEgck60lOGCSI9X8OP+ijDKSj8KA5AYNJf9NdTwYVOVRGbMaLx0mak/ckznyJMv0cFwHvkX50PEc/MsQwJVpGtdzrFScVzxHgabIx9b3ao6GMAyXojzC4az5pz15tZkNoQVxWpiRLb/aML77tkDgCfNik7XEH72HbskCpmNCe4zF+jGpIe1hjFobX7nGf4DwAH9tqQuM7VcaMyOuUayZekesaFCGFFsKtJXVGtl4T5O5NPFqOUV1Zhm9KYPvzCmQVZ1OXW5o4+GpvIVtPDXKaFTyRBBWmgFe4y1K22iBQ/z5wQwdySvknR7yypw5jvVaoAcCn3FR4laITf7NKrXwLc1J4bgBRS9yHBDL4CdKYk3jI9rYSyfYpvNtKHbYisyMrvUQfr07rSLI9V/FFwYI55zmXYERUPv5SO6+pe2wQNmAzowy1QvthQb0IAE4rqrFu7PpsjFcMBEwmPohhzzYfmZUIVcMtUD5ov6MY7nQ03/yALykNgAFnsjGs2O8dvWA0gn0WSR9ukUH2plpUMtXdDjZi4vl8WLEHT6wW/n8Fp8UHFte2pIk2gmGu/sOdFvnusKBTZ+d5n6ooaTBUgWJ93Ze0MRUSaP782cwH/ZDNgycSNpw3mha896Q33LCROUjKdQj+wnj6MP9TAcbPl5L5uZRLRKryiEvb3QbOJx34DUuFwuzx1JSobnWwiMWe5CYatk378nPNhxpqjsqt0xTZjxGfcVLoFvpk621w+Aw7t5V9dq3Fj+0RycC5eIgSKkvFcGGEp/lskXoaf7UTrT9ynFZFi9UtdXmRYGbhgba2X83KyAG4PfpmkgpjEyDL8z59pAC5EnMYF7CbjHYDYOQtwUQSgN8mk0H6ezZktwOD0jJsh8l4Thj/lYutlbkgd++mSmXN67MOPpmUKl9OezETZEu6T2tEKb/GKjiROkho/SlE9KARrzth7jmO61/F0yUUsKuSgecGQxOm8Gbc8LAyFdOsC8KZiVvcHD+lVMlpnozHzA6fhHdpKuU5QIyE/jo/5+xw8FtkDzbZ5w/hTb29N6VDt2/7oS2jXjoaGxIYo0UjuVdBZwFgEonzDJ2ZklpxIcjMe5n/69uYdgTBVLiBdWUq6tVJN4hISEVBaHMvuHbiV20YGrj5ZUUHEFz6qWJnxGlfodkVChQHvoBQ+X7s2ywhNJKJJfQ9107iySRsJ/6yvwIVh50WaHj+s4+y2334dqEHOEJ9UBBhgW7F35oSiGxWtTWUS6hcFZ6v5od4+uOsVjoOP1j0LtqtCIu8vrotFTfl9WRzEHJdotDt/hPvOesLwwvfrfmIIq7f5WIsB8YeY1XKlPtXnihZPA7Lsvyfpg7YgMx508oD2BXGAdSc927LTATkSTb30WViwUIc4LcY4SUMRtsWKq9I4XqLbo84yiqL3ZZVqx5fwQGVBHh/x8eyke/Cvhnl5yzlSoWYJgV3Eg3RIO+Kqjj3SfL9jQrLwgXn1Vcm4EE2UOlJpOC1Pw9bAXKAtLit8QDVtvmFdLPMVm1ayAgrBUyDxVdfKeB9AXNT2Rq4VtRHTm2PjOvRwZqDafm7Oy0Ikb5G0/5WLLWY/UIt35btEj2locwIOXbcyTPRkv9XHG5n5A4ctxqLdfI9daIrFGEAYCAP9FGV/pSTiR+pNk7yH9KQGrYOLU3PTRkUUj+oUOjEUrEP1ExFnh/80ZN/flTuRe1nLymCi0ccYXRCW06ukJCXch7u+qVUPlRNVIhLAfZlxX1Aue1yUVBvoTM4vUgw//ybr9Ir1bbGyCOJxG7PMeK/2xYuh833f8bXG/lP1SEfbbkBeLR1dC3ldqnHQesHoF9bE3IGXytSCHwq8eIs0ShAcOD5BT+sFHbK4SxODE/1MPhYEXZle4yCNhpaeZO8o7/lA6wcOLgifJOK0N3KmCbEWnQunrl0apFxTQU0uMgDX30HJwndQnPvqjicYDQR99LAQN35gaiUsbGwjl8Dz3tssnb2+fslJSuovHMUoTaGSN488YuHb6Ze0HI5uEH9lXRKRwI5TUdGTUjapibScc8063gGs4LSFSmeFjd/kTCmmo1/E3OyktjnzqRtApKja4OPF0bC8t/BaWVDE+5bDJh7MWn6RcvB0ju/hAnTxi3Is5qwCxVtDOIUTsm22LcCRLuiudravtsSOdVCtl9MYDWA3TqJ4W2TC8m9T03AAYyoWYcVKCpENeBG61Vs3Oyhv/lOrSAQs3ljYGz5jP7gxorqcgJWtCi61pn4VfQx3ZWaVw9H+kPJQjpJdmz4BBNAHqHf8ZV9GbHRCGZFs86IBB7gX1q2WxInCmyfEPG+xyL7l0c45rhAtcvGh8aQeZ8I+MbnezfU8N8v8QwV+DmG+F7i7kcWQzvZTt41gIQQkaCvBatQKieClobrE2xSsiPXGbRkAvM18lNkp8toNn3yP4yIQWUTT44AugjsQrV83SKb89elswYvptgblZYhL1TqwuM4r4s/gKDt7JBmEi34YW15RnO8u8XyNZL0rB2iWuidxExvTGs+bB4gr6KH6avZEpSmnlq8QVHjQtcognLM9WKr13zfwVZAUgbCbZLXe1NfdwaDd71Cd8x7csB8T/WLiweJVbM6nDHXy9zKtq9Fd9PoAM4e2eKA5tdjV7LySZ6CC0VBD0Q/so7GaOTC7ZTUt7q0rQ8feOuI0XYyHQqRL6ibxJvx43UMdzfk3LKipOVsM7SHJN6l3h3cSJq/EB8VtU20mPtzSEY6f1N3r7JDcymvrUspE/9WfANd+XZnQmo2v1FauWBLyMhMw5iZVK8CRBQlNtx7ILO8AH7+RoR6fdfGq6+sDa/x4PsbKjifu/Q90NexlnfuARzhyCEKqW2ErdhpSDMjmg2nT9syijeY/2JejKwXoq+FaKQYro7I33PiQijU3setJRur0m79Gn3Uk9wNfwv4ZxxHpNVmAgBpbTgHlYGOp20//yiJaYi2wyv3bsZhvVelNcai2oNaIOfHnQKwXJ1WTOqef2km+ksPaR9dER8GmoBPplhHOZ2kzfZ3z8Bin49zdggbzckeHTqmnEa/LfwWNXJqmNMryWAC3YE/VJWxQpESk/yyRuQRZmAxY7qbSOyhR0kd/b8xVmn2JeEEp8HnBWcaFtvWd7G7KCz90WMgpV+gNCOer4Uhs6IWRliUkfzm/t6EfcXhDEbdp2zklBttkcKXJBLsP/bAvyhAFa8HNgmPtp4hW5rz4yyeNQuzWIMA4I+7Fv9r/0E6nafuFAEbTKDchJZUtH3jwMVSONwk/RJqJbDIekRq6DpaQq2Pmmxq/v83FKdBsM4slI7C/a1kilq/0M0bcvm9mWjDNDVSvmBGexa4kHFllGwMnYke83B97WDLzVc2jq6TjArlCFVJTaz2MF6Uy4HS06Y1aU2fdd1LFaOaxce/xENuuTnAMG0J+55ktiP8kfNioiNAHo73FtrtosOY49D1K3FWvWgH2v/j+mnSCxJex2eouXPR1SKx/5rV44S3YVZ08aMsj54ncZ8CTsBmMAYnQVCgUmqW59Zq84TuZMU778Y/o9Fs4Ik8lGLEQYXaBslstaHc0PEtBjxo9vmIqyZPdTnSjntPmjPbYD7usKKZdZBaumCgLKNb8XQLSEmAGewhmrf+Uqa1UFPsaCIK3oSFjnvNG/4O0Mpa5Jh47bPdcuCcxOVR79hoN8LJBkj9Rs+28Xnhd3hbh5WkWd4LWbRCDVkLnbVwigtIlKGf8L+J1vV8qxHNlQH+efQri7XxLwE6m/hGwCN+wtMD5towz7wUZc9uKZFZCQraSBJTlk4K6tSFT6/06nG5lp0Spf8+XJjfNf+Z1B+Vuv/Z5mYZ5uTKI3jpV6KFBkr0TLdHbsO7h2OvfHIFgLT1GQ/pCJ8wDaoLFZokjd0gGs0Ji5EKj7FX+26opad6vKEnpIa1omLdoy5YZ6SSCWCfldoIaYQbbnxb+u+dtROS7KPRF8drVxmrykhCsHvOSTRNE+5dSO6gDUpWgaJXRGmfLQb6WtQZYeGmSYhn2jPUp0EJgwyhnMxyZPOEaXIQMbUkMh0ZRpUZpxFj3WkspMSsyoBqzZTRMlY0dFXFn+3tkebv/U73LzyIbkzzTc0Upn9KgckF9ggcpxj+RCXKrPlbnxnSxie1o8gzsuuVKLLyeh2NHL32fIzkyIkkbRSOsXjIOQWzRA76W9AshBDjdfTkprPIy3TdXSOK5v6IxV/7oQoj/Z4twYYOaEf9RHEgiSOVFVoIuPckgzCrkt/SHJS6D32nff0VJIRBKwUlef8AFwqTF9uih6KEXDlRg1OfjWZYM8BkZ5F7XjdmNJDCcDLGCnzN/HLPUcf7nYcBM5AZ9rRJDZiNWg0LL0FmT04MymuOdPLKwMXnzxXsS37rFMTeClUc2z4j+9Kgv2+z7qssRO8J5Kr850HNb6l1ubRpSFvKPEA5P1DSsDbddUT1KQWQjU4+z4jXKLOgtLezxhkpQe99HO/sarCfRKAgmR+TYFH6SM/zTsz1i8whb3IIoHSjMcgMl9UGktSSK5yk+4yhyiNkVtAK+c/hMhJqGNDEJob6r397NzAc9DkxqkCV91kPHlTBAyZnX2CRSK+jwLdVDKqRU2gOVLtrroitIt40JESrPvQV4I8HNYcBlNiPN7723DizdSVBQ2dRkqzrWBUnt90ZNZek3fHuhNFt3yzAKNaTCvMOGkVHjKXfePRvhEnvCxLMNnXjuRHY85y2Wz/PjBzm9j+U63XUHzbr+S/yHQI7VXdR3iBN47hJMtTl5rRIjeZqCiAT7MPQ9z1j60Z3zQXgHgcxTCfbBFaCn0oSNNPJ6GB68Zf7MWGKf8DN5mPZICqPlLv/w77LlJcTfWRJpgm07TJyQB6PzipwEwT/yzSUgj+ul182hn139bbOv/lPZuwewdH0WdlAjRY8lpgWBtlg0Yfbo20J1MuORmmcPs88+xsUtGsGwJJ2wDa2sXb76SAoRp+TIQkuU2BmLKx5mhaNxbVP0u36jvocpiq0hvLbV42t9llrA4o4k8yJVuTXnSOLszjw1DG698ySU0o4kv2itG6abOw2jflR7DuXdzzBdWoVb3mqtHfXe0KRqfY/dLQmb+gxAnCtrpiZ15ERt/SWIQzq9AT7P9OY1nSK2ztBJnpNXaa9eRF64PseR0LaosGHj5nqQeEOzXofYzVaTyYJiwJLGMAS0u9ng0nnchAejOQv+IzSLvhy2eQMhOVttBSlWqkADTDI/Pwtc4GoXuMjkLdEPKx2Cxk0yjbizama0RdIO9N4u5f7NHf6sFcqKgYaFH36E0XLru8xVWSlUAFGdutklFQQdWsUM2CaWv0rfUffbNPuFe0V/zuzlgiOXy+2ZugufYcz8wt6z6uS/+FLuvbE/tzZZ9KZr1+KhNtjKNb4rZX15YM+PMyK7UsQwUhzTKgD9KQS3DC8yTSvA1kDNaK4xNPp+0P2jbovUqHlzrL6qyJHtZcoFTCbmJfE4oc6n4xNZebp5+Cu7n3SUs49HS2nUjnTrPFiRSdYIAyRfYPS13e//2CaXcHEkBQIOSX+vkdr5n/J9aFoqtJYkviGQVs8IZkVKYb3KtcOFYky/Qq81saNKxZ5V64jjbzR40mQ50Jn1Dtmde9rbiBWGi6e5B6ALJqbdQvf09vCUB6Y9lh+5T/Zgk0SnMoC71PIx8Nvaq7j+8dcd+7RsnuWBCCe2kFqSPcw+m/yJZdwMnkIsmDBRgU8E5YcQWsuOHGcaJuBFQEqLp6b974fnuHVwM8dP/g1c+bwabUiDa3N+eSoaDrGR9sXI/Xe7xV0vWYSLqTX3YaJlkSGt4FZ+/cfFgWXN3e7fHieQPdeQl8S9jqAZ64SkU6GJzfNKKCK5eciI9OlYOzN0KJ1Ks2D+4tWCHZBj852k9Sh/BQn/krVL2orcOTgYnj3eb6JYm/5XGhGMRggwWph57pnDOGUx+uCvve/533T41S5LFnZqSsH8G2Cc4YBQHR3V6dtKLFYkquKu6X9n3DD6OQCINKlKiBZ+QJxAtHQlT1npjjUhz6lyFTn+BoqnslCYO2roEZc9O8y4hRGCaXdZViJLDk8Ix8vszh2IcSltJLDH5VkY7qoh/Lp70nBoFNLQZRLxwRYPYBe+6NICSTI9tA13e5xZ6XciZDZ03LcAUpUxXF1Hz878WGRLd4QhkuDj1WBafCMTwyiKGyUFhWabgT4vxvK7MiiOmzYrGX/nbEX5qg42gEeG3y6RIfpJrRFfnn55+HteNtQa+ZSRJ3i8ZmsVMZyJVMP0PjJfy3dyBDlxLbzlx5T7I6WNtVkck7hlmgRGzafdTMbSkbVtX9b5IoynqiKhqyg+W82vp994kgxz7tY3saamB61lrvoPhNa2Eg3n0oP6aFOyQNE1nqFN2Kz7RLPerMysVvE68LSm9Vm4adXu3XcPIDkwdW7YVBkO+OYUW8d/Shm3lSodM1rk+AQCESOIWzZUuOadpBNeBMAjQAMwg4mUkqpjSwYePk45fDZTcPsi2JP2RNztbM14q3N8Heec4mnc1eLk8Kt7k0WMebG2CZHkGVYBcfSSsBQVhbhtiJ97lDiETMYNN1TThaDyDn6boJcV3c9gcM+5qEYQ3tGyJ0swxajpXyPC8DRM3KhL24F2Rx/yPDdQlwREkZAfD3tH80vMsnzSQ43bKD7g8O2yB5Um/tccz6SREcmh1TxHKvHXnLEvXOwPYyMVd2FCZyLGQYvIi3aR7RfbzmjHm60XaDP6pxMdSka+T0SXYyK4WqkQolodvMqEJvLfQFYchx65b8kzOvdDyuoe1JOLN+6m68RokmnYS6dHADKojk6V1mz8gDzdXEMvmzkX2lpYdn1oApz2xktkzDHbt5/WFn2exR1978s/jhT0NO/KHdK7JwijcocAQDQe4zJ8EtHSH84PTQTdwjHBvfLqvKYWDjsWv7/4JPkxK8iZgkKIvS17Lyb41VpXFOBsyG9iLZVo3tbywoyTgFLHCp1hrmz/LYymvJslYHQUkW0R0gj8esQqRLeZkMownveatRYV6Zr7ZnBKJEGIa+1/dT+w1UFD1wClGTU9HSYcVheCZ+i9MvlpONTF/mEesXIVwDgm4mkl690viYAZP1xAyPs3RP3imB5O5xZ3wmv88TF5AtKeLXJMRUk4oOVmpfjgldCksZIrvlmC4Jt/BYpEteKvr0zG3RwHyjTHpQkRqw8O9G3zwzwDV6ScnpSMVVYXmL1wBH8K3BwfywZkRpQH8WNqWsr2UzvLwSuVHt/M/jOuMXnUE1waaA+OpAoNhjuKpEwnlwHDyulgMmUlXvaN39JWG0g8qO40VHfJAl8qAqzvdmjYCIFUZ60dXQSM4ZYaGrBpXM3ZkQgO5bX7MoCHUYdRq+xRvai3Eaggq1Td2hiwGZWzmhuH/rH3gIlIAQ7Sx08cOgL2rP/5nlZe4WYe7+T9gA1DCXNlOXL8hIzdrgdOET3uEyIcGwD7V/LRUvAwynmdKeoKb+oErdIw0B5tYCrOTWuVwhj41cwcn0+S7VpwyypGwgACtSmVt1Nvc66rB1zNa+usj0cODsPWY0P2u4YkxIIbSBxTfagJiJ/2UIJLuw4BrPbpTrRka2bFjuz9+elVBu2ebgRVaJhIcKLyza3CLQ+OD2ImkGmNfK+0oJeu2TEpH0hCTIYMOScz+zPjTdHJGr4wPZe4mlJaGEOHjDhHmw1WLMgua/OTa8DY/JQCTEVkEDsSKV+j386FyQcJGYj4CyS3QitbxllHbokjnImLNrFVLw7zodrLJ2FHxeyxA3BqtNxZg3Xhf3i01xf4vMWdz3eGArLe7IyjCrMbvoWAqWVRjPldwLRJfy1u0VtFergEEfWSgo85LlhxyEyd1nUtdeGXKzbsEyglFZJnxFe681zWwamRI3ibEG+Q7UOOSagixYDkEN6LID/x2yIHSwQ4MmCmcFhubeirOPrnj0AW54DuReL6DpmnpNcOIbsj8IimGb80u5fT+YJ//mCo7vZTbaJzvXZyb/dZ+u6EmKILgjBPzTN36itmFodpqsTKfGwtzUGBEX8RRvu5B6tTps/I+K1kd8XuPCtUOOxf58Bq8D5oZ0skGNiiyCWmA44f4tZ86ElYe7iNJp1UI+nNDZRCVKy7qqZ19PHCoNgec9QkeqPjDZilWw+rkF/thZ297dlo1l9PQBDMdpzohSr3tNujIWTa7s68xLOq2yLDcTF6/mm9OFi1tSvgeV0PdNQ52P3NLpy0nYMp/ryxlD4/KWG/t9LT+J9cjWjtSVpSd7II9RUSDlEiVq2mk5qa9gqDNHqSQNiP7pj2Pc2kH9VuJGF5g2AKQoNunlV135n5rOhujZEYqK+2LBm706ekRPuLOH/cU2N+dDrjJioRptq0D5IoAU9fv26hUwEKfzR5z/niwO1ZOW6hdrD+x8vybfM1b+eAR4bvSsqX7sHJyeOpbYJXBbAsme3VipDk92EpFSmxN+XdAsAC8RHTEogYiibShgtgLt9gbrWF6zy8vjqhGMg4OuK0mm/UI+sqQbWIR5ShRhpl2YuNaX0SxeHxXvz1AA5PhhFLJ7wD6+zMXDsPFqYGRD63yU8VoiqyIJMLtoYhu4pVIq1XK8uv5STrzF63trfBJQvFSKdGRWYUnCZkGLoWmQTqhvjqZJyYtJbduGJYqRMHK9WGbGLpsBj50yaCqJBUzW3LlwxG6BQ6AWAlN4PsYDAO9yD9Heo06HB0plrMCrrECllZE+Y1IC76sjUJenEar9WNYsIMDcFXRLtB0deLY+8lDr2jfdLvdm79RvABm+uzFVNKBlKkuryQX+f7Xa4m8Bvftre5eTyupP5rqRz7Gw5Q4/WQAajjGyUrzrF9UDYjrMiDISU2ngqHLS/492XSqISr0vObb166UT2xTrFZp7+RcyzpimUzvVMwf/OIKHehGyP9aFsZYOoUEfIXPx88CsF8ZBVW8k1ZmatY7FxUDGWu5O9Z6RJEQ7kn8JNsmVGe7DGDdkCX4XgH+P4V3CH4FBnX1RR+DJ8brC8f+RBU11ddoWozQzu9YWutqPlHWLY+OpCYqbMYjtOr89UQk2KjvvNXG3xSzCVfcnGLoueltxaE1lgH4PkrXFD7k9bP9t//aidcrXGtYN/QDGkyRI2B7Q0CjrRMsrV3cimEoRBs8gWu0Rj5es/iT6ba+gCydEk0LhJKepAhxoajJjG/4xqDS796QY/k6FMgrqypTyUs9v1pEUpBEPekUW7gsXeL8X6ckZKwzC4gPzmQWAz3amq84xVep49ImrURN9FZiV5wb0hHIusejzkK6SZTkE1CtIAG4VL7b+fCf/bkcx+s0YUgyWr99ao0LEjSPJowjW6//75pYJQe7aICOITcL+YmK9qn/JqkyVhEKDRqWKZIVoXzD198kzOirOnDPXZ6qzT4BBVnq7jHzWHRHnrs8MkKbzO8kDAIXPS2UVQOribpVhNDU0x2CnXiJINmybAEYrbxd4Z7UIK0UnWcnhBb6vcqO0UWkoZPdOwECoG8yijl3CVsusoMXBUmgPkQVmui4ZRUoCEjsiM8iQ28dhCzRRwCmPcSoFdXYauaXAV9XGhBiZYlz7aPUnDpydjQwFUsZJ8DDxdmoJYltQs2acPUKg00x2g5UbPzf2BQJeT2HAN/xa254tTDRXI6N0eF1ztntpXIv7lYrK9GOGysqj4apwrH8LbG9ChMxB8zOOSluHbZxtJSYO2V9SOkr15FMpe5uiHKjeYQ3ZXhVZaEYAJNrAskXmbClE1fGNx/eduvRkMkBrTAzFRrqCw9EEgh58SHie8mIBNXf1g1R+YOqeBNjch5CQjTMHAHATspRumDSHTwi9OLW3wQy+cZVjywi+/vfZH+ABUvNBaZOl3OzpG7tLKZFlSsogJjkKMY/hukWvLK8lE2DwnbC78T6cMQdSfQsbe63fHPrKzFSBIsky7Vk5CMfELUkkqTumBWyRvjwX5qo8DtKZjZX6Urrmck2OUKcA86d06ULw96zwsqPf+FoO1kGlSlU1dicwXziz3bfV9EnMH+4kWfv9WYhyWak+R7QE7t8BGhr+LhArpehxOkWO5edhGIPQJ9155N86+nqZvVbNth0/hrpvidVS+BTIPPXedezW8QLq2g+mlRt6eB78xSL1dsT2wzSKQ89Fc3ZWvsNbJp1eNbju2YHUgMNJuLInjB7NksC1VzqVlwA+jLFtz8uuztOg9V/JhsX5IxPXJDuYp0KOLxMThg5RM5rNk59Cs3s99FOZY9l6By1UqGrGUty32Yf9GKDEJ4U7dAR6udNJ1Y4zPRaXNy1Jd2SNY9SaQxYnYBquPLT" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov/" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AC-17 <small>REMOTE ACCESS</small></h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC - ACCESS CONTROL</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AC-17
+                                        </td>
+                                        <td>
+                                            AC-17 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>)
+                                        </td>
+                                        <td>
+                                            AC-17 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br />
+                        <a href="#controlDescription">Control Description</a><br />
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br />
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC</a>
+                    &gt; <strong>AC-17</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"><p>
+a.
+Establishes and documents usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed; and
+</p>
+<p>
+b.
+Authorizes remote access to the information system prior to allowing such connections.
+</p>
+</p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Remote access is access to organizational information systems by users (or processes acting on behalf of users) communicating through external networks (e.g., the Internet). Remote access methods include, for example, dial-up, broadband, and wireless. Organizations often employ encrypted virtual private networks (VPNs) to enhance confidentiality and integrity over remote connections. The use of encrypted VPNs does not make the access non-remote; however, the use of VPNs, when adequately provisioned with appropriate security controls (e.g., employing appropriate encryption techniques for confidentiality and integrity protection) may provide sufficient assurance to the organization that it can effectively treat such connections as internal networks.  Still, VPN connections traverse external networks, and the encrypted VPN does not enhance the availability of remote connections. Also, VPNs with encrypted tunnels can affect the organizational capability to adequately monitor network communications traffic for malicious code. Remote access controls apply to information systems other than public web servers or systems designed for public access. This control addresses authorization prior to allowing remote access without specifying the formats for such authorization. While organizations may use interconnection security agreements to authorize remote access connections, such agreements are not required by this control. Enforcing access restrictions for remote connections is addressed in AC-3.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-18">AC-18</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-19">AC-19</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-20">AC-20</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-3">CA-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-7">CA-7</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-8">CM-8</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-2">IA-2</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-3">IA-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-8">IA-8</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-4">MA-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-17">PE-17</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-4">PL-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-10">SC-10</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-4">SI-4</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AC-17(1)</span>
+                            </th>
+                            <td>
+                                REMOTE ACCESS | AUTOMATED MONITORING / CONTROL<br/>
+                                <strong>The information system monitors and controls remote access methods.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Automated monitoring and control of remote access sessions allows organizations to detect cyber attacks and also ensure ongoing compliance with remote access policies by auditing connection activities of remote users on a variety of information system components (e.g., servers, workstations, notebook computers, smart phones, and tablets).
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>,&nbsp;<a href="AU-12.html">AU-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AC-17(2)</span>
+                            </th>
+                            <td>
+                                REMOTE ACCESS | PROTECTION OF CONFIDENTIALITY / INTEGRITY USING ENCRYPTION<br/>
+                                <strong>The information system implements cryptographic mechanisms to protect the confidentiality and integrity of remote access sessions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The encryption strength of mechanism is selected based on the security categorization of the information.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SC-8.html">SC-8</a>,&nbsp;<a href="SC-12.html">SC-12</a>,&nbsp;<a href="SC-13.html">SC-13</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AC-17(3)</span>
+                            </th>
+                            <td>
+                                REMOTE ACCESS | MANAGED ACCESS CONTROL POINTS<br/>
+                                <strong>The information system routes all remote accesses through [Assignment: organization-defined number] managed network access control points.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Limiting the number of access control points for remote accesses reduces the attack surface for organizations. Organizations consider the Trusted Internet Connections (TIC) initiative requirements for external network connections.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SC-7.html">SC-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AC-17(4)</span>
+                            </th>
+                            <td>
+                                REMOTE ACCESS | PRIVILEGED COMMANDS / ACCESS<br/>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AC-17 (4)(a)</th>
+                                                <td><pre>Authorizes the execution of privileged commands and access to security-relevant information via remote access only for [Assignment: organization-defined needs]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-17 (4)(b)</th>
+                                                <td><pre>Documents the rationale for such access in the security plan for the information system.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AC-6.html">AC-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AC-17(5)</span>
+                            </th>
+                            <td>
+                                REMOTE ACCESS | MONITORING FOR UNAUTHORIZED CONNECTIONS<br/>
+                                <strong>[Withdrawn: Incorporated into SI-4].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">AC-17(6)</span>
+                            </th>
+                            <td>
+                                REMOTE ACCESS | PROTECTION OF INFORMATION<br/>
+                                <strong>The organization ensures that users protect information about remote access mechanisms from unauthorized use and disclosure.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AT-2.html">AT-2</a>,&nbsp;<a href="AT-3.html">AT-3</a>,&nbsp;<a href="PS-6.html">PS-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">AC-17(7)</span>
+                            </th>
+                            <td>
+                                REMOTE ACCESS | ADDITIONAL PROTECTION FOR SECURITY FUNCTION ACCESS<br/>
+                                <strong>[Withdrawn: Incorporated into AC-3 (10)].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">AC-17(8)</span>
+                            </th>
+                            <td>
+                                REMOTE ACCESS | DISABLE NONSECURE NETWORK PROTOCOLS<br/>
+                                <strong>[Withdrawn: Incorporated into CM-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">AC-17(9)</span>
+                            </th>
+                            <td>
+                                REMOTE ACCESS | DISCONNECT / DISABLE ACCESS<br/>
+                                <strong>The organization provides the capability to expeditiously disconnect or disable remote access to the information system within [Assignment: organization-defined time period].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement requires organizations to have the capability to rapidly disconnect current users remotely accessing the information system and/or disable further remote access. The speed of disconnect or disablement varies based on the criticality of missions/business functions and the need to eliminate immediate or future remote access to organizational information systems.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div><div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-46</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-46">http://csrc.nist.gov/publications/PubsSPs.html#800-46</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-77</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-77">http://csrc.nist.gov/publications/PubsSPs.html#800-77</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-113</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-113">http://csrc.nist.gov/publications/PubsSPs.html#800-113</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-114</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-114">http://csrc.nist.gov/publications/PubsSPs.html#800-114</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-121</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-121">http://csrc.nist.gov/publications/PubsSPs.html#800-121</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="../impact/low-2.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="../impact/moderate-2.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="../impact/high-2.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="../../Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="../search.html">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov/" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov/" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-17 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 19:19:38 GMT -->
+</html>

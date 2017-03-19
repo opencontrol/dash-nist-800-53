@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html  >
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/family/Access Control by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 19:17:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="head"><title>
+	NVD - Family
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/family/Access Control" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov/" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Family</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+
+    
+    <h4>Access Control Control Family</h4>
+
+      
+    
+<p>Showing <strong>25</strong> controls:</p>
+  
+
+		<table class="table table-hover table-striped table-smaller">
+			<thead>
+				<tr>
+					<th>No.</th>
+					<th>Control</th>
+					<th>Priority</th>
+					<th>Low</th>
+					<th>Moderate</th>
+					<th>High</th>
+				</tr>
+			</thead>
+			<tbody>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-1.html">AC-1</a></td>
+            <td>ACCESS CONTROL POLICY AND PROCEDURES</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl01_LowNumberLabel">AC-1</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl01_ModerateNumberLabel">AC-1</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl01_HighNumberLabel">AC-1</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-2.html">AC-2</a></td>
+            <td>ACCOUNT MANAGEMENT</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_LowNumberLabel">AC-2</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModerateNumberLabel">AC-2</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-2.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl01_PriorityLink" href="../control/AC-2.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl02_PriorityLink" href="../control/AC-2.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl03_PriorityLink" href="../control/AC-2.html#enhancement-4">4</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighNumberLabel">AC-2</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-2.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl01_PriorityLink" href="../control/AC-2.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl02_PriorityLink" href="../control/AC-2.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl03_PriorityLink" href="../control/AC-2.html#enhancement-4">4</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl04_PriorityLink" href="../control/AC-2.html#enhancement-5">5</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl05_PriorityLink" href="../control/AC-2.html#enhancement-11">11</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl06_PriorityLink" href="../control/AC-2.html#enhancement-12">12</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl07_PriorityLink" href="../control/AC-2.html#enhancement-13">13</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-3.html">AC-3</a></td>
+            <td>ACCESS ENFORCEMENT</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl03_LowNumberLabel">AC-3</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl03_ModerateNumberLabel">AC-3</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl03_HighNumberLabel">AC-3</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-4.html">AC-4</a></td>
+            <td>INFORMATION FLOW ENFORCEMENT</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl04_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl04_ModerateNumberLabel">AC-4</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl04_HighNumberLabel">AC-4</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-5.html">AC-5</a></td>
+            <td>SEPARATION OF DUTIES</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl05_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl05_ModerateNumberLabel">AC-5</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl05_HighNumberLabel">AC-5</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-6.html">AC-6</a></td>
+            <td>LEAST PRIVILEGE</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModerateNumberLabel">AC-6</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-6.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl01_PriorityLink" href="../control/AC-6.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl02_PriorityLink" href="../control/AC-6.html#enhancement-5">5</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl03_PriorityLink" href="../control/AC-6.html#enhancement-9">9</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl04_PriorityLink" href="../control/AC-6.html#enhancement-10">10</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighNumberLabel">AC-6</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-6.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl01_PriorityLink" href="../control/AC-6.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl02_PriorityLink" href="../control/AC-6.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl03_PriorityLink" href="../control/AC-6.html#enhancement-5">5</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl04_PriorityLink" href="../control/AC-6.html#enhancement-9">9</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl05_PriorityLink" href="../control/AC-6.html#enhancement-10">10</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-7.html">AC-7</a></td>
+            <td>UNSUCCESSFUL LOGON ATTEMPTS</td>
+            <td nowrap>P2</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl07_LowNumberLabel">AC-7</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl07_ModerateNumberLabel">AC-7</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl07_HighNumberLabel">AC-7</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-8.html">AC-8</a></td>
+            <td>SYSTEM USE NOTIFICATION</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl08_LowNumberLabel">AC-8</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl08_ModerateNumberLabel">AC-8</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl08_HighNumberLabel">AC-8</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-9.html">AC-9</a></td>
+            <td>PREVIOUS LOGON (ACCESS) NOTIFICATION</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl09_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl09_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl09_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-10.html">AC-10</a></td>
+            <td>CONCURRENT SESSION CONTROL</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl10_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl10_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl10_HighNumberLabel">AC-10</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-11.html">AC-11</a></td>
+            <td>SESSION LOCK</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_ModerateNumberLabel">AC-11</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-11.html#enhancement-1">1</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_HighNumberLabel">AC-11</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-11.html#enhancement-1">1</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-12.html">AC-12</a></td>
+            <td>SESSION TERMINATION</td>
+            <td nowrap>P2</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl12_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl12_ModerateNumberLabel">AC-12</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl12_HighNumberLabel">AC-12</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-13.html">AC-13</a></td>
+            <td>SUPERVISION AND REVIEW - ACCESS CONTROL</td>
+            <td nowrap></td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl13_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl13_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl13_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-14.html">AC-14</a></td>
+            <td>PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl14_LowNumberLabel">AC-14</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl14_ModerateNumberLabel">AC-14</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl14_HighNumberLabel">AC-14</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-15.html">AC-15</a></td>
+            <td>AUTOMATED MARKING</td>
+            <td nowrap></td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl15_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl15_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl15_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-16.html">AC-16</a></td>
+            <td>SECURITY ATTRIBUTES</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl16_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl16_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl16_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-17.html">AC-17</a></td>
+            <td>REMOTE ACCESS</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_LowNumberLabel">AC-17</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModerateNumberLabel">AC-17</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-17.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl01_PriorityLink" href="../control/AC-17.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl02_PriorityLink" href="../control/AC-17.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl03_PriorityLink" href="../control/AC-17.html#enhancement-4">4</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighNumberLabel">AC-17</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-17.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl01_PriorityLink" href="../control/AC-17.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl02_PriorityLink" href="../control/AC-17.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl03_PriorityLink" href="../control/AC-17.html#enhancement-4">4</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-18.html">AC-18</a></td>
+            <td>WIRELESS ACCESS</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_LowNumberLabel">AC-18</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_ModerateNumberLabel">AC-18</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-18.html#enhancement-1">1</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighNumberLabel">AC-18</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-18.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighPriorityRepeater_ctl01_PriorityLink" href="../control/AC-18.html#enhancement-4">4</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighPriorityRepeater_ctl02_PriorityLink" href="../control/AC-18.html#enhancement-5">5</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-19.html">AC-19</a></td>
+            <td>ACCESS CONTROL FOR MOBILE DEVICES</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_LowNumberLabel">AC-19</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_ModerateNumberLabel">AC-19</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-19.html#enhancement-5">5</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_HighNumberLabel">AC-19</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-19.html#enhancement-5">5</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-20.html">AC-20</a></td>
+            <td>USE OF EXTERNAL INFORMATION SYSTEMS</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_LowNumberLabel">AC-20</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_ModerateNumberLabel">AC-20</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-20.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_ModeratePriorityRepeater_ctl01_PriorityLink" href="../control/AC-20.html#enhancement-2">2</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_HighNumberLabel">AC-20</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-20.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_HighPriorityRepeater_ctl01_PriorityLink" href="../control/AC-20.html#enhancement-2">2</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-21.html">AC-21</a></td>
+            <td>INFORMATION SHARING</td>
+            <td nowrap>P2</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl21_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl21_ModerateNumberLabel">AC-21</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl21_HighNumberLabel">AC-21</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-22.html">AC-22</a></td>
+            <td>PUBLICLY ACCESSIBLE CONTENT</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl22_LowNumberLabel">AC-22</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl22_ModerateNumberLabel">AC-22</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl22_HighNumberLabel">AC-22</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-23.html">AC-23</a></td>
+            <td>DATA MINING PROTECTION</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl23_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl23_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl23_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-24.html">AC-24</a></td>
+            <td>ACCESS CONTROL DECISIONS</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl24_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl24_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl24_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-25.html">AC-25</a></td>
+            <td>REFERENCE MONITOR</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl25_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl25_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl25_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+			</tbody>
+		</table>
+    
+
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="../impact/low-2.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="../impact/moderate-2.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="../impact/high-2.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="../../Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="../search.html">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov/" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov/" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/family/Access Control by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 19:17:46 GMT -->
+</html>

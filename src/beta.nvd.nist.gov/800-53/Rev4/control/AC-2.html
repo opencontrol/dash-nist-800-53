@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html  >
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 19:19:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="head"><title>
+	NVD - Control
+</title><meta charset="UTF-8" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet" />
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+</head>
+<body class="LTR ENUS ContentBody" >
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-2" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+<nav id="navbar" class="navbar">
+  <div id="desktop-nav-container">
+    <div class="container-fluid container-logo">
+        <div class="container row">
+            <!-- Brand -->
+            <div class="col-lg-3 col-md-6 col-md-6 navbar-header">
+                <a class="navbar-brand" href="https://beta.nvd.nist.gov/">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NVD-white-55.png" />
+                </a>
+            </div>
+            <div id="navbar-tagline-container" class="col-lg-6 text-center hidden-sm" style="text-transform: none;">
+                <span id="navbar-first-tagline"><a href="http://csrc.nist.gov/">Computer Security Resource Center</a></span><br/>
+                <span id="navbar-second-tagline"><a href="https://beta.nvd.nist.gov/home">National Vulnerability Database</a></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 navbar-nist-logo">
+                <a href="http://nist.gov/" target="_blank">
+                    <img src="https://beta.nvd.nist.gov/NVD/media/images/NIST_logo.png" />
+                </a>
+                <br />
+				<span class="navbar-nist-name">National Institute of<br />
+					Standards and Technology</span><br />
+                <span class="navbar-doc-name"><a href="https://www.doc.gov/">U.S. Department of Commerce</a></span>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+    <div class="navbar-csrc container-navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/home" class="dropdown-toggle" data-toggle="dropdown" id="genLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-home"></i> General
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/vuln" class="dropdown-toggle" data-toggle="dropdown" id="vulnLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="vulnLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="metricsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="metricsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/products" class="dropdown-toggle" data-toggle="dropdown" id="productsLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-wrench"></i> Products
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                            <i class="fa fa-check-square-o"></i> Configurations (CCE)
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/about" class="dropdown-toggle" data-toggle="dropdown" id="aboutLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-info-circle"></i> About
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/other-pages" class="dropdown-toggle" data-toggle="dropdown" id="addLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="fa fa-plus"></i> Other Sites
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="addLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://beta.nvd.nist.gov/search" class="dropdown-toggle" data-toggle="dropdown" id="searchLinksDropdown"
+                           aria-haspopup="true" aria-expanded="true" role="button">
+                            <i class="glyphicon glyphicon-search"></i> Search
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="searchLinksDropdown">
+                            <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                            <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                            <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+  </div><!-- /#desktop-nav-container -->
+  
+  <div id="mobile-nav-container">
+    <!-- Brand -->
+    <div class="col-md-2 col-sm-4 col-xs-4 navbar-header">
+      <a class="navbar-brand" href="https://beta.nvd.nist.gov/" id="navbar-brand-image">
+        <img src="https://beta.nvd.nist.gov/NVD/Media/images/NVD-white-150-38.png">
+      </a>
+    </div>
+    <div class="col-md-10 col-sm-8 col-xs-8 navbar-nist-logo">
+      <span id="nvd-menu-button" class="pull-right">
+        <a href="#">
+          <span class="fa fa-bars"></span> 
+          <span id="nvd-menu-full-text">NVD MENU</span>
+        </a>
+      </span>
+    </div>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div id="main-menu-drop" style="display: none;">
+    <ul>
+        <li class="expandable">
+            <a href="#">
+                <i class="fa fa-home"></i> General
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/general/nvd-dashboard"><i class="fa fa-tachometer"></i> NVD Dashboard</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/news"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/email-list"><i class="fa fa-envelope"></i> Email List</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://beta.nvd.nist.gov/general/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln">
+                <i class="fa fa-bug fa-flip-vertical"></i> Vulnerabilities
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-search"></i> Search & Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/full-listing"><i class="fa fa-list"></i> Full Listing</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/categories"><i class="fa fa-sitemap"></i> Categories (CWE)</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/data-feeds"><i class="fa fa-download"></i> Data Feeds</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/vendor-comments"><i class="fa fa-commenting"></i> Vendor Comments</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln/visualizations"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/vuln/full-listing#">
+                <i class="fa fa-balance-scale"></i> Vulnerability Metrics
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss"><i class="fa fa-balance-scale"></i> CVSS Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator"><i class="fa fa-calculator"></i> CVSS V3 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator"><i class="fa fa-calculator"></i> CVSS V2 Calculator</a></li>
+                <li><a href="https://beta.nvd.nist.gov/vuln-metrics/visualizations/cvss-severity-distribution-over-time"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/products">
+                <i class="fa fa-wrench"></i> Products
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/products/cpe"><i class="fa fa-square-o"></i> CPE Information</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-search"></i> CPE Dictionary</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/statistics"><i class="fa fa-bar-chart"></i> CPE Statistics</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/swid"><i class="fa fa-square"></i> SWID</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/visualizations/cpe-products-distribution"><i class="fa fa-area-chart"></i> Visualizations</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://beta.nvd.nist.gov/config/cce" id="configLink">
+                <i class="fa fa-check-square-o"></i> Configurations (CCE)
+            </a>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/about">
+                <i class="fa fa-info-circle"></i> About
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/about/contact"><i class="fa fa-at"></i> Contact</a></li>
+                <li><a href="https://beta.nvd.nist.gov/about/maintenance"><i class="fa fa-wrench"></i> Maintenance</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/other-pages">
+                <i class="fa fa-plus"></i> Other Sites
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/ncp/repository"><i class="fa fa-check-square-o"></i> Checklist (NCP) Repository</a></li>
+                <li><a href="https://beta.nvd.nist.gov/800-53"><i class="fa fa-cog"></i> 800-53 Controls</a></li>
+                <li><a href="https://beta.nvd.nist.gov/scap/validated-tools"><i class="fa fa-wrench"></i> SCAP Validated Tools</a></li>
+            </ul>
+        </li>
+        <li class="expandable">
+            <a href="https://beta.nvd.nist.gov/search">
+                <i class="glyphicon glyphicon-search"></i> Search
+                <span class="expander fa fa-plus pull-right"></span>
+            </a>
+            <ul style="display: none;">
+                <li><a href="https://beta.nvd.nist.gov/vuln/search"><i class="fa fa-bug fa-flip-vertical"></i> Vulnerability Search</a></li>
+                <li><a href="https://beta.nvd.nist.gov/products/cpe/search"><i class="fa fa-wrench"></i> CPE Dictionary</a></li>
+                <!--<li><a href="/search"><i class="fa fa-file-text"></i> NVD Topics</a></li>-->
+            </ul>
+        </li>
+    </ul>
+  </div><!-- /#mobile-nav-container -->
+  
+</nav>
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb"><a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span  class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div class="col-lg-10 col-md-8 col-sm-12">
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AC-2 <small>ACCOUNT MANAGEMENT</small></h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC - ACCESS CONTROL</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AC-2
+                                        </td>
+                                        <td>
+                                            AC-2 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>)
+                                        </td>
+                                        <td>
+                                            AC-2 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>) (<a href="#enhancement-5">5</a>) (<a href="#enhancement-11">11</a>) (<a href="#enhancement-12">12</a>) (<a href="#enhancement-13">13</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br />
+                        <a href="#controlDescription">Control Description</a><br />
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br />
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC</a>
+                    &gt; <strong>AC-2</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"><p>
+a.
+Identifies and selects the following types of information system accounts to support organizational missions/business functions: [Assignment: organization-defined information system account types];
+</p>
+<p>
+b.
+Assigns account managers for information system accounts;
+</p>
+<p>
+c.
+Establishes conditions for group and role membership;
+</p>
+<p>
+d.
+Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;
+</p>
+<p>
+e.
+Requires approvals by [Assignment: organization-defined personnel or roles] for requests to create information system accounts;
+</p>
+<p>
+f.
+Creates, enables, modifies, disables, and removes information system accounts in accordance with [Assignment: organization-defined procedures or conditions];
+</p>
+<p>
+g.
+Monitors the use of information system accounts;
+</p>
+<p>
+h.
+Notifies account managers:
+<p>
+1.
+When accounts are no longer required;
+</p>
+<p>
+2.
+When users are terminated or transferred; and
+</p>
+<p>
+3.
+When individual information system usage or need-to-know changes;
+</p>
+
+</p>
+<p>
+i.
+Authorizes access to the information system based on:
+<p>
+1.
+A valid access authorization;
+</p>
+<p>
+2.
+Intended system usage; and
+</p>
+<p>
+3.
+Other attributes as required by the organization or associated missions/business functions;
+</p>
+
+</p>
+<p>
+j.
+Reviews accounts for compliance with account management requirements [Assignment: organization-defined frequency]; and
+</p>
+<p>
+k.
+Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.
+</p>
+</p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Information system account types include, for example, individual, shared, group, system, guest/anonymous, emergency, developer/manufacturer/vendor, temporary, and service. Some of the account management requirements listed above can be implemented by organizational information systems. The identification of authorized users of the information system and the specification of access privileges reflects the requirements in other security controls in the security plan. Users requiring administrative privileges on information system accounts receive additional scrutiny by appropriate organizational personnel (e.g., system owner, mission/business owner, or chief information security officer) responsible for approving such accounts and privileged access. Organizations may choose to define access privileges or other attributes by account, by type of account, or a combination of both. Other attributes required for authorizing access include, for example, restrictions on time-of-day, day-of-week, and point-of-origin. In defining other account attributes, organizations consider system-related requirements (e.g., scheduled maintenance, system upgrades) and mission/business requirements, (e.g., time zone differences, customer requirements, remote access to support travel requirements). Failure to consider these factors could affect information system availability. Temporary and emergency accounts are accounts intended for short-term use. Organizations establish temporary accounts as a part of normal account activation procedures when there is a need for short-term accounts without the demand for immediacy in account activation. Organizations establish emergency accounts in response to crisis situations and with the need for rapid account activation. Therefore, emergency account activation may bypass normal account authorization processes. Emergency and temporary accounts are not to be confused with infrequently used accounts (e.g., local logon accounts used for special tasks defined by organizations or when network resources are unavailable). Such accounts remain available and are not subject to automatic disabling or removal dates. Conditions for disabling or deactivating accounts include, for example: (i) when shared/group, emergency, or temporary accounts are no longer required; or (ii) when individuals are transferred or terminated. Some types of information system accounts may require specialized training.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-4">AC-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-5">AC-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-6">AC-6</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-10">AC-10</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-19">AC-19</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-20">AC-20</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-9">AU-9</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-2">IA-2</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-4">IA-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-5">IA-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-8">IA-8</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-5">CM-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-6">CM-6</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-11">CM-11</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-3">MA-3</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-4">MA-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-5">MA-5</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-4">PL-4</a>,&nbsp;<a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-13">SC-13</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AC-2(1)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | AUTOMATED SYSTEM ACCOUNT MANAGEMENT<br/>
+                                <strong>The organization employs automated mechanisms to support the management of information system accounts.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The use of automated mechanisms can include, for example: using email or text messaging to automatically notify account managers when users are terminated or transferred; using the information system to monitor account usage; and using telephonic notification to report atypical system account usage.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AC-2(2)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | REMOVAL OF TEMPORARY / EMERGENCY ACCOUNTS<br/>
+                                <strong>The information system automatically [Selection: removes; disables] temporary and emergency accounts after [Assignment: organization-defined time period for each type of account].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement requires the removal of both temporary and emergency accounts automatically after a predefined period of time has elapsed, rather than at the convenience of the systems administrator.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AC-2(3)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | DISABLE INACTIVE ACCOUNTS<br/>
+                                <strong>The information system automatically disables inactive accounts after [Assignment: organization-defined time period].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AC-2(4)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | AUTOMATED AUDIT ACTIONS<br/>
+                                <strong>The information system automatically audits account creation, modification, enabling, disabling, and removal actions, and notifies [Assignment: organization-defined personnel or roles].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>,&nbsp;<a href="AU-12.html">AU-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AC-2(5)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | INACTIVITY LOGOUT<br/>
+                                <strong>The organization requires that users log out when [Assignment: organization-defined time-period of expected inactivity or description of when to log out].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="SC-23.html">SC-23</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">AC-2(6)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | DYNAMIC PRIVILEGE MANAGEMENT<br/>
+                                <strong>The information system implements the following dynamic privilege management capabilities: [Assignment: organization-defined list of dynamic privilege management capabilities].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                In contrast to conventional access control approaches which employ static information system accounts and predefined sets of user privileges, dynamic access control approaches (e.g., service-oriented architectures) rely on run time access control decisions facilitated by dynamic privilege management. While user identities may remain relatively constant over time, user privileges may change more frequently based on ongoing mission/business requirements and operational needs of organizations. Dynamic privilege management can include, for example, the immediate revocation of privileges from users, as opposed to requiring that users terminate and restart their sessions to reflect any changes in privileges. Dynamic privilege management can also refer to mechanisms that change the privileges of users based on dynamic rules as opposed to editing specific user profiles. This type of privilege management includes, for example, automatic adjustments of privileges if users are operating out of their normal work times, or if information systems are under duress or in emergency maintenance situations. This control enhancement also includes the ancillary effects of privilege changes, for example, the potential changes to encryption keys used for communications. Dynamic privilege management can support requirements for information system resiliency.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AC-16.html">AC-16</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">AC-2(7)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | ROLE-BASED SCHEMES<br/>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AC-2 (7)(a)</th>
+                                                <td><pre>Establishes and administers privileged user accounts in accordance with a role-based access scheme that organizes allowed information system access and privileges into roles;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-2 (7)(b)</th>
+                                                <td><pre>Monitors privileged role assignments; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-2 (7)(c)</th>
+                                                <td><pre>Takes [Assignment: organization-defined actions] when privileged role assignments are no longer appropriate.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Privileged roles are organization-defined roles assigned to individuals that allow those individuals to perform certain security-relevant functions that ordinary users are not authorized to perform. These privileged roles include, for example, key management, account management, network and system administration, database administration, and web administration.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">AC-2(8)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | DYNAMIC ACCOUNT CREATION<br/>
+                                <strong>The information system creates [Assignment: organization-defined information system accounts] dynamically.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Dynamic approaches for creating information system accounts (e.g., as implemented within service-oriented architectures) rely on establishing accounts (identities) at run time for entities that were previously unknown. Organizations plan for dynamic creation of information system accounts by establishing trust relationships and mechanisms with the appropriate authorities to validate related authorizations and privileges.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="AC-16.html">AC-16</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">AC-2(9)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | RESTRICTIONS ON USE OF SHARED / GROUP ACCOUNTS<br/>
+                                <strong>The organization only permits the use of shared/group accounts that meet [Assignment: organization-defined conditions for establishing shared/group accounts].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">AC-2(10)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | SHARED / GROUP ACCOUNT CREDENTIAL TERMINATION<br/>
+                                <strong>The information system terminates shared/group account credentials when members leave the group.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-11">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_EnhancementNameDT">AC-2(11)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | USAGE CONDITIONS<br/>
+                                <strong>The information system enforces [Assignment: organization-defined circumstances and/or usage conditions] for [Assignment: organization-defined information system accounts].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations can describe the specific conditions or circumstances under which information system accounts can be used, for example, by restricting usage to certain days of the week, time of day, or specific durations of time.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-12">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_EnhancementNameDT">AC-2(12)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | ACCOUNT MONITORING / ATYPICAL USAGE<br/>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AC-2 (12)(a)</th>
+                                                <td><pre>Monitors information system accounts for [Assignment: organization-defined atypical usage]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-2 (12)(b)</th>
+                                                <td><pre>Reports atypical usage of information system accounts to [Assignment: organization-defined personnel or roles].</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Atypical usage includes, for example, accessing information systems at certain times of the day and from locations that are not consistent with the normal usage patterns of individuals working in organizations.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="CA-7.html">CA-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-13">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_EnhancementNameDT">AC-2(13)</span>
+                            </th>
+                            <td>
+                                ACCOUNT MANAGEMENT | DISABLE ACCOUNTS FOR HIGH-RISK INDIVIDUALS<br/>
+                                <strong>The organization disables accounts of users posing a significant risk within [Assignment: organization-defined time period] of discovery of the risk.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Users posing a significant risk to organizations include individuals for whom reliable evidence or intelligence indicates either the intention to use authorized access to information systems to cause harm or through whom adversaries will cause harm. Harm includes potential adverse impacts to organizational operations and assets, individuals, other organizations, or the Nation. Close coordination between authorizing officials, information system administrators, and human resource managers is essential in order for timely execution of this control enhancement.
+                                                <br/>
+                                                    Related to: 
+                                                    <a href="PS-4.html">PS-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div><div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 nav-800-53">
+      <h3>800-53 (Rev. 4)</h3>
+      <dl>
+            <dt>Security Controls</dt>
+            <dd><a id="R4LI" href="../impact/low-2.html">Low-Impact</a></dd>
+            <dd><a id="R4MI" href="../impact/moderate-2.html">Moderate-Impact</a></dd>
+            <dd><a id="R4HI" href="../impact/high-2.html">High-Impact</a></dd>
+            <dt>Other Links</dt>
+            <dd><a id="R4F" href="../../Rev4.html">Families</a></dd>
+            <dd><a id="R4S" href="../search.html">Search</a></dd>
+        </dl>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+    <div class="container">        
+		<div class="row">            
+			<div class="col-lg-3 col-sm-12 nist-info-container">                        
+				<strong>Incident Response Assistance and Non-NVD Related Technical Cyber Security Questions:</strong>                              
+				<p>                  
+					US-CERT Security Operations Center<br/>                  
+					Email: <a href="mailto:soc@us-cert.gov">soc@us-cert.gov</a><br/>                  
+					Phone: 1-888-282-0870                
+				</p>            
+                <p>
+                    <a href="https://www.dhs.gov/" target="_blank" style="float: left; margin-left: 50px; width: 68px;">
+                        <img src="https://beta.nvd.nist.gov/NVD/media/images/dhs-logo.png" />
+                    </a>
+                    <div style="display: inline-block; text-align: left; margin-left: 0; margin-right: 20px;">
+                        <strong>Sponsored by</strong><br/>
+                        <a href="https://www.dhs.gov/" target="_blank">DHS/NCCIC/US-CERT</a>
+                    </div>
+                </p>           
+			</div>            
+			<div class="col-lg-6 col-sm-12 links-container">     
+                  <p class="text-center"><strong>NVD Primary Resources</strong></p>     
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/search">Vulnerability Search Engine</a><br/>
+                      <a href="https://beta.nvd.nist.gov/ncp/repository">National Checklist Program</a><br/>
+                      <a href="https://beta.nvd.nist.gov/scap/validated-tools">SCAP Validated Tools</a><br/>
+                      <a href="https://beta.nvd.nist.gov/general/visualizations">Visualizations</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v3-calculator">CVSS V3 Calculator</a>
+                    </p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p class="text-center">
+                      <a href="https://beta.nvd.nist.gov/vuln/data-feeds">Data Feeds</a><br/>
+                      <a href="https://beta.nvd.nist.gov/products/cpe/search">Product Dictionary</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics">Vulnerability Metrics</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln/categories">Vulnerability Categories</a><br/>
+                      <a href="https://beta.nvd.nist.gov/vuln-metrics/cvss/v2-calculator">CVSS V2 Calculator</a>
+                    </p>
+                  </div>
+                </div>
+				<p class="text-center">                 
+					Last Updated: 1/23/2017                                    
+				</p>   
+			</div>            
+			<div class="col-lg-3 col-sm-12 subscription-container">                
+				<strong>Subscribe to updates from NVD, SCAP, XCCDF and Emerging Specifications:</strong><br/>                    
+				<a href="https://beta.nvd.nist.gov/general/email-list">Announcement and Discussion Lists</a><br/><br/>
+				<strong>General Questions</strong>               
+				<address>Email: <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></address>  
+			</div>        
+		</div>    
+	</div>
+</footer>
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 19:19:38 GMT -->
+</html>
